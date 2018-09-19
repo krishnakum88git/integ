@@ -6,18 +6,14 @@ media_folder: static/img
 public_folder: /img
 
 collections:
-  - name: "blog"
-    label: "Blog"
-    folder: "src/pages/blog"
+  - name: "magnets"
+    label: "Magnets"
+    folder: "src/magnets"
     create: true
-    slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
     fields:
-      - {label: "Template Key", name: "templateKey", widget: "hidden", default: "blog-post"}
       - {label: "Title", name: "title", widget: "string"}
-      - {label: "Publish Date", name: "date", widget: "datetime"}
-      - {label: "Description", name: "description", widget: "text"}
-      - {label: "Body", name: "body", widget: "markdown"}
-      - {label: "Tags", name: "tags", widget: "list"}
+      - {label: "Link to", name: "link-to", widget: "relation", collection: "pages", searchFields: ["name"], valueField: "name"}
+      - {label: "Featured Image", name: "thumbnail", widget: "image"}
 
   - name: "pages"
     label: "Pages"
@@ -29,7 +25,7 @@ collections:
           - {label: "Template Key", name: "templateKey", widget: "hidden", default: "about-page"}
           - {label: "Title", name: "title", widget: "string"}
           - {label: "Body", name: "body", widget: "markdown"}
-      - file: "src/pages/products/index.md"
+      - file: "src/pages/home.md"
         label: "Products Page"
         name: "products"
         fields:
