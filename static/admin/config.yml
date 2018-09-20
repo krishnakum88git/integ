@@ -12,6 +12,8 @@ collections:
     create: true
     fields:
       - {label: "Title", name: "title", widget: "string"}
+      - {label: "Featured Image", name: "thumbnail", widget: "image"}
+      - {label: "Page", name: "page", widget: "relation", collection: "pages", searchFields: ["name"], valueField: "name"}
 
   - name: "pages"
     label: "Pages"
