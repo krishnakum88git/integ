@@ -12,8 +12,6 @@ collections:
     create: true
     fields:
       - {label: "Title", name: "title", widget: "string"}
-      - {label: "Link to", name: "link-to", widget: "relation", collection: "pages", searchFields: ["name"], valueField: "name"}
-      - {label: "Featured Image", name: "thumbnail", widget: "image"}
 
   - name: "pages"
     label: "Pages"
