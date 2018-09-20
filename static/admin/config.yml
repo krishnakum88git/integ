@@ -6,15 +6,6 @@ media_folder: static/img
 public_folder: /img
 
 collections:
-  - name: "magnets"
-    label: "Magnets"
-    folder: "src/magnets"
-    create: true
-    fields:
-      - {label: "Title", name: "title", widget: "string"}
-      - {label: "Featured Image", name: "thumbnail", widget: "image"}
-      - {label: "Page", name: "page", widget: "relation", collection: "pages", searchFields: ["name"], valueField: "name"}
-
   - name: "pages"
     label: "Pages"
     files:
@@ -29,5 +20,14 @@ collections:
         label: "Products Page"
         name: "products"
         fields:
+          - {label: "Template Key", name: "templateKey", widget: "hidden", default: "home"}
           - {label: "Title", name: "title", widget: "string"}
           - {label: "Body", name: "body", widget: "markdown"}
+  - name: "magnets"
+    label: "Magnets"
+    folder: "src/magnets"
+    create: true
+    fields:
+      - {label: "Title", name: "title", widget: "string"}
+      - {label: "Featured Image", name: "thumbnail", widget: "image"}
+      - {label: "Page", name: "page", widget: "relation", collection: "pages", searchFields: ["name"], valueField: "name"}

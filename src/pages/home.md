@@ -1,4 +1,6 @@
 ---
+templateKey: 'home'
+path: /home
 title: Home
 ---
 ### this is home
