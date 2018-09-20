@@ -30,4 +30,4 @@ collections:
     fields:
       - {label: "Title", name: "title", widget: "string"}
       - {label: "Featured Image", name: "thumbnail", widget: "image"}
-      - {label: "Page", name: "page", widget: "relation", collection: "pages", searchFields: ["name"], valueField: "name"}
+      - {label: "Page", name: "page", widget: "relation", collection: "pages", searchFields: ["name", "title"], valueField: "title"}
