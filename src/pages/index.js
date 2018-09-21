@@ -2,13 +2,14 @@ import React from 'react'
 import PropTypes from 'prop-types'
 import { graphql } from 'gatsby'
 import Layout from '../components/Layout'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 
 export default class IndexPage extends React.Component {
   render() {
     return (
       <Layout>
         <section>
-          <h1>hi</h1>
+          <FontAwesomeIcon style={{color: "red"}} icon="heart" />
         </section>
       </Layout>
     )

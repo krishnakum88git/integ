@@ -3,10 +3,10 @@ import PropTypes from 'prop-types'
 import { graphql } from 'gatsby'
 import Layout from '../components/Layout'
 import Content, { HTMLContent } from '../components/Content'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 
-export const HomePageTemplate = ({ title, content, contentComponent }) => {
+export const PageTemplate = ({ title, content, contentComponent, iconName, indicatorColor }) => {
   const PageContent = contentComponent || Content
-
   return (
     <section className="section section--gradient">
       <div className="container">
@@ -15,6 +15,7 @@ export const HomePageTemplate = ({ title, content, contentComponent }) => {
             <div className="section">
               <h2 className="title is-size-3 has-text-weight-bold is-bold-light">
                 {title}
+                <FontAwesomeIcon style={{color: indicatorColor}} icon={iconName} />
               </h2>
               <PageContent className="content" content={content} />
             </div>
@@ -25,38 +26,40 @@ export const HomePageTemplate = ({ title, content, contentComponent }) => {
   )
 }
 
-HomePageTemplate.propTypes = {
+PageTemplate.propTypes = {
   title: PropTypes.string.isRequired,
   content: PropTypes.string,
   contentComponent: PropTypes.func,
 }
 
-const HomePage = ({ data }) => {
+const Page = ({ data }) => {
   const { markdownRemark: post } = data
 
   return (
     <Layout>
-      <HomePageTemplate
+      <PageTemplate
         contentComponent={HTMLContent}
-        title={post.frontmatter.title}
         content={post.html}
+        {...post.frontmatter}
       />
     </Layout>
   )
 }
 
-HomePage.propTypes = {
+Page.propTypes = {
   data: PropTypes.object.isRequired,
 }
 
-export default HomePage
+export default Page
 
-export const homePageQuery = graphql`
-  query HomePage($id: String!) {
+export const pageQuery = graphql`
+  query Page($id: String!) {
     markdownRemark(id: { eq: $id }) {
       html
       frontmatter {
         title
+        iconName
+        indicatorColor
       }
     }
   }

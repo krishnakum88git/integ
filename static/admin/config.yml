@@ -1,6 +1,5 @@
 backend:
-  name: git-gateway
-  branch: master
+  name: test-repo
 
 media_folder: static/img
 public_folder: /img
@@ -16,18 +15,10 @@ collections:
           - {label: "Template Key", name: "templateKey", widget: "hidden", default: "about-page"}
           - {label: "Title", name: "title", widget: "string"}
           - {label: "Body", name: "body", widget: "markdown"}
-      - file: "src/pages/home.md"
+      - file: "src/pages/home/index.md"
         label: "Products Page"
         name: "products"
         fields:
-          - {label: "Template Key", name: "templateKey", widget: "hidden", default: "home"}
+          - {label: "Template Key", name: "templateKey", widget: "hidden", default: "about-page"}
           - {label: "Title", name: "title", widget: "string"}
           - {label: "Body", name: "body", widget: "markdown"}
-  - name: "magnets"
-    label: "Magnets"
-    folder: "src/magnets"
-    create: true
-    fields:
-      - {label: "Title", name: "title", widget: "string"}
-      - {label: "Featured Image", name: "thumbnail", widget: "image"}
-      - {label: "Page", name: "page", widget: "relation", collection: "pages", searchFields: ["name", "title"], valueField: "title"}
