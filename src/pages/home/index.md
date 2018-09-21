@@ -1,6 +1,6 @@
 ---
 templateKey: 'generic-page'
-path: /home
+slug: home
 title: Landing Page
 indicatorColor: '#EE4035'
 iconName: 'heart'

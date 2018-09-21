@@ -1,7 +1,9 @@
 ---
 templateKey: 'generic-page'
-path: /providers
+slug: providers
 title: Providers
 indicatorColor: '#A55EEA'
 iconName: 'user-md'
+banner: '../../img/providers.png'
+isHomepageMagnet: true
 ---

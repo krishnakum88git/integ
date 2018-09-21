@@ -4,8 +4,9 @@ import { graphql } from 'gatsby'
 import Layout from '../components/Layout'
 import Content, { HTMLContent } from '../components/Content'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import Img from "gatsby-image"
 
-export const PageTemplate = ({ title, content, contentComponent, iconName, indicatorColor }) => {
+export const PageTemplate = ({ title, content, contentComponent, iconName, indicatorColor, banner }) => {
   const PageContent = contentComponent || Content
   return (
     <section className="section section--gradient">
@@ -16,6 +17,7 @@ export const PageTemplate = ({ title, content, contentComponent, iconName, indic
               <h2 className="title is-size-3 has-text-weight-bold is-bold-light">
                 {title}
                 <FontAwesomeIcon style={{color: indicatorColor}} icon={iconName} />
+                <Img fluid={banner.childImageSharp.fluid} />
               </h2>
               <PageContent className="content" content={content} />
             </div>
@@ -59,7 +61,14 @@ export const pageQuery = graphql`
       frontmatter {
         title
         iconName
-        indicatorColor
+        indicatorColor,
+        banner {
+          childImageSharp {
+            fluid(maxWidth: 1440) {
+              ...GatsbyImageSharpFluid
+            }
+          }
+        }
       }
     }
   }
