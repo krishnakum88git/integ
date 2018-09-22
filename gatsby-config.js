@@ -6,6 +6,12 @@ module.exports = {
     "gatsby-plugin-styled-components",
     "gatsby-plugin-react-helmet",
     {
+      resolve: "gatsby-plugin-google-fonts",
+      options: {
+        fonts: ["Open Sans:400,400i,700"]
+      }
+    },
+    {
       resolve: "gatsby-source-filesystem",
       options: {
         path: `${__dirname}/src/pages`,
