@@ -1,58 +1,53 @@
-import React from 'react'
-import PropTypes from 'prop-types'
-import { graphql } from 'gatsby'
-import Layout from '../components/Layout'
-import Content, { HTMLContent } from '../components/Content'
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import Img from "gatsby-image"
+import React from "react";
+import PropTypes from "prop-types";
+import { graphql } from "gatsby";
 
-export const PageTemplate = ({ title, content, contentComponent, iconName, indicatorColor, banner }) => {
-  const PageContent = contentComponent || Content
+import Layout from "../components/Layout";
+import Content, { HTMLContent } from "../components/Content";
+
+export const PageTemplate = ({ content, contentComponent }) => {
+  const PageContent = contentComponent || Content;
   return (
-    <section className="section section--gradient">
-      <div className="container">
-        <div className="columns">
-          <div className="column is-10 is-offset-1">
-            <div className="section">
-              <h2 className="title is-size-3 has-text-weight-bold is-bold-light">
-                {title}
-                <FontAwesomeIcon style={{color: indicatorColor}} icon={iconName} />
-                <Img fluid={banner.childImageSharp.fluid} />
-              </h2>
-              <PageContent className="content" content={content} />
-            </div>
-          </div>
-        </div>
-      </div>
+    <section className="section section--gradient" style={{ minHeight: 400 }}>
+      <PageContent className="content" content={content} />
     </section>
-  )
-}
+  );
+};
 
 PageTemplate.propTypes = {
   title: PropTypes.string.isRequired,
   content: PropTypes.string,
-  contentComponent: PropTypes.func,
-}
+  contentComponent: PropTypes.func
+};
 
 const Page = ({ data }) => {
-  const { markdownRemark: post } = data
+  const { markdownRemark: post } = data;
 
+  const hero = {
+    title: post.frontmatter.title,
+    subTitle:
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin convallis cursus lectus iaculis. Mauris pulvinar nisi metus. ",
+    image: post.frontmatter.banner.childImageSharp.fluid,
+    iconColor: post.frontmatter.indicatorColor,
+    iconName: post.frontmatter.iconName
+  };
+  const magnets = (post.frontmatter.magnets || []).map(magnet => ({node: magnet}));
   return (
-    <Layout>
+    <Layout hero={hero} magnets={magnets}>
       <PageTemplate
         contentComponent={HTMLContent}
         content={post.html}
         {...post.frontmatter}
       />
     </Layout>
-  )
-}
+  );
+};
 
 Page.propTypes = {
-  data: PropTypes.object.isRequired,
-}
+  data: PropTypes.object.isRequired
+};
 
-export default Page
+export default Page;
 
 export const pageQuery = graphql`
   query Page($id: String!) {
@@ -61,7 +56,7 @@ export const pageQuery = graphql`
       frontmatter {
         title
         iconName
-        indicatorColor,
+        indicatorColor
         banner {
           childImageSharp {
             fluid(maxWidth: 1440) {
@@ -69,7 +64,22 @@ export const pageQuery = graphql`
             }
           }
         }
+        magnets {
+          id
+          frontmatter {
+            title
+            iconName
+            indicatorColor
+            banner {
+              childImageSharp {
+                fixed(width: 300) {
+                  ...GatsbyImageSharpFixed
+                }
+              }
+            }
+          }
+        }
       }
     }
   }
-`
+`;

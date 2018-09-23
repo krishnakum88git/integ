@@ -1,4 +1,7 @@
 module.exports = {
+  mapping: {
+    'MarkdownRemark.frontmatter.magnets': `MarkdownRemark.frontmatter.slug`
+  },
   siteMetadata: {
     title: "Gatsby + Netlify CMS Starter"
   },

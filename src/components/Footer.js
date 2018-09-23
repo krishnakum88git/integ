@@ -1,7 +1,8 @@
 import React from "react";
 import { Link } from "gatsby";
-import logo from "../img/white-logo.png";
 import styled, { css } from "styled-components";
+
+import logo from "../img/white-logo.png";
 import { font } from "../styles/typography";
 
 const FooterWrapper = styled.footer`
