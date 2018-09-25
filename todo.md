@@ -2,8 +2,13 @@
 - browser test
 - add 508 link above nav
 - do first-pass 508 assesment and make fixes
+- rough out contact
+
+# ?s
 - hover styles for magnets (ask scott)
 - should hero shorten when resized?
+- title tag structure
+- favicon
 
 # done for now
 - exit link modal
