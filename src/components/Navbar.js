@@ -3,11 +3,10 @@ import { Link as GatsbyLink } from "gatsby";
 import styled from "styled-components";
 
 import logo from "../img/logo.png";
-import { font } from "../styles/typography"
+import { font } from "../styles/typography";
 
 const Link = styled(GatsbyLink)`
-  ${font}
-  color: #555555;
+  ${font} color: #555555;
   font-size: 16px;
   font-weight: normal;
   text-decoration: none;
@@ -27,24 +26,61 @@ const Nav = styled.nav`
   z-index: 1;
 `;
 
+const items = [
+  {
+    title: "New to Medicare",
+    path: "/new-to-medicare",
+    color: "#20BE6B"
+  },
+  {
+    title: "Plans",
+    path: "/plans",
+    color: "#F7B731"
+  },
+  {
+    title: "Member Resources",
+    path: "/member-resources",
+    color: "#4B7BEC"
+  },
+  {
+    title: "Providers",
+    path: "/providers",
+    color: "#A55EEA"
+  },
+  {
+    title: "About Us",
+    path: "/about-us",
+    color: "#FA8231"
+  },
+  {
+    title: "Compliance",
+    path: "/compliance",
+    color: "#0FB8B1"
+  },
+  {
+    title: "Contact Us",
+    path: "/contact-us",
+    color: "#45AAF2"
+  }
+];
+
 const Navbar = () => (
   <Nav>
     <div>
       <Link to="/">
-        <img
-          src={logo}
-          alt="Integra Managed Care - Home"
-        />
+        <img src={logo} alt="Integra Managed Care - Home" />
       </Link>
     </div>
     <NavItems>
-      <Link to="/new-to-medicare">New to Medicare</Link>
-      <Link to="/plans">Our Plans</Link>
-      <Link to="/member-resources">Member Resources</Link>
-      <Link to="/providers">Providers</Link>
-      <Link to="/about-us">About Us</Link>
-      <Link to="/compliance">Compliance</Link>
-      <Link to="/contact-us">Contact Us</Link>
+      {items.map(item => (
+        <Link
+          activeStyle={{ color: item.color }}
+          key={item.path}
+          to={item.path}
+        >
+          {item.title}
+        </Link>
+      ))}
     </NavItems>
   </Nav>
 );

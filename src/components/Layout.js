@@ -7,6 +7,7 @@ import Navbar from "./Navbar";
 import Footer from "./Footer";
 import Magnets from "./Magnets";
 import Hero from "./Hero";
+import ExternalLinkWarningModal from './ExternalLinkWarningModal';
 
 const Wrapper = styled.div``;
 
@@ -38,7 +39,7 @@ class TemplateWrapper extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      browserWidth: 1600
+      browserWidth: document.body.getBoundingClientRect().width
     };
   }
   componentDidMount() {
@@ -48,7 +49,6 @@ class TemplateWrapper extends Component {
     );
   }
   componentWillUnmount() {
-    this.handleResize();
     window.removeEventListener("resize", this.handleResize);
   }
   handleResize = () => {
@@ -68,6 +68,7 @@ class TemplateWrapper extends Component {
           <GreyBar />
         </MiddleSection>
         <Footer />
+        <ExternalLinkWarningModal />
       </Wrapper>
     );
   }

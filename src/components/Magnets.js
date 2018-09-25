@@ -7,10 +7,12 @@ const Magnets = styled.section`
   justify-content: center;
 `;
 
-export default ({magnets}) => (
+export default ({ magnets }) => (
   <Magnets>
-    {magnets.map(({ node }) => (
-      <Magnet key={node.id} {...node.frontmatter} />
-    ))}
+    {magnets.map(node => {
+      const magnet = node.node || node;
+      console.log(magnet.frontmatter)
+      return <Magnet key={magnet.id} {...magnet.frontmatter} />
+    })}
   </Magnets>
 );

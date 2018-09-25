@@ -1,10 +1,10 @@
 import React from "react";
-import PropTypes from "prop-types";
 import styled from "styled-components";
 import { graphql } from "gatsby";
 
 import Layout from "../components/Layout";
 import { font } from "../styles/typography";
+import Link from "../components/Link";
 
 const CenterCopy = styled.div`
   ${font} text-align: center;
@@ -30,16 +30,16 @@ const CenterBody = styled.p`
 
 export default class IndexPage extends React.Component {
   render() {
+    const homeContent = this.props.data.allMarkdownRemark.edges[0].node.frontmatter;
     const hero = {
-      title: "Lorem Ipsum",
-      subTitle:
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin convallis cursus lectus iaculis. Mauris pulvinar nisi metus.",
+      title: homeContent.title,
+      subTitle: homeContent.subTitle,
       image: this.props.data.file.childImageSharp.fluid,
-      iconColor: "#EE4035",
-      iconName: "heart"
+      iconColor: homeContent.indicatorColor,
+      iconName: homeContent.iconName
     };
     return (
-      <Layout hero={hero} magnets={this.props.data.allMarkdownRemark.edges}>
+      <Layout hero={hero} magnets={homeContent.magnets}>
         <CenterCopy>
           <CenterTitle>Dolor Sit Amet</CenterTitle>
           <CenterBody>
@@ -47,19 +47,12 @@ export default class IndexPage extends React.Component {
             convallis cursus lectus eu iaculis. Mauris pulvinar nisi metus,
             vitae facilisis risus aliquam at.
           </CenterBody>
+          <p><Link to="https://google.com" title="External link test: google.com" /></p>
         </CenterCopy>
       </Layout>
     );
   }
 }
-
-IndexPage.propTypes = {
-  data: PropTypes.shape({
-    allMarkdownRemark: PropTypes.shape({
-      edges: PropTypes.array
-    })
-  })
-};
 
 export const pageQuery = graphql`
   query IndexQuery {
@@ -71,21 +64,26 @@ export const pageQuery = graphql`
       }
     }
 
-    allMarkdownRemark(
-      filter: { frontmatter: { isHomepageMagnet: { eq: true } } }
-    ) {
+    allMarkdownRemark(filter: { frontmatter: { slug: { eq: "home" } } }) {
       edges {
         node {
-          id
           frontmatter {
             title
-            slug
             iconName
             indicatorColor
-            banner {
-              childImageSharp {
-                fixed(width: 300) {
-                  ...GatsbyImageSharpFixed
+            magnets {
+              id
+              frontmatter {
+                title
+                iconName
+                slug
+                indicatorColor
+                banner {
+                  childImageSharp {
+                    fixed(width: 300) {
+                      ...GatsbyImageSharpFixed
+                    }
+                  }
                 }
               }
             }

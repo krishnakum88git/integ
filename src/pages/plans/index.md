@@ -2,10 +2,10 @@
 templateKey: 'generic-page'
 slug: plans
 title: Our plans
+subTitle: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin convallis cursus lectus iaculis. Mauris pulvinar nisi metus."
 indicatorColor: '#F7B731'
 iconName: 'book-open'
 banner: '../../img/plans.png'
-isHomepageMagnet: true
 magnets:
     - about-us
     - new-to-medicare

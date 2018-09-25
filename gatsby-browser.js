@@ -1,6 +1,23 @@
-const svgCore = require("@fortawesome/fontawesome-svg-core");
-const svgIcons = require("@fortawesome/free-solid-svg-icons");
+import React from "react";
+import { library } from "@fortawesome/fontawesome-svg-core";
+import * as svgIcons from "@fortawesome/free-solid-svg-icons";
+import AppProvider from "./src/store/provider";
 
-const icons = ["faBalanceScale", "faUserMd", "faUserFriends", "faPhone", "faHeart", "faFileMedicalAlt", "faQuestion", "faBookOpen"]
+const icons = [
+  "faBalanceScale",
+  "faUserMd",
+  "faUserFriends",
+  "faPhone",
+  "faHeart",
+  "faFileMedicalAlt",
+  "faQuestion",
+  "faBookOpen",
+  "faExclamationTriangle"
+];
 
-exports.onClientEntry = () => icons.forEach(icon => svgCore.library.add(svgIcons[icon]));
+export const onClientEntry = () =>
+  icons.forEach(icon => library.add(svgIcons[icon]));
+
+export const wrapRootElement = ({ element }) => {
+  return <AppProvider>{element}</AppProvider>;
+};

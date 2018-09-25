@@ -105,7 +105,7 @@ export default ({ browserWidth, iconColor, iconName, image, title, subTitle }) =
           firstStop={4000 - browserWidth / 2}
           secondStop={4000 + browserWidth / 2}
         />
-        <Img style={{ width: browserWidth, height: 636 }} fluid={image} />
+        {image && <Img style={{ width: browserWidth, height: 636 }} fluid={image} />}
       </HeroWrapper>
     </HeroSection>
     <IconWrapper>

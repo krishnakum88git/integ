@@ -25,8 +25,7 @@ const Page = ({ data }) => {
 
   const hero = {
     title: post.frontmatter.title,
-    subTitle:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin convallis cursus lectus iaculis. Mauris pulvinar nisi metus. ",
+    subTitle: post.frontmatter.subTitle,
     image: post.frontmatter.banner.childImageSharp.fluid,
     iconColor: post.frontmatter.indicatorColor,
     iconName: post.frontmatter.iconName
@@ -55,6 +54,7 @@ export const pageQuery = graphql`
       html
       frontmatter {
         title
+        subTitle
         iconName
         indicatorColor
         banner {
@@ -70,6 +70,7 @@ export const pageQuery = graphql`
             title
             iconName
             indicatorColor
+            slug
             banner {
               childImageSharp {
                 fixed(width: 300) {
