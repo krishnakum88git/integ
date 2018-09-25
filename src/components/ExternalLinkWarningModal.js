@@ -83,8 +83,8 @@ const Modal = ({ onClose, children }) => (
 
 export default () => (
   <Consumer>
-    {({ isExternalLinkModalOpen, closeExternalLinkModal, externalLinkURL }) =>
-      isExternalLinkModalOpen ? (
+    {({ isExternalLinkModalOpen, closeExternalLinkModal, externalLinkURL }) => {
+      return isExternalLinkModalOpen ? (
         <Modal onClose={closeExternalLinkModal}>
           <Icon icon="exclamation-triangle" />
           <Title>Leaving This Site</Title>
@@ -106,6 +106,6 @@ export default () => (
           </ButtonContainer>
         </Modal>
       ) : null
-    }
+    }}
   </Consumer>
 );

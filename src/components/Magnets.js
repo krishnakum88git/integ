@@ -11,7 +11,6 @@ export default ({ magnets }) => (
   <Magnets>
     {magnets.map(node => {
       const magnet = node.node || node;
-      console.log(magnet.frontmatter)
       return <Magnet key={magnet.id} {...magnet.frontmatter} />
     })}
   </Magnets>

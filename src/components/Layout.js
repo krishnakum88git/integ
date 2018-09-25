@@ -39,7 +39,7 @@ class TemplateWrapper extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      browserWidth: document.body.getBoundingClientRect().width
+      browserWidth: typeof(document) !== "undefined" ? document.body.getBoundingClientRect().width : 1400
     };
   }
   componentDidMount() {
