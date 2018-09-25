@@ -10,7 +10,7 @@ const ModalWrapper = styled.div`
   width: 100%;
   top: 0;
   left: 0;
-  background-color: rgba(0, 0, 0, 0.3);
+  background-color: rgba(0, 0, 0, 0.75);
   z-index: 99;
   display: flex;
   justify-content: center;
@@ -27,46 +27,48 @@ const ModalContent = styled.div`
   justify-content: center;
   padding: 40px;
   flex-direction: column;
+  border: 1px solid #222222;
 `;
 
 const Icon = styled(FontAwesomeIcon)`
   && {
-    width: 70px;
-    height: 70px;
-    color: orange;
+    width: 64px;
+    height: 64px;
+    color: #F7B731;
   }
 `;
 
 const Title = styled.h1`
-  ${font} font-size: 30px;
-  color: #222;
+  ${font} font-size: 32px;
+  color: #333;
   text-align: center;
   margin: 40px 0 0;
+  font-weight: normal;
 `;
 
 const SubTitle = styled.h2`
   ${font} font-size: 16px;
-  color: #222;
+  color: #000;
   text-align: center;
   margin: 10px 0 50px;
   font-weight: normal;
 `;
 
 const Button = styled.button`
-  ${font} height: 60px;
+  ${font} height: 64px;
   width: 100%;
   margin: 0 10px;
-  background-color: #ccc;
+  background-color: #D1D8DF;
   border: none;
-  border-radius: 30px;
-  color: #555;
+  border-radius: 32px;
+  color: #495969;
   display: block;
   font-size: 16px;
   cursor: pointer;
 `;
 
 const PrimaryButton = styled(Button)`
-  background-color: #5884ff;
+  background-color: #006EF5;
   color: #fff;
 `;
 
