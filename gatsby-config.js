@@ -1,10 +1,19 @@
 module.exports = {
+  mapping: {
+    'MarkdownRemark.frontmatter.magnets': `MarkdownRemark.frontmatter.slug`
+  },
   siteMetadata: {
     title: "Gatsby + Netlify CMS Starter"
   },
   plugins: [
     "gatsby-plugin-styled-components",
     "gatsby-plugin-react-helmet",
+    {
+      resolve: "gatsby-plugin-google-fonts",
+      options: {
+        fonts: ["Open Sans:400,400i,700"]
+      }
+    },
     {
       resolve: "gatsby-source-filesystem",
       options: {
@@ -24,7 +33,11 @@ module.exports = {
     {
       resolve: "gatsby-transformer-remark",
       options: {
-        plugins: []
+        plugins: [
+          {
+            resolve: "gatsby-remark-relative-images"
+          }
+        ]
       }
     },
     {
