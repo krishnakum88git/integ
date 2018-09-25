@@ -12,7 +12,11 @@ const icons = [
   "faFileMedicalAlt",
   "faQuestion",
   "faBookOpen",
-  "faExclamationTriangle"
+  "faExclamationTriangle",
+  "faUser",
+  "faEnvelope",
+  "faPhone",
+  "faMapMarker"
 ];
 
 export const onClientEntry = () =>

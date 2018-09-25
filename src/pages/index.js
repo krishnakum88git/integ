@@ -69,6 +69,7 @@ export const pageQuery = graphql`
         node {
           frontmatter {
             title
+            subTitle
             iconName
             indicatorColor
             magnets {

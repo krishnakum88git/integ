@@ -3,6 +3,7 @@ import { Consumer } from "../store/createContext";
 import styled from "styled-components";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { font } from "../styles/typography";
+import IntegraButton from "./Button";
 
 const ModalWrapper = styled.div`
   position: fixed;
@@ -54,27 +55,13 @@ const SubTitle = styled.h2`
   font-weight: normal;
 `;
 
-const Button = styled.button`
-  ${font} height: 64px;
-  width: 100%;
-  margin: 0 10px;
-  background-color: #D1D8DF;
-  border: none;
-  border-radius: 32px;
-  color: #495969;
-  display: block;
-  font-size: 16px;
-  cursor: pointer;
-`;
-
-const PrimaryButton = styled(Button)`
-  background-color: #006EF5;
-  color: #fff;
-`;
-
 const ButtonContainer = styled.div`
   display: flex;
   width: 100%;
+`;
+
+const CancelButton = styled(IntegraButton)`
+  margin-left: 10px;
 `;
 
 const Modal = ({ onClose, children }) => (
@@ -96,15 +83,16 @@ export default () => (
             Press OK to continue or cancel to remain on the site.
           </SubTitle>
           <ButtonContainer>
-            <PrimaryButton
+            <IntegraButton
+              isPrimary={true}
               onClick={e => {
                 e.stopPropagation();
                 window.location.href = externalLinkURL;
               }}
             >
               OK
-            </PrimaryButton>
-            <Button onClick={closeExternalLinkModal}>Cancel</Button>
+            </IntegraButton>
+            <CancelButton onClick={closeExternalLinkModal}>Cancel</CancelButton>
           </ButtonContainer>
         </Modal>
       ) : null
