@@ -6,7 +6,7 @@ subTitle: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin conval
 isLarge: true
 indicatorColor: '#EE4035'
 iconName: 'heart'
-banner: '../../img/home.png'
+banner: '../../img/home.jpg'
 magnets:
     - new-to-medicare
     - plans

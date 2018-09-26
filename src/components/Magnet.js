@@ -93,7 +93,7 @@ const Magnet = ({ banner, slug, indicatorColor, iconName, title }) => (
         <Dot color={indicatorColor} />
         <Icon icon={iconName} />
         <ImageContainer>
-          <Img style={{ height: 180 }} fixed={banner.childImageSharp.fixed} />
+          {banner && <Img style={{ height: 180 }} fixed={banner.childImageSharp.fixed} />}
         </ImageContainer>
       </ImageWrapper>
       <Title>{title}</Title>

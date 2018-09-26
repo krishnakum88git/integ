@@ -52,7 +52,7 @@ export default class IndexPage extends React.Component {
 
 export const pageQuery = graphql`
   query IndexQuery {
-    file(relativePath: { regex: "/home.png/" }) {
+    file(relativePath: { regex: "/home.jpg/" }) {
       childImageSharp {
         fluid(maxWidth: 1440) {
           ...GatsbyImageSharpFluid

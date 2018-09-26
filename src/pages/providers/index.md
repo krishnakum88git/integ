@@ -4,7 +4,7 @@ slug: providers
 title: Providers
 indicatorColor: '#A55EEA'
 iconName: 'user-md'
-banner: '../../img/providers.png'
+banner: '../../img/providers.jpg'
 magnets: 
     - plans
     - compliance

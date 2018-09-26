@@ -4,7 +4,7 @@ slug: new-to-medicare
 title: New To Medicare?
 indicatorColor: '#20BE6B'
 iconName: 'question'
-banner: '../../img/new-to-medicare.png'
+banner: '../../img/new-to-medicare.jpg'
 magnets:
     - new-to-medicare
     - plans

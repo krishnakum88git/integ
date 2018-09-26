@@ -4,7 +4,7 @@ slug: plans
 title: Our Plans
 indicatorColor: '#F7B731'
 iconName: 'book-open'
-banner: '../../img/plans.png'
+banner: '../../img/plans.jpg'
 magnets:
     - about-us
     - new-to-medicare
