@@ -14,10 +14,10 @@ const Hero = styled.div`
   flex-direction: column;
 `
 
-const Image = ({browserWidth, image}) => image ? (
+const Image = ({image}) => image ? (
   <Img
     style={{
-      width: browserWidth > 1600 ? 1600 : browserWidth,
+      width: '100%',
       height: '100%',
       position: "absolute",
       top: 0

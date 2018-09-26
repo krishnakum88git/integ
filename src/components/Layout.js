@@ -1,7 +1,6 @@
 import React, { Component } from "react";
 import Helmet from "react-helmet";
 import styled, { injectGlobal } from "styled-components";
-import { debounce } from "lodash";
 import { font, headings } from '../styles/typography'
 import { blacks } from '../styles/colors'
 import favicon from '../img/favicon.ico'
@@ -50,26 +49,6 @@ const MiddleSection = styled.section`
 `;
 
 class TemplateWrapper extends Component {
-  constructor(props) {
-    super(props);
-    this.state = {
-      browserWidth: typeof(document) !== "undefined" ? document.body.getBoundingClientRect().width : 1400
-    };
-  }
-  componentDidMount() {
-    window.addEventListener(
-      "resize",
-      debounce(this.handleResize, 100, { maxWait: 250 })
-    );
-  }
-  componentWillUnmount() {
-    window.removeEventListener("resize", this.handleResize);
-  }
-  handleResize = () => {
-    this.setState({
-      browserWidth: document.body.getBoundingClientRect().width
-    });
-  };
   render() {
     return (
       <Wrapper>
@@ -96,7 +75,7 @@ class TemplateWrapper extends Component {
           <meta name="twitter:description" content={description} /> */}
         </Helmet>
         <Navbar />
-        <Hero browserWidth={this.state.browserWidth} {...this.props.hero} />
+        <Hero {...this.props.hero} />
         <MiddleSection>
           <div>{this.props.children}</div>
           {this.props.magnets && <Magnets magnets={this.props.magnets} />}
