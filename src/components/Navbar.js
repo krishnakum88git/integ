@@ -4,16 +4,40 @@ import styled from "styled-components";
 
 import logo from "../img/logo.png";
 import { font } from "../styles/typography";
+import { blacks } from "../styles/colors";
 
 const Link = styled(GatsbyLink)`
-  ${font} color: #555555;
+  display: flex;
+  position: relative;
+  align-items: center;
+  color: ${blacks[1]};
   font-size: 16px;
   font-weight: normal;
   text-decoration: none;
-  margin: 0px 15px;
+  margin: 0px 16px 0 24px;
+
+  &.is-active {
+    .navigation-indicator {
+      opacity: 1;
+    }
+  }
 `;
 
-const NavItems = styled.div``;
+const Indicator = styled.div`
+  position: absolute;
+  left: -16px;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background-color: ${props => props.color || 'transparent'};
+  opacity: 0;
+  will-change: opacity;
+  transition: .2s ease-out opacity;
+`
+
+const NavItems = styled.div`
+  display: flex;
+`;
 
 const Nav = styled.nav`
   max-width: 1200px;
@@ -33,7 +57,7 @@ const items = [
     color: "#20BE6B"
   },
   {
-    title: "Plans",
+    title: "Our Plans",
     path: "/plans",
     color: "#F7B731"
   },
@@ -74,10 +98,12 @@ const Navbar = () => (
     <NavItems>
       {items.map(item => (
         <Link
-          activeStyle={{ color: item.color }}
+          activeStyle={{ color: blacks[0], fontWeight: 700 }}
+          activeClassName='is-active'
           key={item.path}
           to={item.path}
         >
+          <Indicator className="navigation-indicator" color={item.color} />
           {item.title}
         </Link>
       ))}
