@@ -68,7 +68,7 @@ const Navbar = () => (
   <Nav>
     <div>
       <Link to="/">
-        <img src={logo} alt="Integra Managed Care - Home" />
+        <img src={logo} style={{width: 200}} alt="Integra Managed Care - Home" />
       </Link>
     </div>
     <NavItems>
