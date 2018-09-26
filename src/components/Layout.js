@@ -3,6 +3,7 @@ import Helmet from "react-helmet";
 import styled, { injectGlobal } from "styled-components";
 import { debounce } from "lodash";
 import { font, headings } from '../styles/typography'
+import { blacks } from '../styles/colors'
 
 import Navbar from "./Navbar";
 import Footer from "./Footer";
@@ -22,6 +23,7 @@ injectGlobal`
   body, html {
     margin: 0;
     background-color: #fafafa;
+    color: ${blacks[0]};
     ${font}
   }
 

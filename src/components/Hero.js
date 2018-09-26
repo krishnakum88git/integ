@@ -4,7 +4,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import Img from "gatsby-image";
 import DividerCurve from './DividerCurve'
 
-import { font } from "../styles/typography";
+import { font, fontSizes, textShadow } from "../styles/typography";
 
 const Hero = styled.div`
   display: flex;
@@ -54,23 +54,22 @@ const GradientOverlay = styled.div`
 const Container = styled.div`
   box-sizing: border-box;
   margin: 0 auto;
-  padding: ${props => props.isCentered ? '175px 20%' : '175px 50%  175px 0%' };
+  padding: ${props => props.isCentered ? '175px 20%' : '175px 50%  175px 32px' };
   width: 1200px;
   z-index: 2;
 `
 
 const Title = styled.h1`
   color: #ffffff;
-  text-shadow: 0px 2px 5px rgba(0, 0, 0, 0.5);
+  text-shadow: ${textShadow};
   margin: 0;
   text-align: ${props => (props.isCentered ? "center" : "left")};
 `;
 
-const Subtitle = styled.h2`
-  ${font} font-size: 22px;
+const Subtitle = styled.p`
+  font-size: ${fontSizes.sm};
   color: #ffffff;
-  text-shadow: 0px 2px 5px rgba(0, 0, 0, 0.5);
-  font-weight: normal;
+  text-shadow: ${textShadow};
   margin: 10px 0 0 0;
   text-align: ${props => (props.isCentered ? "center" : "left")};
 `;

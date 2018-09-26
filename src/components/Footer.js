@@ -24,17 +24,15 @@ const Column = styled.div`
   width: 30%;
 `;
 
-const ColumnHeading = styled.h3`
-  ${font} color: #ffffff;
-  font-size: 22px;
-  font-weight: normal;
+const ColumnHeading = styled.h4`
+  color: #ffffff;
+  font-weight: 700;
   margin: 10px 0;
 `;
 
-const ColumnSubHeading = styled.h4`
-  ${font} color: #ffffff;
-  font-size: 16px;
-  font-weight: normal;
+const ColumnSubHeading = styled.h5`
+  color: #ffffff;
+  font-weight: 700;
   margin: 10px 0;
 `;
 

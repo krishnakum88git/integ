@@ -1,34 +1,47 @@
 import { css } from 'styled-components'
+import { blacks } from './colors'
 
 export const font = css`font-family: 'Open Sans', sans-serif;`;
-export const fontSizes = [64, 45, 32, 22, 16];
+export const sizes = [64, 45, 32, 22, 16];
 export const spacing = [48, 32, 16, 8];
+export const fontSizes = {
+  xs: `${sizes[4]}px`,
+  sm: `${sizes[3]}px`,
+  md: `${sizes[2]}px`,
+  lg: `${sizes[1]}px`,
+  xl: `${sizes[0]}px`
+}
+
+export const textShadow = '0px 2px 5px rgba(0, 0, 0, 0.75)'
 
 export const headings = css`
   h1, h2, h3, h4, h5 {
     font-weight: 800;
-    color: #333333;
     letter-spacing: -0.025em;
     line-height: 1;
   }
 
   h1 {
-    font-size: ${fontSizes[0]}px;
+    font-size: ${fontSizes.xl};
   }
 
   h2 {
-    font-size: ${fontSizes[1]}px;
+    font-size: ${fontSizes.lg};
   }
 
   h3 {
-    font-size: ${fontSizes[2]}px;
+    font-size: ${fontSizes.md};
   }
 
   h4 {
-    font-size: ${fontSizes[3]}px;
+    font-size: ${fontSizes.sm};
+    letter-spacing: 0;
+    line-height: 1.2;
   }
 
   h5 {
-    font-size: ${fontSizes[4]}px;
+    font-size: ${fontSizes.xs};
+    letter-spacing: 0;
+    line-height: 1.2;
   }
 `;

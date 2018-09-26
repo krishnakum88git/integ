@@ -19,7 +19,6 @@ const CenterTitle = styled.h2`
 `;
 
 const CenterBody = styled.p`
-  ${font} color: #333333;
   font-size: 22px;
   margin: 0;
 `;
