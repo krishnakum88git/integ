@@ -3,15 +3,24 @@ import styled from "styled-components";
 import Magnet from "./Magnet";
 
 const Magnets = styled.section`
-  display: flex;
-  justify-content: center;
+  margin-top: 120px;
+  background-color: #D1D8DF;
 `;
+
+const Container = styled.div`
+  display: flex;
+  margin: 0 auto;
+  justify-content: center;
+  width: 1200px;
+`
 
 export default ({ magnets }) => (
   <Magnets>
-    {magnets.map(node => {
-      const magnet = node.node || node;
-      return <Magnet key={magnet.id} {...magnet.frontmatter} />
-    })}
+    <Container>
+      {magnets.map(node => {
+        const magnet = node.node || node;
+        return <Magnet key={magnet.id} {...magnet.frontmatter} />
+      })}
+    </Container>
   </Magnets>
 );

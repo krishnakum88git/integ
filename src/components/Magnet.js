@@ -9,14 +9,14 @@ import { font } from "../styles/typography"
 const Wrapper = styled.div`
   position: relative;
   background-color: #ffffff;
-  width: 300px;
+  width: 280px;
   border-radius: 10px;
   overflow: hidden;
   display: flex;
   flex-direction: column;
   align-items: center;
   box-shadow: 0px 2px 0px #a5b1c2;
-  margin: 52px 15px;
+  margin: -45px 15px 45px;
 `;
 
 const Dot = styled.div`
@@ -80,10 +80,8 @@ const Link = styled(GatsbyLink)`
   text-decoration: none;
 `;
 
-const Title = styled.h3`
-  ${font}
+const Title = styled.h5`
   color: #777777;
-  font-size: 16px;
   text-align: center;
   text-decoration: none;
   font-weight: 700;
