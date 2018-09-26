@@ -30,18 +30,11 @@ injectGlobal`
   ${headings}
 `;
 
-const GreyBar = styled.div`
-  background-color: #d1d8df;
-  height: 256px;
-  width: 100%;
-  position: absolute;
-  bottom: 0;
-  z-index: -1;
-`;
-
-const MiddleSection = styled.section`
+const Container = styled.section`
   position: relative;
-  min-height: 524px;
+  margin: 0 auto;
+  width: 1200px;  
+  min-height: 400px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -76,11 +69,10 @@ class TemplateWrapper extends Component {
         </Helmet>
         <Navbar />
         <Hero {...this.props.hero} />
-        <MiddleSection>
-          <div>{this.props.children}</div>
-          {this.props.magnets && <Magnets magnets={this.props.magnets} />}
-          <GreyBar />
-        </MiddleSection>
+        <Container>
+          {this.props.children}
+        </Container>
+        {this.props.magnets && <Magnets magnets={this.props.magnets} />}
         <Footer />
         <ExternalLinkWarningModal />
       </Wrapper>

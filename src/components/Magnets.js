@@ -3,8 +3,17 @@ import styled from "styled-components";
 import Magnet from "./Magnet";
 
 const Magnets = styled.section`
-  margin-top: 120px;
-  background-color: #D1D8DF;
+  position: relative;
+  margin-top: 16px;
+  
+  &:before {
+    position: absolute;
+    content: " ";
+    bottom: 0;
+    width: 100%;
+    height: 70%;
+    background-color: #D1D8DF;
+  }
 `;
 
 const Container = styled.div`
