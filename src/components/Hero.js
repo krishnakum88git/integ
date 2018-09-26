@@ -104,8 +104,8 @@ const Divider = () => (
 
 export default ({ browserWidth, iconColor, iconName, image, title, subTitle, isLarge = false }) => (
   <Hero>
-    <Image browserWidth={browserWidth} image={image} />
-    <GradientOverlay isLeftToRight={isLarge} />
+    <Image aria-hidden="true" browserWidth={browserWidth} image={image} />
+    <GradientOverlay aria-hidden="true" isLeftToRight={isLarge} />
     <Container isCentered={!isLarge}>
       <Title isCentered={!isLarge}>{title}</Title>
       <Subtitle isCentered={!isLarge}>{subTitle}</Subtitle>

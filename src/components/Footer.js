@@ -19,7 +19,7 @@ const Content = styled.div`
   justify-content: space-between;
 `;
 
-const Column = styled.div`
+const Column = styled.article`
   width: 30%;
 `;
 
