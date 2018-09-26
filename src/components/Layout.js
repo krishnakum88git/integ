@@ -4,6 +4,7 @@ import styled, { injectGlobal } from "styled-components";
 import { debounce } from "lodash";
 import { font, headings } from '../styles/typography'
 import { blacks } from '../styles/colors'
+import favicon from '../img/favicon.ico'
 
 import Navbar from "./Navbar";
 import Footer from "./Footer";
@@ -72,7 +73,9 @@ class TemplateWrapper extends Component {
   render() {
     return (
       <Wrapper>
-        <Helmet title="Integra Managed Care"><html lang="en" /></Helmet>
+        <Helmet title="Integra Managed Care"><html lang="en" />
+          <link rel="icon" href={favicon} />
+        </Helmet>
         <Navbar />
         <Hero browserWidth={this.state.browserWidth} {...this.props.hero} />
         <MiddleSection>
