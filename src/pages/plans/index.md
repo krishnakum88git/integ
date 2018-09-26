@@ -1,8 +1,7 @@
 ---
 templateKey: 'generic-page'
 slug: plans
-title: Our plans
-subTitle: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin convallis cursus lectus iaculis. Mauris pulvinar nisi metus."
+title: Our Plans
 indicatorColor: '#F7B731'
 iconName: 'book-open'
 banner: '../../img/plans.png'
@@ -12,4 +11,3 @@ magnets:
     - compliance
     - contact-us
 ---
-### this is plan test

@@ -54,7 +54,7 @@ const GradientOverlay = styled.div`
 const Container = styled.div`
   box-sizing: border-box;
   margin: 0 auto;
-  padding: ${props => props.isCentered ? '175px 20%' : '175px 50%  175px 32px' };
+  padding: ${props => props.isCentered ? '150px 20%' : '175px 50%  175px 32px' };
   width: 1200px;
   z-index: 2;
 `
@@ -83,7 +83,7 @@ const Footer = styled.div`
   z-index: 2;
 `
 
-export default ({ browserWidth, iconColor, iconName, image, title, subTitle, isLarge = true }) => (
+export default ({ browserWidth, iconColor, iconName, image, title, subTitle, isLarge = false }) => (
   <Hero>
     <Image browserWidth={browserWidth} image={image} />
     <GradientOverlay isLeftToRight={isLarge} />

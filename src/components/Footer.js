@@ -9,7 +9,6 @@ const FooterWrapper = styled.footer`
   background-color: #333;
   display: flex;
   justify-content: center;
-  min-height: 370px;
   padding: 88px 0;
 `;
 

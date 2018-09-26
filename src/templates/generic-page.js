@@ -28,7 +28,8 @@ const Page = ({ data }) => {
     subTitle: post.frontmatter.subTitle,
     image: post.frontmatter.banner.childImageSharp.fluid,
     iconColor: post.frontmatter.indicatorColor,
-    iconName: post.frontmatter.iconName
+    iconName: post.frontmatter.iconName,
+    isLarge: post.frontmatter.isLarge
   };
   const magnets = (post.frontmatter.magnets || []).map(magnet => ({node: magnet}));
   return (
@@ -57,6 +58,7 @@ export const pageQuery = graphql`
         subTitle
         iconName
         indicatorColor
+        isLarge
         banner {
           childImageSharp {
             fluid(maxWidth: 1440) {

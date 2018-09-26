@@ -31,7 +31,8 @@ export default class IndexPage extends React.Component {
       subTitle: homeContent.subTitle,
       image: this.props.data.file.childImageSharp.fluid,
       iconColor: homeContent.indicatorColor,
-      iconName: homeContent.iconName
+      iconName: homeContent.iconName,
+      isLarge: homeContent.isLarge
     };
     return (
       <Layout hero={hero} magnets={homeContent.magnets}>
@@ -67,6 +68,7 @@ export const pageQuery = graphql`
             subTitle
             iconName
             indicatorColor
+            isLarge
             magnets {
               id
               frontmatter {
