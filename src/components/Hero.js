@@ -18,11 +18,10 @@ const Hero = styled.div`
 const Image = ({browserWidth, image}) => image ? (
   <Img
     style={{
-      width: browserWidth,
+      width: browserWidth > 1600 ? 1600 : browserWidth,
       height: '100%',
       position: "absolute",
-      top: 0,
-      zIndex: -1
+      top: 0
     }}
     fluid={image} />
 ) : null

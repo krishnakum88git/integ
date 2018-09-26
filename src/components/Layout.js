@@ -9,11 +9,18 @@ import Magnets from "./Magnets";
 import Hero from "./Hero";
 import ExternalLinkWarningModal from './ExternalLinkWarningModal';
 
-const Wrapper = styled.div``;
+const Wrapper = styled.div`
+  margin: 0 auto;
+  max-width: 1600px;
+  min-width: 1200px;
+  background-color: #ffffff;
+  box-shadow: 0 0 2px 2px rgba(0, 0, 0, 0.05);
+`;
 
 injectGlobal`
   body, html {
     margin: 0;
+    background-color: #fafafa;
   }
 `;
 
