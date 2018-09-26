@@ -1,5 +1,4 @@
 import { css } from 'styled-components'
-import { blacks } from './colors'
 
 export const font = css`font-family: 'Open Sans', sans-serif;`;
 export const sizes = [64, 45, 32, 22, 16];

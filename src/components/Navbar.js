@@ -3,7 +3,6 @@ import { Link as GatsbyLink } from "gatsby";
 import styled from "styled-components";
 
 import logo from "../img/logo.png";
-import { font } from "../styles/typography";
 import { blacks } from "../styles/colors";
 
 const Link = styled(GatsbyLink)`

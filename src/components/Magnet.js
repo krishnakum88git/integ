@@ -4,8 +4,6 @@ import { Link as GatsbyLink } from "gatsby";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import Img from "gatsby-image";
 
-import { font } from "../styles/typography"
-
 const Wrapper = styled.div`
   position: relative;
   background-color: #ffffff;

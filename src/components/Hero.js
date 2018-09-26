@@ -2,9 +2,9 @@ import React from "react";
 import styled from "styled-components";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import Img from "gatsby-image";
-import DividerCurve from './DividerCurve'
 
-import { font, fontSizes, textShadow } from "../styles/typography";
+import { fontSizes, textShadow } from "../styles/typography";
+import DividerCurve from "./DividerCurve";
 
 const Hero = styled.div`
   display: flex;
@@ -12,7 +12,6 @@ const Hero = styled.div`
   position: relative;
   justify-content: center;
   flex-direction: column;
-  overflow: hidden;
 `
 
 const Image = ({browserWidth, image}) => image ? (
@@ -26,17 +25,26 @@ const Image = ({browserWidth, image}) => image ? (
     fluid={image} />
 ) : null
 
-const Icon = styled(FontAwesomeIcon)`
-  position: absolute;  
+const IconBase = styled(FontAwesomeIcon)`
   padding: 32px;
   width: 48px;
   min-width: 48px;
   max-width: 48px;
   height: 48px;
+`;
+
+const IconContainer = styled.div`
+  position: absolute;  
   background-color: #fff;
   border-radius: 50%;
-  bottom: -28px;
-`;
+  bottom: -38px;
+`
+
+const Icon = props => (
+  <IconContainer>
+    <IconBase {...props} />
+  </IconContainer>
+)
 
 const GradientOverlay = styled.div`
   height: 100%;
@@ -83,6 +91,17 @@ const Footer = styled.div`
   z-index: 2;
 `
 
+const DividerContainer = styled.div`
+  transform: translateY(2px);
+  width: 100%;
+`
+
+const Divider = () => (
+  <DividerContainer>
+    <DividerCurve />
+  </DividerContainer>
+)
+
 export default ({ browserWidth, iconColor, iconName, image, title, subTitle, isLarge = false }) => (
   <Hero>
     <Image browserWidth={browserWidth} image={image} />
@@ -92,7 +111,7 @@ export default ({ browserWidth, iconColor, iconName, image, title, subTitle, isL
       <Subtitle isCentered={!isLarge}>{subTitle}</Subtitle>
     </Container>
     <Footer>
-      <DividerCurve />
+      <Divider />
       <Icon style={{ color: iconColor }} icon={iconName} />
     </Footer>
   </Hero>

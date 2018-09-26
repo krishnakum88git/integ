@@ -72,7 +72,7 @@ class TemplateWrapper extends Component {
   render() {
     return (
       <Wrapper>
-        <Helmet title="Home | Gatsby + Netlify CMS"><html lang="en" /></Helmet>
+        <Helmet title="Integra Managed Care"><html lang="en" /></Helmet>
         <Navbar />
         <Hero browserWidth={this.state.browserWidth} {...this.props.hero} />
         <MiddleSection>
