@@ -14,17 +14,13 @@ const CenterCopy = styled.div`
   font-weight: normal;
 `;
 
-const CenterTitle = styled.h3`
-  ${font} color: #333333;
-  font-size: 45px;
-  font-weight: normal;
+const CenterTitle = styled.h2`
   margin-bottom: 10px;
 `;
 
 const CenterBody = styled.p`
   ${font} color: #333333;
   font-size: 22px;
-  font-weight: normal;
   margin: 0;
 `;
 

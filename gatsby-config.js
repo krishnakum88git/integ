@@ -3,7 +3,7 @@ module.exports = {
     'MarkdownRemark.frontmatter.magnets': `MarkdownRemark.frontmatter.slug`
   },
   siteMetadata: {
-    title: "Gatsby + Netlify CMS Starter"
+    title: "Integra Managed Care"
   },
   plugins: [
     "gatsby-plugin-styled-components",
@@ -11,7 +11,7 @@ module.exports = {
     {
       resolve: "gatsby-plugin-google-fonts",
       options: {
-        fonts: ["Open Sans:400,400i,700"]
+        fonts: ["Open Sans:400,400i,700,800"]
       }
     },
     {

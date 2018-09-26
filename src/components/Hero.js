@@ -60,12 +60,9 @@ const Container = styled.div`
 `
 
 const Title = styled.h1`
-  ${font} font-size: 64px;
   color: #ffffff;
   text-shadow: 0px 2px 5px rgba(0, 0, 0, 0.5);
-  font-weight: normal;
   margin: 0;
-  line-height: 64px;
   text-align: ${props => (props.isCentered ? "center" : "left")};
 `;
 

@@ -2,6 +2,7 @@ import React, { Component } from "react";
 import Helmet from "react-helmet";
 import styled, { injectGlobal } from "styled-components";
 import { debounce } from "lodash";
+import { font, headings } from '../styles/typography'
 
 import Navbar from "./Navbar";
 import Footer from "./Footer";
@@ -21,7 +22,10 @@ injectGlobal`
   body, html {
     margin: 0;
     background-color: #fafafa;
+    ${font}
   }
+
+  ${headings}
 `;
 
 const GreyBar = styled.div`
