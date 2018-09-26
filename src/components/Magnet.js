@@ -89,7 +89,7 @@ const Title = styled.h5`
 const Magnet = ({ banner, slug, indicatorColor, iconName, title }) => (
   <Link to={`/${slug}`}>
     <Wrapper>
-      <ImageWrapper>
+      <ImageWrapper aria-hidden="true">
         <Dot color={indicatorColor} />
         <Icon icon={iconName} />
         <ImageContainer>
