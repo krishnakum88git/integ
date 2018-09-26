@@ -8,8 +8,8 @@ import Content, { HTMLContent } from "../components/Content";
 export const PageTemplate = ({ content, contentComponent }) => {
   const PageContent = contentComponent || Content;
   return (
-    <section className="section section--gradient" style={{ minHeight: 400 }}>
-      <PageContent className="content" content={content} />
+    <section style={{ minHeight: 400 }}>
+      <PageContent content={content} />
     </section>
   );
 };

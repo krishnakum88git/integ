@@ -46,8 +46,8 @@ const GradientOverlay = styled.div`
   top: 0;
   left: 0;
   background: linear-gradient(
-    to right,
-    rgba(0, 0, 0, 0.5),
+    ${props => (props.isLeftToRight ? 'to right' : 'to top')},
+    rgba(0, 0, 0, 0.75),
     rgba(0, 0, 0, 0)
   );
 `;
@@ -55,26 +55,28 @@ const GradientOverlay = styled.div`
 const Container = styled.div`
   box-sizing: border-box;
   margin: 0 auto;
-  padding: 175px 50% 175px 0;
+  padding: ${props => props.isCentered ? '175px 20%' : '175px 50%  175px 0%' };
   width: 1200px;
   z-index: 2;
 `
 
-const Title = styled.h2`
+const Title = styled.h1`
   ${font} font-size: 64px;
   color: #ffffff;
   text-shadow: 0px 2px 5px rgba(0, 0, 0, 0.5);
   font-weight: normal;
   margin: 0;
   line-height: 64px;
+  text-align: ${props => (props.isCentered ? "center" : "left")};
 `;
 
-const Subtitle = styled.h3`
+const Subtitle = styled.h2`
   ${font} font-size: 22px;
   color: #ffffff;
   text-shadow: 0px 2px 5px rgba(0, 0, 0, 0.5);
   font-weight: normal;
   margin: 10px 0 0 0;
+  text-align: ${props => (props.isCentered ? "center" : "left")};
 `;
 
 const Footer = styled.div`
@@ -86,13 +88,13 @@ const Footer = styled.div`
   z-index: 2;
 `
 
-export default ({ browserWidth, iconColor, iconName, image, title, subTitle }) => (
+export default ({ browserWidth, iconColor, iconName, image, title, subTitle, isLarge = true }) => (
   <Hero>
     <Image browserWidth={browserWidth} image={image} />
-    <GradientOverlay />
-    <Container>
-      <Title>{title}</Title>
-      <Subtitle>{subTitle}</Subtitle>
+    <GradientOverlay isLeftToRight={isLarge} />
+    <Container isCentered={!isLarge}>
+      <Title isCentered={!isLarge}>{title}</Title>
+      <Subtitle isCentered={!isLarge}>{subTitle}</Subtitle>
     </Container>
     <Footer>
       <DividerCurve />
