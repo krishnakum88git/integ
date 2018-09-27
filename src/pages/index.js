@@ -28,7 +28,14 @@ export default class IndexPage extends React.Component {
           Call Toll-Free <a href='tel:1-877-388-5195'>1-877-388-5195</a>, TTY 711
         </Callout>
 
-        <Callout title={<span>Integra Managed Care<sup>®</sup> Medicare Advantage plans may offer:</span>}>
+        <Callout
+          title={<span>Integra Managed Care<sup>®</sup> Medicare Advantage plans may offer:</span>}
+          action={{
+            text: "View Our Plans",
+            icon: "book-open",
+            url: "/plans"
+          }}
+        >
           <ul>
             <li>Low cost premiums, some as low as $0</li>
             <li>Out-of-pocket maximums to help prevent financial surprises</li>
