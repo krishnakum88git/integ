@@ -4,50 +4,23 @@ import { graphql } from "gatsby";
 
 import Layout from "../components/Layout";
 import Content, { HTMLContent } from "../components/Content";
-import Callout from "../components/Callout";
-import List from "../components/List";
-
-import styled from "styled-components";
-
-const PlanColumns = styled.div`
-  display: flex;
-  max-width: 1200px;
-  margin: 0 auto;
-`;
-
-const PlanResources = styled.div`
-  min-width: 480px;
-  margin-left: 64px;
-`;
+import Container from "../components/Container";
+import Lists from "../components/Lists";
 
 export const PageTemplate = ({
   content,
   contentComponent,
-  introduction,
-  documents,
-  links
+  lists
 }) => {
   const PageContent = contentComponent || Content;
   return (
-    <section>
-      <Callout {...introduction} />
-      <PlanColumns>
-        <div>
-          <h3>Plan Information</h3>
-          <PageContent content={content} />
-        </div>
-        <PlanResources>
-          <List title="Documents" type="document" items={documents} />
-          <List title="Resources" type="resource" items={links} />
-          <List title="Test" items={[{
-            title: 'something',
-            icon: 'map-marker'
-          },{
-            title: 'default'
-          }]} />
-        </PlanResources>
-      </PlanColumns>
-    </section>
+    <Container size="lg" vpad flex>
+      <div>
+        <h3 style={{marginTop: 0}}>Plan Information</h3>
+        <PageContent content={content} />
+      </div>
+      <Lists items={lists} />
+    </Container>
   );
 };
 
@@ -65,7 +38,12 @@ const PlanPage = ({ data }) => {
   };
   const magnets = (plansPage.magnets || []).map(magnet => ({ node: magnet }));
   return (
-    <Layout hero={hero} magnets={magnets} disclaimers={planPage.disclaimers}>
+    <Layout
+      hero={hero}
+      introduction={planPage.introduction}
+      magnets={magnets}
+      disclaimers={planPage.disclaimers}
+    >
       <PageTemplate
         contentComponent={HTMLContent}
         content={plan.html}
@@ -135,13 +113,15 @@ export const planPageQuery = graphql`
             target
           }
         }
-        documents {
+        lists {
           title
-          url
-        }
-        links {
-          title
-          url
+          type
+          items {
+            title
+            url
+            icon
+            type
+          }
         }
       }
     }

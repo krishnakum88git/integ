@@ -5,12 +5,53 @@ title: About Us
 indicatorColor: '#FA8231'
 iconName: 'user-friends'
 banner: '../../img/about.jpg'
+lists:
+  - title: Member and Provider Services
+    items: 
+      - title: 1-877-388-5191 TTY – 711
+        icon: phone
+      - title: Hours - 8:00AM to 8:00PM
+        icon: clock
+      - title: Sunday through Saturday
+        icon: calendar
+      - title: October 15, 2018 through March 31, 2019
+        icon: calendar
+  - title: Sales Representative
+    items: 
+      - title: 1-877-388-5190 TTY - 711
+        icon: phone
+      - title: Hours - 8:00AM to 8:00PM
+        icon: clock
+      - title: Monday through Sunday
+        icon: calendar
+      - title: From February 15th through September 30th, hours are Monday - Friday only
+        icon: calendar
+  - title: Enrollment
+    items:
+      - title: Enrollment Form Weblink
+        url: /
+        type: resource
+      - title: You may download, complete, sign and date an enrollment form
+      - title: Application Instructions Weblink
+        url: /
+        type: resource
+      - title: Once you have completed the form please fax it to
+      - title: 1-xxx-xxx-xxxx
+        icon: fax
+      - title: Or mail it to
+      - title: Integra Managed Care 1981 Marcus Avenue – Suite 100 Attention Medicare Lake Success, NY 11042
+        icon: envelope
 magnets:
     - new-to-medicare
     - plans
     - member-resources
     - providers
+disclaimers:
+    - Integra Managed Care is a HMO plan with Medicare and Medicaid contracts. Enrollment in Integra Managed Care depends on contract renewal. This information is not a complete description of benefits. Contact the plan for more information. Limitations, copayments, and restrictions may apply. Benefits, premiums and/or co-payments/co-insurance may change on January 1 of each year. You must continue to pay your Medicare Part B premium. The Formulary, pharmacy network, and/or provider network may change at any time. You will receive notice when necessary. Premiums, copays, co-insurance and deductibles may vary based on the level of Extra Help you receive. Please contact the Integra Managed Care for further details. Certain plans are available to anyone who has both Medical Assistance from the State and Medicare. Integra Managed Care is available to anyone with Medicare who meets the Skilled Nursing Facility (SNF) level of care and resides in a nursing home. Integra Managed Care complies with applicable Federal civil rights laws and does not discriminate on the basis of race, color, national origin, age, disability, or sex. 
+    - Integra Managed Care cumple con las leyes federales de derechos civiles aplicables y no discrimina por motivos de raza, color, nacionalidad, edad, discapacidad o sexo. ATTENTION - If you speak Spanish, language assistance services, free of charge, are available to you. Call 1-877-388-5195 (TTY - 711). ATENCIÓN - si habla español, tiene a su disposición servicios gratuitos de asistencia lingüística. Llame al 1- 877-388-5195 (TTY - 711). Assistance services for other languages are also available free of charge at the number above. All plan materials and information is available upon request in a different language or alternate formats such as braille, large print and audio.
+
 ---
+### Integra Managed Care
 
 Medicare Advantage Plans are available to Medicare eligible individuals with Medicare Part A and B coverage and who live in New York City (all 5 Boroughs - Bronx, Kings, New York, Queens, Richmond), and Nassau County. Our Plan provides Medicare Beneficiaries with ALL Original Medicare benefits, including Part D prescription drug plus additional benefits not covered by Medicare. 
 

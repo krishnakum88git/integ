@@ -20,7 +20,10 @@ const icons = [
   "faMapMarker",
   "faLink",
   "faCircle",
-  "faDotCircle"
+  "faDotCircle",
+  "faClock",
+  "faCalendar",
+  "faFax"
 ];
 
 export const onClientEntry = () =>

@@ -9,16 +9,21 @@ introduction:
       icon: file-alt
       url: /files/H1205_2019-SB-Plan-Harmony_M_v4_Draft.pdf
       target: _blank
-documents:
-    - title: Lorem ipsum dolor sit amet
-      url: /files/test.pdf
-    - title: Consectetur adipiscing elit
-      url: /files/test2.pdf
-links:
-    - title: Sit amet est laoreet euismod vel pretium
-      url: https://google.com
-    - title: Turpis nunc quis dictum ipsum
-      url: https://wikipedia.com
+lists:
+  - title: Documents
+    type: document
+    items: 
+      - title: Lorem ipsum dolor sit amet
+        url: /files/test.pdf
+      - title: Consectetur adipiscing elit
+        url: /files/test2.pdf
+  - title: Resources
+    type: resource
+    items: 
+      - title: Sit amet est laoreet euismod vel pretium
+        url: https://google.com
+      - title: Turpis nunc quis dictum ipsum
+        url: https://wikipedia.com
 ---
 This is a summary of drug and health services covered by Integra Harmony Plan (HMO SNP). It does not list every service that we cover or list every limitation or exclusion. To get a complete list of services we cover, you can access the “Evidence of Coverage” on our website at http://www.integraplan.org, or call us and ask that a copy be sent to you.
 

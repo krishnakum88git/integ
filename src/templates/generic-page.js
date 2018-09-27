@@ -5,12 +5,14 @@ import { graphql } from "gatsby";
 import Layout from "../components/Layout";
 import Content, { HTMLContent } from "../components/Content";
 import Container from "../components/Container";
+import Lists from "../components/Lists";
 
-export const PageTemplate = ({ content, contentComponent }) => {
+export const PageTemplate = ({ content, lists, contentComponent }) => {
   const PageContent = contentComponent || Content;
   return (
-    <Container>
+    <Container size="lg" vpad flex>
       <PageContent content={content} />
+      <Lists items={lists} />
     </Container>
   );
 };
@@ -84,6 +86,16 @@ export const pageQuery = graphql`
             icon
             url
             target
+          }
+        }
+        lists {
+          title
+          type
+          items {
+            title
+            url
+            icon
+            type
           }
         }
         magnets {

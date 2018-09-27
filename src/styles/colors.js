@@ -4,10 +4,11 @@ export const blacks = [
   '#777777',
   '#999999',
   '#BBBBBB',
-  '#DDDDDD'
+  '#DDDDDD',
+  '#F7F7F7'
 ]
 
-export const link = '#006EF5';
+export const link = '#006AEB';
 
 export const black = {
   darkest: blacks[0],
@@ -15,7 +16,8 @@ export const black = {
   dark: blacks[2],
   light: blacks[3],
   lighter: blacks[4],
-  lightest: blacks[5]
+  lightest: blacks[5],
+  ultralight: blacks[6]
 }
 
 export default { blacks, black, link }

@@ -18,7 +18,7 @@ const getIcon = type => {
 }
 
 const Icon = styled(FontAwesomeIcon)`
-  margin: 0 ${spaceSizes.xs};
+  margin: 3px ${spaceSizes.xs} 0 0;
   color: ${black.lighter};
 `;
 
@@ -32,8 +32,19 @@ const ListItems = styled.ul`
 `
 
 const ListItemBody = styled.li`
-  margin: ${spaceSizes.xs} 0;
+  display: flex;
+  margin: ${spaceSizes.sm} 0;
 `
+
+const TitleBody = styled.h5`
+  margin: 0;
+`
+
+const Title = props => props.text ? (
+  <TitleBody>
+    {props.text}
+  </TitleBody>
+) : null
 
 export const ListItem = props => (
   <ListItemBody>
@@ -44,22 +55,12 @@ export const ListItem = props => (
   </ListItemBody>
 )
 
-const TitleBody = styled.h4`
-  margin: 0;
-`
-
-const Title = props => props.text ? (
-  <TitleBody>
-    {props.text}
-  </TitleBody>
-) : null
-
-export default ({title, type, children, items = []}) => (
+export default ({title, type, items = []}) => (
   <List>
     <Title text={title} />
     <ListItems>
       {items.map(item =>
-        <ListItem key={item.title} type={type} {...item} />
+        <ListItem key={item.title} {...item} type={type || item.type} />
       )}
     </ListItems>
   </List>

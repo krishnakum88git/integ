@@ -16,7 +16,7 @@ export default class IndexPage extends React.Component {
       isLarge: homeContent.isLarge
     };
     return (
-      <Layout hero={hero} magnets={homeContent.magnets}>
+      <Layout hero={hero} magnets={homeContent.magnets} disclaimers={homeContent.disclaimers}>
         <Callout>
           Integra Managed Care offers Medicare Advantage Prescription Drug Plans and a Medicare-Medicaid Plan option that gives you flexibility in choosing a health plan that’s right for you and helps maintain your overall health and well-being.
         </Callout>
@@ -66,6 +66,7 @@ export const pageQuery = graphql`
             iconName
             indicatorColor
             isLarge
+            disclaimers
             magnets {
               id
               frontmatter {

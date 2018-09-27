@@ -9,16 +9,26 @@ introduction:
       icon: file-alt
       url: /static/H1205_2019-SB-Plan-Harmony_M_v4_Draft.pdf
       target: _blank
-documents:
-    - title: Lorem ipsum dolor sit amet
-      url: /documents/test.pdf
-    - title: Consectetur adipiscing elit
-      url: /documents/test2.pdf
-links:
-    - title: Sit amet est laoreet euismod vel pretium
-      url: https://google.com
-    - title: Turpis nunc quis dictum ipsum
-      url: https://wikipedia.com
+lists:
+  - title: Documents
+    type: document
+    items: 
+      - title: Lorem ipsum dolor sit amet
+        url: /files/test.pdf
+      - title: Consectetur adipiscing elit
+        url: /files/test2.pdf
+  - title: Resources
+    type: resource
+    items: 
+      - title: Sit amet est laoreet euismod vel pretium
+        url: https://google.com
+      - title: Turpis nunc quis dictum ipsum
+        url: https://wikipedia.com
+  - title: Test
+    items:
+      - title: 'something'
+        icon: 'map-marker'
+      - title: 'default'
 ---
 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi tristique venenatis erat at porttitor. Nunc eget massa sit amet est laoreet euismod vel pretium turpis. Nunc quis dictum ipsum. Curabitur finibus dolor nisl, quis venenatis mauris commodo vel.
 
