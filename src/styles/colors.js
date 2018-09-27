@@ -8,3 +8,5 @@ export const blacks = [
 ]
 
 export const link = '#006EF5';
+
+export default { blacks, link }

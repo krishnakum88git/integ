@@ -1,27 +1,8 @@
 import React from "react";
-import styled from "styled-components";
 import { graphql } from "gatsby";
 
 import Layout from "../components/Layout";
-import { font } from "../styles/typography";
-import Link from "../components/Link";
-
-const CenterCopy = styled.div`
-  ${font} text-align: center;
-  max-width: 856px;
-  margin: 0 auto 40px;
-  text-align: center;
-  font-weight: normal;
-`;
-
-const CenterTitle = styled.h2`
-  margin-bottom: 10px;
-`;
-
-const CenterBody = styled.p`
-  font-size: 22px;
-  margin: 0;
-`;
+import Callout from "../components/Callout";
 
 export default class IndexPage extends React.Component {
   render() {
@@ -36,15 +17,24 @@ export default class IndexPage extends React.Component {
     };
     return (
       <Layout hero={hero} magnets={homeContent.magnets}>
-        <CenterCopy>
-          <CenterTitle>Dolor Sit Amet</CenterTitle>
-          <CenterBody>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin
-            convallis cursus lectus eu iaculis. Mauris pulvinar nisi metus,
-            vitae facilisis risus aliquam at.
-          </CenterBody>
-          <p><Link to="https://google.com" title="External link test: google.com" /></p>
-        </CenterCopy>
+        <Callout>
+          Integra Managed Care offers Medicare Advantage Prescription Drug Plans and a Medicare-Medicaid Plan option that gives you flexibility in choosing a health plan that’s right for you and helps maintain your overall health and well-being.
+        </Callout>
+
+        <Callout
+          title={<span>Need help finding a plan<br />that may be a good fit for you?</span>}
+          type="secondary"
+        >
+          Call Toll-Free <a href='tel:1-877-388-5195'>1-877-388-5195</a>, TTY 711
+        </Callout>
+
+        <Callout title={<span>Integra Managed Care<sup>®</sup> Medicare Advantage plans may offer:</span>}>
+          <ul>
+            <li>Low cost premiums, some as low as $0</li>
+            <li>Out-of-pocket maximums to help prevent financial surprises</li>
+            <li>Prescription drug coverage for thousands of brand name and generic drugs</li>
+          </ul>
+        </Callout>
       </Layout>
     );
   }

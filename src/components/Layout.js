@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import Helmet from "react-helmet";
 import styled, { injectGlobal } from "styled-components";
-import { font, headings } from '../styles/typography'
+import { font, headings, links } from '../styles/typography'
 import { blacks } from '../styles/colors'
 import favicon from '../img/favicon.ico'
 
@@ -28,24 +28,7 @@ injectGlobal`
   }
 
   ${headings}
-`;
-
-const GreyBar = styled.div`
-  background-color: #d1d8df;
-  height: 256px;
-  width: 100%;
-  position: absolute;
-  bottom: 0;
-  z-index: -1;
-`;
-
-const MiddleSection = styled.section`
-  position: relative;
-  min-height: 524px;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  margin-top: 20px;
+  ${links}
 `;
 
 class TemplateWrapper extends Component {
@@ -76,11 +59,8 @@ class TemplateWrapper extends Component {
         </Helmet>
         <Navbar />
         <Hero {...this.props.hero} />
-        <MiddleSection>
-          <div>{this.props.children}</div>
-          {this.props.magnets && <Magnets magnets={this.props.magnets} />}
-          <GreyBar />
-        </MiddleSection>
+        {this.props.children}
+        {this.props.magnets && <Magnets magnets={this.props.magnets} />}
         <Footer />
         <ExternalLinkWarningModal />
       </Wrapper>

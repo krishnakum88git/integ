@@ -14,7 +14,7 @@ const Wrapper = styled.div`
   flex-direction: column;
   align-items: center;
   box-shadow: 0px 2px 0px #a5b1c2;
-  margin: -45px 15px 45px;
+  margin: 45px 15px;
 `;
 
 const Dot = styled.div`
