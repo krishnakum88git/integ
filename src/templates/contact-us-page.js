@@ -24,9 +24,6 @@ const Address = styled.address`
 `;
 
 const ColumnHeading = styled.h3`
-  ${font} color: #333333;
-  font-size: 32px;
-  font-weight: normal;
   margin: 10px 0;
 `;
 
