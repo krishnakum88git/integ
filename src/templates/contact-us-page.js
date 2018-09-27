@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import { graphql } from "gatsby";
-import styled, { css } from "styled-components";
+import styled from "styled-components";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 import Layout from "../components/Layout";
@@ -8,24 +8,7 @@ import { HTMLContent } from "../components/Content";
 import { font } from "../styles/typography";
 import { visuallyHidden } from "../styles/a11y";
 import Button from "../components/Button";
-
-const ColumnBody = css`
-  ${font} color: #333333;
-  font-size: 22px;
-  font-weight: normal;
-  margin: 0;
-`;
-
-const Copy = styled.p`
-  ${ColumnBody};
-`;
-const Address = styled.address`
-  ${ColumnBody} font-style: normal;
-`;
-
-const ColumnHeading = styled.h3`
-  margin: 10px 0;
-`;
+import Lists from "../components/Lists";
 
 const Icon = styled(FontAwesomeIcon)`
   && {
@@ -33,15 +16,6 @@ const Icon = styled(FontAwesomeIcon)`
     height: 24px;
     width: 24px;
     margin: 0 16px 0 24px;
-  }
-`;
-
-const OfficeIcon = styled(FontAwesomeIcon)`
-  && {
-    color: #bbbbbb;
-    height: 24px;
-    width: 24px;
-    margin: 5px 10px 0 0;
   }
 `;
 
@@ -86,19 +60,6 @@ const ContactColumns = styled.div`
   margin-bottom: 100px;
 `;
 
-const OfficeSection = styled.div`
-  margin: 0 0 0 64px;
-
-  h3 {
-    margin-bottom: 26px;
-  }
-`;
-
-const OfficeRow = styled.div`
-  display: flex;
-  margin: 0 0 20px 13px;
-`;
-
 const fields = [
   { title: "First Name", slug: "firstName", type: "text", iconName: "user" },
   { title: "Last Name", slug: "lastName", type: "text", iconName: "user" },
@@ -120,7 +81,7 @@ class ContactUsTemplate extends Component {
       <section>
         <ContactColumns>
           <ContactForm>
-            <ColumnHeading>Request Additional Information</ColumnHeading>
+            <h3>Request Additional Information</h3>
             {fields.map(field => (
               <div key={field.slug}>
                 <FieldLabel htmlFor={field.slug}>{field.title}</FieldLabel>
@@ -141,25 +102,7 @@ class ContactUsTemplate extends Component {
               Submit
             </Button>
           </ContactForm>
-          <OfficeSection>
-            <ColumnHeading>Our Offices</ColumnHeading>
-            <OfficeRow>
-              <OfficeIcon icon="map-marker" />
-              <Address>
-                1981 Marcus Avenue, Suite 100
-                <br />
-                Lake Success, New York 11042
-              </Address>
-            </OfficeRow>
-            <OfficeRow>
-              <OfficeIcon icon="phone" />
-              <Copy>
-                +1 855-800-4683
-                <br />
-                TTY: 711
-              </Copy>
-            </OfficeRow>
-          </OfficeSection>
+          <Lists items={this.props.lists} />
         </ContactColumns>
       </section>
     );
@@ -190,8 +133,6 @@ const ContactUs = ({ data }) => {
       <ContactUsTemplate
         contentComponent={HTMLContent}
         content={post.html}
-        instructionsTitle="Dolor Sit Amet"
-        instructionsBody="For more information call and speak with one of our associates, or fill out the form below to have an associate contact you. There is no obligation to enroll."
         {...post.frontmatter}
       />
     </Layout>
@@ -225,6 +166,16 @@ export const contactUsQuery = graphql`
             icon
             url
             target
+          }
+        }
+        lists {
+          title
+          type
+          items {
+            title
+            url
+            icon
+            type
           }
         }
         magnets {

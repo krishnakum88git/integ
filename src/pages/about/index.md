@@ -10,36 +10,31 @@ lists:
     items: 
       - title: 1-877-388-5191 TTY – 711
         icon: phone
-      - title: Hours - 8:00AM to 8:00PM
+      - title: Hours - 8:00AM to 8:00PM\nSunday through Saturday
         icon: clock
-      - title: Sunday through Saturday
-        icon: calendar
       - title: October 15, 2018 through March 31, 2019
         icon: calendar
   - title: Sales Representative
     items: 
       - title: 1-877-388-5190 TTY - 711
         icon: phone
-      - title: Hours - 8:00AM to 8:00PM
+      - title: Hours - 8:00AM to 8:00PM\nMonday through Sunday
         icon: clock
-      - title: Monday through Sunday
-        icon: calendar
       - title: From February 15th through September 30th, hours are Monday - Friday only
         icon: calendar
   - title: Enrollment
     items:
-      - title: Enrollment Form Weblink
-        url: /
-        type: resource
       - title: You may download, complete, sign and date an enrollment form
-      - title: Application Instructions Weblink
+        icon: file-alt
+      - title: Enrollment Form
+        url: /
+        type: document
+      - title: Application Instructions
         url: /
         type: resource
-      - title: Once you have completed the form please fax it to
-      - title: 1-xxx-xxx-xxxx
+      - title: Once you have completed the form please fax it to\n1-xxx-xxx-xxxx
         icon: fax
-      - title: Or mail it to
-      - title: Integra Managed Care 1981 Marcus Avenue – Suite 100 Attention Medicare Lake Success, NY 11042
+      - title: Or mail it to\nIntegra Managed Care 1981 Marcus Avenue – Suite 100 Attention Medicare Lake Success, NY 11042
         icon: envelope
 magnets:
     - new-to-medicare

@@ -34,9 +34,10 @@ const ListItems = styled.ul`
 const ListItemBody = styled.li`
   display: flex;
   margin: ${spaceSizes.sm} 0;
+  white-space: pre-wrap;
 `
 
-const TitleBody = styled.h5`
+const TitleBody = styled.h4`
   margin: 0;
 `
 
@@ -46,12 +47,14 @@ const Title = props => props.text ? (
   </TitleBody>
 ) : null
 
+const parseNewlines = text => text.split("\\n").join("\n")
+
 export const ListItem = props => (
   <ListItemBody>
     <Icon icon={props.icon || getIcon(props.type)} fixedWidth />
     {props.url || props.to ? (
-      <Link to={props.url}>{props.title}</Link>
-    ) : props.title}
+      <Link to={props.url}>{parseNewlines(props.title)}</Link>
+    ) : parseNewlines(props.title)}
   </ListItemBody>
 )
 

@@ -5,6 +5,13 @@ title: Contact Us
 indicatorColor: '#45AAF2'
 iconName: 'phone'
 banner: '../../img/contact-us.jpg'
+lists:
+  - title: Our Offices
+    items: 
+      - title: +1 855-800-4683 \n TTY - 711
+        icon: phone
+      - title: 1981 Marcus Avenue, \n Suite 100 \n Lake Success, New York \n 11042
+        icon: map-marker
 magnets:
     - new-to-medicare
     - providers

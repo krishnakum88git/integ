@@ -1,13 +1,13 @@
 ---
 templateKey: 'generic-page'
 slug: providers
-title: Providers
+title: Provider Search
 indicatorColor: '#A55EEA'
 iconName: 'user-md'
 banner: '../../img/providers.jpg'
 introduction:
-    title: Dolor Sit Amet
-    body: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin convallis cursus lectus eu iaculis. Mauris pulvinar nisi metus, vitae facilisis risus aliquam at.
+    title: Need help finding a Provider or Pharmacy?
+    body: We can help you in several ways.
 magnets: 
     - plans
     - compliance
