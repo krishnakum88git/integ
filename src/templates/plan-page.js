@@ -102,7 +102,7 @@ const PlanPage = ({ data }) => {
   };
   const magnets = (plansPage.magnets || []).map(magnet => ({ node: magnet }));
   return (
-    <Layout hero={hero} magnets={magnets}>
+    <Layout hero={hero} magnets={magnets} disclaimers={planPage.disclaimers}>
       <PageTemplate
         contentComponent={HTMLContent}
         content={plan.html}
@@ -161,6 +161,7 @@ export const planPageQuery = graphql`
       html
       frontmatter {
         title
+        disclaimers
         introduction {
           title
           body

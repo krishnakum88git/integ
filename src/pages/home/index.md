@@ -7,6 +7,9 @@ isLarge: true
 indicatorColor: '#EE4035'
 iconName: 'heart'
 banner: '../../img/home.jpg'
+disclaimers: 
+    - test1
+    - test2
 magnets:
     - new-to-medicare
     - plans

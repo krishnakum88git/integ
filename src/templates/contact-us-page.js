@@ -140,7 +140,9 @@ class ContactUsTemplate extends Component {
                 </Field>
               </div>
             ))}
-            <Button isPrimary={true} fullWidth={true}>Submit</Button>
+            <Button isPrimary={true} fullWidth={true}>
+              Submit
+            </Button>
           </ContactForm>
           <OfficeSection>
             <ColumnHeading>Our Offices</ColumnHeading>
@@ -182,7 +184,12 @@ const ContactUs = ({ data }) => {
     node: magnet
   }));
   return (
-    <Layout hero={hero} introduction={post.frontmatter.introduction} magnets={magnets}>
+    <Layout
+      hero={hero}
+      introduction={post.frontmatter.introduction}
+      magnets={magnets}
+      disclaimers={post.frontmatter.disclaimers}
+    >
       <ContactUsTemplate
         contentComponent={HTMLContent}
         content={post.html}
@@ -205,6 +212,7 @@ export const contactUsQuery = graphql`
         subTitle
         iconName
         indicatorColor
+        disclaimers
         banner {
           childImageSharp {
             fluid(maxWidth: 1440) {

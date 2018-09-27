@@ -33,9 +33,16 @@ const Page = ({ data }) => {
     isLarge: post.frontmatter.isLarge
   };
 
-  const magnets = (post.frontmatter.magnets || []).map(magnet => ({node: magnet}));
+  const magnets = (post.frontmatter.magnets || []).map(magnet => ({
+    node: magnet
+  }));
   return (
-    <Layout hero={hero} introduction={post.frontmatter.introduction} magnets={magnets}>
+    <Layout
+      hero={hero}
+      introduction={post.frontmatter.introduction}
+      magnets={magnets}
+      disclaimers={post.frontmatter.disclaimers}
+    >
       <PageTemplate
         contentComponent={HTMLContent}
         content={post.html}
@@ -61,6 +68,7 @@ export const pageQuery = graphql`
         iconName
         indicatorColor
         isLarge
+        disclaimers
         banner {
           childImageSharp {
             fluid(maxWidth: 1440) {

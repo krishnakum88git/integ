@@ -63,7 +63,7 @@ class TemplateWrapper extends Component {
         {this.props.introduction && <Callout {...this.props.introduction} />}
         {this.props.children}
         {this.props.magnets && <Magnets magnets={this.props.magnets} />}
-        <Footer />
+        <Footer disclaimers={this.props.disclaimers} />
         <ExternalLinkWarningModal />
       </Wrapper>
     );
