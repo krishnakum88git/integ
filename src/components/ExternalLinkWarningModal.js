@@ -2,7 +2,7 @@ import React from "react";
 import { Consumer } from "../store/createContext";
 import styled from "styled-components";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { font } from "../styles/typography";
+import { spaceSizes } from "../styles/typography";
 import IntegraButton from "./Button";
 
 const ModalWrapper = styled.div`
@@ -16,17 +16,17 @@ const ModalWrapper = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
+  text-align: center;
 `;
 
 const ModalContent = styled.div`
-  height: 400px;
-  width: 600px;
   background-color: #fff;
   border-radius: 20px;
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 40px;
+  padding: ${spaceSizes.lg};
+  width: 500px;
   flex-direction: column;
   border: 1px solid #222222;
 `;
@@ -39,20 +39,12 @@ const Icon = styled(FontAwesomeIcon)`
   }
 `;
 
-const Title = styled.h1`
-  ${font} font-size: 32px;
-  color: #333;
-  text-align: center;
+const Title = styled.h3`
   margin: 40px 0 0;
-  font-weight: normal;
 `;
 
-const SubTitle = styled.h2`
-  ${font} font-size: 16px;
-  color: #000;
-  text-align: center;
+const SubTitle = styled.p`
   margin: 10px 0 50px;
-  font-weight: normal;
 `;
 
 const ButtonContainer = styled.div`
@@ -85,6 +77,7 @@ export default () => (
           <ButtonContainer>
             <IntegraButton
               isPrimary={true}
+              fullWidth={true}
               onClick={e => {
                 e.stopPropagation();
                 window.location.href = externalLinkURL;
@@ -92,7 +85,12 @@ export default () => (
             >
               OK
             </IntegraButton>
-            <CancelButton onClick={closeExternalLinkModal}>Cancel</CancelButton>
+            <CancelButton
+              fullWidth={true}
+              onClick={closeExternalLinkModal}
+            >
+              Cancel
+            </CancelButton>
           </ButtonContainer>
         </Modal>
       ) : null
