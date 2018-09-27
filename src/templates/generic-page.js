@@ -10,7 +10,7 @@ import Lists from "../components/Lists";
 export const PageTemplate = ({ content, lists, contentComponent }) => {
   const PageContent = contentComponent || Content;
   return (
-    <Container size="lg" vpad flex>
+    <Container size="lg" vpad={!!content} flex>
       <PageContent content={content} />
       <Lists items={lists} />
     </Container>
