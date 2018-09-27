@@ -10,5 +10,6 @@ magnets:
     - providers
     - about-us
     - compliance
-instructions: For more information call and speak with one of our associates, or fill out the form below to have an associate contact you. There is no obligation to enroll.
+introduction:
+    body: For more information call and speak with one of our associates, or fill out the form below to have an associate contact you. There is no obligation to enroll.
 ---

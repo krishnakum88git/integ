@@ -32,9 +32,10 @@ const Page = ({ data }) => {
     iconName: post.frontmatter.iconName,
     isLarge: post.frontmatter.isLarge
   };
+
   const magnets = (post.frontmatter.magnets || []).map(magnet => ({node: magnet}));
   return (
-    <Layout hero={hero} magnets={magnets}>
+    <Layout hero={hero} introduction={post.frontmatter.introduction} magnets={magnets}>
       <PageTemplate
         contentComponent={HTMLContent}
         content={post.html}
@@ -65,6 +66,16 @@ export const pageQuery = graphql`
             fluid(maxWidth: 1440) {
               ...GatsbyImageSharpFluid
             }
+          }
+        }
+        introduction {
+          title
+          body
+          action {
+            text
+            icon
+            url
+            target
           }
         }
         magnets {

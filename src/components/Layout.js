@@ -9,6 +9,7 @@ import Navbar from "./Navbar";
 import Footer from "./Footer";
 import Magnets from "./Magnets";
 import Hero from "./Hero";
+import Callout from "./Callout";
 import ExternalLinkWarningModal from './ExternalLinkWarningModal';
 
 const Wrapper = styled.div`
@@ -59,6 +60,7 @@ class TemplateWrapper extends Component {
         </Helmet>
         <Navbar />
         <Hero {...this.props.hero} />
+        {this.props.introduction && <Callout {...this.props.introduction} />}
         {this.props.children}
         {this.props.magnets && <Magnets magnets={this.props.magnets} />}
         <Footer />

@@ -2,9 +2,7 @@ import React from 'react'
 import PropTypes from 'prop-types'
 import styled from 'styled-components'
 
-const ContentContainer = styled.div`
-  min-height: 150px;
-`
+const ContentContainer = styled.div``
 
 export const HTMLContent = ({ content, className }) => (
   <ContentContainer className={className} dangerouslySetInnerHTML={{ __html: content }} />

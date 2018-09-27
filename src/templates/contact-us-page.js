@@ -89,22 +89,6 @@ const ContactColumns = styled.div`
   margin-bottom: 100px;
 `;
 
-const Instructions = styled.div`
-  max-width: 856px;
-  margin: 0 auto 100px;
-`;
-const InstructionsTitle = styled.h2`
-  ${font} text-align: center;
-  color: #333333;
-  font-size: 45px;
-`;
-
-const InstructionsBody = styled.p`
-  ${font} text-align: center;
-  color: #333333;
-  font-size: 22px;
-`;
-
 const OfficeSection = styled.div`
   margin: 0 0 0 64px;
 
@@ -135,13 +119,8 @@ class ContactUsTemplate extends Component {
   handleFocus = focusedField => _ => this.setState({ focusedField });
   handleBlur = _ => this.setState({ focusedField: undefined });
   render() {
-    const { instructionsBody, instructionsTitle } = this.props;
     return (
-      <section style={{ minHeight: 400 }}>
-        <Instructions>
-          <InstructionsTitle>{instructionsTitle}</InstructionsTitle>
-          <InstructionsBody>{instructionsBody}</InstructionsBody>
-        </Instructions>
+      <section>
         <ContactColumns>
           <ContactForm>
             <ColumnHeading>Request Additional Information</ColumnHeading>
@@ -161,7 +140,7 @@ class ContactUsTemplate extends Component {
                 </Field>
               </div>
             ))}
-            <Button isPrimary={true}>Submit</Button>
+            <Button isPrimary={true} fullWidth={true}>Submit</Button>
           </ContactForm>
           <OfficeSection>
             <ColumnHeading>Our Offices</ColumnHeading>
@@ -203,7 +182,7 @@ const ContactUs = ({ data }) => {
     node: magnet
   }));
   return (
-    <Layout hero={hero} magnets={magnets}>
+    <Layout hero={hero} introduction={post.frontmatter.introduction} magnets={magnets}>
       <ContactUsTemplate
         contentComponent={HTMLContent}
         content={post.html}
@@ -231,6 +210,16 @@ export const contactUsQuery = graphql`
             fluid(maxWidth: 1440) {
               ...GatsbyImageSharpFluid
             }
+          }
+        }
+        introduction {
+          title
+          body
+          action {
+            text
+            icon
+            url
+            target
           }
         }
         magnets {

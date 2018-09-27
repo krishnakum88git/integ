@@ -14,10 +14,11 @@ const buttonStyles = css`
   font-weight: bold;
   display: block;
   cursor: pointer;
+  width: ${props => props.fullWidth ? '100%' : 'auto'};
 `
 
 const ButtonStyled = styled.button`
-  ${buttonStyles}  
+  ${buttonStyles}
 `;
 
 const ButtonLinkStyled =  styled(Link)`
@@ -25,10 +26,10 @@ const ButtonLinkStyled =  styled(Link)`
   display: inline-block;
 `
 
-const Button = ({url, ...props}) => props.onClick ? (
-  <ButtonStyled {...props} />
-) : (
+const Button = ({url, ...props}) => props.to || url ? (
   <ButtonLinkStyled to={url} {...props} />
+) : (
+  <ButtonStyled {...props} />
 )
 
 const IconStyled = styled(FontAwesomeIcon)`
