@@ -1,14 +1,26 @@
 import { css } from 'styled-components'
+import colors from './colors'
 
 export const font = css`font-family: 'Open Sans', sans-serif;`;
 export const sizes = [64, 45, 32, 22, 16];
-export const spacing = [48, 32, 16, 8];
+export const spacing = [128, 96, 64, 48, 32, 16, 8];
+
 export const fontSizes = {
   xs: `${sizes[4]}px`,
   sm: `${sizes[3]}px`,
   md: `${sizes[2]}px`,
   lg: `${sizes[1]}px`,
   xl: `${sizes[0]}px`
+}
+
+export const spaceSizes = {
+  xs: `${spacing[6]}px`,
+  sm: `${spacing[5]}px`,
+  md: `${spacing[4]}px`,
+  lg: `${spacing[3]}px`,
+  xl: `${spacing[2]}px`,
+  xxl: `${spacing[1]}px`,
+  xxxl: `${spacing[0]}px`
 }
 
 export const textShadow = '0px 2px 5px rgba(0, 0, 0, 0.75)'
@@ -26,10 +38,12 @@ export const headings = css`
 
   h2 {
     font-size: ${fontSizes.lg};
+    line-height: 1.2;
   }
 
   h3 {
     font-size: ${fontSizes.md};
+    line-height: 1.2;
   }
 
   h4 {
@@ -44,3 +58,17 @@ export const headings = css`
     line-height: 1.2;
   }
 `;
+
+export const links = css`
+  a {
+    color: ${colors.link};
+    font-weight: 700;
+    text-decoration: none;
+
+    &:active,
+    &:visited,
+    &:focus {
+      text-decoration: none;
+    }
+  }
+`

@@ -8,7 +8,6 @@ import DividerCurve from "./DividerCurve";
 
 const Hero = styled.div`
   display: flex;
-  margin-bottom: 28px;
   position: relative;
   justify-content: center;
   flex-direction: column;

@@ -4,7 +4,6 @@ import Magnet from "./Magnet";
 
 const Magnets = styled.section`
   position: relative;
-  margin-top: 16px;
   
   &:before {
     position: absolute;

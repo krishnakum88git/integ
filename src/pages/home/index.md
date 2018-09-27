@@ -1,8 +1,7 @@
 ---
 templateKey: 'generic-page'
 slug: home
-title: Lorem Ipsum
-subTitle: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin convallis cursus lectus iaculis. Mauris pulvinar nisi metus."
+title: Discover a plan that works to your advantage
 isLarge: true
 indicatorColor: '#EE4035'
 iconName: 'heart'

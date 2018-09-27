@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import Helmet from "react-helmet";
 import styled, { injectGlobal } from "styled-components";
-import { font, headings } from '../styles/typography'
+import { font, headings, links } from '../styles/typography'
 import { blacks } from '../styles/colors'
 import favicon from '../img/favicon.ico'
 
@@ -28,17 +28,7 @@ injectGlobal`
   }
 
   ${headings}
-`;
-
-const Container = styled.section`
-  position: relative;
-  margin: 0 auto;
-  width: 1200px;  
-  min-height: 400px;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  margin-top: 20px;
+  ${links}
 `;
 
 class TemplateWrapper extends Component {
@@ -69,9 +59,7 @@ class TemplateWrapper extends Component {
         </Helmet>
         <Navbar />
         <Hero {...this.props.hero} />
-        <Container>
-          {this.props.children}
-        </Container>
+        {this.props.children}
         {this.props.magnets && <Magnets magnets={this.props.magnets} />}
         <Footer />
         <ExternalLinkWarningModal />
