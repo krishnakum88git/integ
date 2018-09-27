@@ -18,7 +18,9 @@ const icons = [
   "faEnvelope",
   "faPhone",
   "faMapMarker",
-  "faLink"
+  "faLink",
+  "faCircle",
+  "faDotCircle"
 ];
 
 export const onClientEntry = () =>

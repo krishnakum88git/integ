@@ -11,9 +11,9 @@ introduction:
       target: _blank
 documents:
     - title: Lorem ipsum dolor sit amet
-      path: /documents/test.pdf
+      url: /documents/test.pdf
     - title: Consectetur adipiscing elit
-      path: /documents/test2.pdf
+      url: /documents/test2.pdf
 links:
     - title: Sit amet est laoreet euismod vel pretium
       url: https://google.com

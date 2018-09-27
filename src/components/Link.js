@@ -30,7 +30,7 @@ class ExternalLink extends Component {
 class Link extends Component {
   render() {
     const LinkComponent = this.props.to[0] === "/" ? GatsbyLink : ExternalLink;
-    return <LinkComponent {...this.props}>{this.props.title}</LinkComponent>;
+    return <LinkComponent {...this.props}>{this.props.title || this.props.children}</LinkComponent>;
   }
 }
 

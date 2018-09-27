@@ -5,10 +5,9 @@ import { graphql } from "gatsby";
 import Layout from "../components/Layout";
 import Content, { HTMLContent } from "../components/Content";
 import Callout from "../components/Callout";
+import List from "../components/List";
 
 import styled from "styled-components";
-import { link } from "../styles/colors";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 const PlanColumns = styled.div`
   display: flex;
@@ -16,43 +15,10 @@ const PlanColumns = styled.div`
   margin: 0 auto;
 `;
 
-const ResourceCollection = styled.div`
-  margin: 0 0 20px;
-`;
-
-const Icon = styled(FontAwesomeIcon)`
-  && {
-    color: #bbbbbb;
-    height: 24px;
-    width: 24px;
-    padding: 10px;
-  }
-`;
-
 const PlanResources = styled.div`
   min-width: 480px;
   margin-left: 64px;
 `;
-
-const ResourceLinkContainer = styled.div`
-  display: flex;
-  align-items: center;
-
-  a {
-    color: ${link};
-    text-decoration: none;
-    font-size: 22px;
-  }
-`;
-
-const ResourceLink = ({ title, iconName }) => (
-  <ResourceLinkContainer>
-    <Icon icon={iconName} /> <a href="/plans">{title}</a>
-  </ResourceLinkContainer>
-);
-
-const DocumentLink = props => <ResourceLink iconName="file-alt" {...props} />;
-const WebLink = props => <ResourceLink iconName="link" {...props} />;
 
 export const PageTemplate = ({
   content,
@@ -71,17 +37,14 @@ export const PageTemplate = ({
           <PageContent content={content} />
         </div>
         <PlanResources>
-          <h4>Plan Resources</h4>
-          <ResourceCollection>
-            {(documents || []).map(document => (
-              <DocumentLink key={document.title} {...document} />
-            ))}
-          </ResourceCollection>
-          <ResourceCollection>
-            {(links || []).map(link => (
-              <WebLink key={link.title} {...link} />
-            ))}
-          </ResourceCollection>
+          <List title="Documents" type="document" items={documents} />
+          <List title="Resources" type="resource" items={links} />
+          <List title="Test" items={[{
+            title: 'something',
+            icon: 'map-marker'
+          },{
+            title: 'default'
+          }]} />
         </PlanResources>
       </PlanColumns>
     </section>
@@ -174,7 +137,7 @@ export const planPageQuery = graphql`
         }
         documents {
           title
-          path
+          url
         }
         links {
           title
