@@ -96,12 +96,12 @@ export const PageTemplate = ({
         <PlanResources>
           <h3>Plan Resources</h3>
           <ResourceCollection>
-            {documents.map(document => (
+            {(documents || []).map(document => (
               <DocumentLink key={document.title} {...document} />
             ))}
           </ResourceCollection>
           <ResourceCollection>
-            {links.map(link => (
+            {(links || []).map(link => (
               <WebLink key={link.title} {...link} />
             ))}
           </ResourceCollection>
