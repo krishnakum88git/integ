@@ -19,7 +19,7 @@ const containerSize = props => {
 }
 
 const Container = styled.div`
-  margin: 0 auto;  
+  margin: 0 auto;
   ${containerSize}
 `
 

@@ -4,35 +4,16 @@ import { graphql } from "gatsby";
 
 import Layout from "../components/Layout";
 import Content, { HTMLContent } from "../components/Content";
+import Callout from "../components/Callout";
 
 import styled from "styled-components";
-import { font } from "../styles/typography";
 import { link } from "../styles/colors";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-
-const Introduction = styled.div`
-  max-width: 856px;
-  margin: 0 auto 100px;
-`;
-const IntroductionTitle = styled.h2`
-  ${font} text-align: center;
-  color: #333333;
-  font-size: 45px;
-`;
-
-const IntroductionBody = styled.p`
-  ${font} text-align: center;
-  color: #333333;
-  font-size: 22px;
-`;
 
 const PlanColumns = styled.div`
   display: flex;
   max-width: 1200px;
   margin: 0 auto;
-  h3 {
-    font-weight: normal;
-  }
 `;
 
 const ResourceCollection = styled.div`
@@ -76,25 +57,21 @@ const WebLink = props => <ResourceLink iconName="link" {...props} />;
 export const PageTemplate = ({
   content,
   contentComponent,
-  introductionBody,
-  introductionTitle,
+  introduction,
   documents,
   links
 }) => {
   const PageContent = contentComponent || Content;
   return (
-    <section style={{ minHeight: 400 }}>
-      <Introduction>
-        <IntroductionTitle>{introductionTitle}</IntroductionTitle>
-        <IntroductionBody>{introductionBody}</IntroductionBody>
-      </Introduction>
+    <section>
+      <Callout {...introduction} />
       <PlanColumns>
         <div>
           <h3>Plan Information</h3>
           <PageContent content={content} />
         </div>
         <PlanResources>
-          <h3>Plan Resources</h3>
+          <h4>Plan Resources</h4>
           <ResourceCollection>
             {(documents || []).map(document => (
               <DocumentLink key={document.title} {...document} />
@@ -184,8 +161,16 @@ export const planPageQuery = graphql`
       html
       frontmatter {
         title
-        introductionTitle
-        introductionBody
+        introduction {
+          title
+          body
+          action {
+            text
+            icon
+            url
+            target
+          }
+        }
         documents {
           title
           path

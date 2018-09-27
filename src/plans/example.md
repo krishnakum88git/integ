@@ -1,8 +1,14 @@
 ---
 title: 2018 Plan Name
 slug: 2018-plan-name
-introductionTitle: Dolor Sit Amet
-introductionBody: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin convallis cursus lectus eu iaculis. Mauris pulvinar nisi metus, vitae facilisis risus aliquam at. 
+introduction:
+    title: Dolor Sit Amet
+    body: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin convallis cursus lectus eu iaculis. Mauris pulvinar nisi metus, vitae facilisis risus aliquam at.
+    action:
+      text: Download Plan
+      icon: file-alt
+      url: /static/files/H1205_2019-SB-Plan-Harmony_M_v4_Draft.pdf
+      target: _blank
 documents:
     - title: Lorem ipsum dolor sit amet
       path: /documents/test.pdf

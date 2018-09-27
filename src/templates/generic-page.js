@@ -4,13 +4,14 @@ import { graphql } from "gatsby";
 
 import Layout from "../components/Layout";
 import Content, { HTMLContent } from "../components/Content";
+import Container from "../components/Container";
 
 export const PageTemplate = ({ content, contentComponent }) => {
   const PageContent = contentComponent || Content;
   return (
-    <section style={{ minHeight: 400 }}>
+    <Container>
       <PageContent content={content} />
-    </section>
+    </Container>
   );
 };
 

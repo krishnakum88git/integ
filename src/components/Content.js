@@ -1,12 +1,17 @@
 import React from 'react'
 import PropTypes from 'prop-types'
+import styled from 'styled-components'
+
+const ContentContainer = styled.div`
+  min-height: 150px;
+`
 
 export const HTMLContent = ({ content, className }) => (
-  <div className={className} dangerouslySetInnerHTML={{ __html: content }} />
+  <ContentContainer className={className} dangerouslySetInnerHTML={{ __html: content }} />
 )
 
 const Content = ({ content, className }) => (
-  <div className={className}>{content}</div>
+  <ContentContainer className={className}>{content}</ContentContainer>
 )
 
 Content.propTypes = {

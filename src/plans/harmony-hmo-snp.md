@@ -1,8 +1,14 @@
 ---
 title: Integra Harmony (HMO SNP) Plan
 slug: 2019-harmony-hmo-snp
-introductionTitle: Dolor Sit Amet
-introductionBody: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin convallis cursus lectus eu iaculis. Mauris pulvinar nisi metus, vitae facilisis risus aliquam at. 
+introduction:
+    title: Dolor Sit Amet
+    body: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin convallis cursus lectus eu iaculis. Mauris pulvinar nisi metus, vitae facilisis risus aliquam at.
+    action:
+      text: Download Plan
+      icon: file-alt
+      url: /static/files/H1205_2019-SB-Plan-Harmony_M_v4_Draft.pdf
+      target: _blank
 documents:
     - title: Lorem ipsum dolor sit amet
       path: /documents/test.pdf
@@ -14,7 +20,7 @@ links:
     - title: Turpis nunc quis dictum ipsum
       url: https://wikipedia.com
 ---
-This is a summary of drug and health services covered by Integra Harmony Plan (HMO SNP). It does not list every service that we cover or list every limitation or exclusion. To get a complete list of services we cover, you can access the “Evidence of Coverage” on our website at (http://www.integraplan.org), or call us and ask that a copy be sent to you.
+This is a summary of drug and health services covered by Integra Harmony Plan (HMO SNP). It does not list every service that we cover or list every limitation or exclusion. To get a complete list of services we cover, you can access the “Evidence of Coverage” on our website at http://www.integraplan.org, or call us and ask that a copy be sent to you.
 
 To join Integra Harmony Plan (HMO SNP), you must be entitled to Medicare Part A, be enrolled in Medicare Part B and the New York State Medicaid Program, and live in our service area. 
 

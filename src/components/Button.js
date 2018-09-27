@@ -1,21 +1,48 @@
 import React from "react";
-import styled from "styled-components";
-import { font } from "../styles/typography";
+import styled, { css } from "styled-components";
+import { fontSizes, spaceSizes } from "../styles/typography";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { Link } from "gatsby";
 
-const Button = styled.button`
-  ${font} height: 64px;
-  width: 100%;
+const buttonStyles = css`
+  padding: ${spaceSizes.sm} ${spaceSizes.md};
   background-color: ${props => (props.isPrimary ? "#006EF5" : "#D1D8DF")};
   border: none;
   border-radius: 32px;
   color: ${props => (props.isPrimary ? "#ffffff" : "#495969")};
+  font-size: ${fontSizes.sm};
+  font-weight: bold;
   display: block;
-  font-size: 16px;
   cursor: pointer;
+`
+
+const ButtonStyled = styled.button`
+  ${buttonStyles}  
 `;
 
-export default ({ children, isPrimary, onClick, ...rest }) => (
-  <Button onClick={onClick} isPrimary={isPrimary} {...rest}>
+const ButtonLinkStyled =  styled(Link)`
+  ${buttonStyles}
+  display: inline-block;
+`
+
+const Button = ({url, ...props}) => props.onClick ? (
+  <ButtonStyled {...props} />
+) : (
+  <ButtonLinkStyled to={url} {...props} />
+)
+
+const IconStyled = styled(FontAwesomeIcon)`
+  margin-right: ${spaceSizes.sm};
+`
+
+const Icon = props => props.icon ? (
+  <IconStyled {...props} />
+) : null
+
+export default ({ children, text, icon, ...buttonProps }) => (
+  <Button {...buttonProps}>
+    <Icon icon={icon} />
     {children}
+    {text}
   </Button>
 );

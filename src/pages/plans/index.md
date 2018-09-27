@@ -11,3 +11,4 @@ magnets:
     - compliance
     - contact-us
 ---
+[2019 Harmony (HMO SNP)](/plans/2019-harmony-hmo-snp)

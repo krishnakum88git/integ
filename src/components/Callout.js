@@ -1,8 +1,9 @@
 import React from 'react';
 import styled, { css } from "styled-components";
-import { fontSizes, spacing } from "../styles/typography";
+import { fontSizes, spaceSizes } from "../styles/typography";
 import colors from "../styles/colors";
 import Container from './Container'
+import Button from './Button'
 
 const calloutColors = props => {
   switch (props.type) {
@@ -35,7 +36,7 @@ const calloutAlignment = props => {
 }
 
 const Callout = styled.div`
-  padding: ${spacing[1]}px 0;
+  padding: ${spaceSizes.xxl} 0;
   font-size: ${fontSizes.sm};
   ${calloutColors}
   ${calloutAlignment}
@@ -65,15 +66,29 @@ const Callout = styled.div`
   }
 `
 
-const Title = styled.h2`
+const TitleStyled = styled.h2`
   margin-top: 0;
 `
 
-export default ({ title, type, align = 'center', size = 'md', children }) => (
+const Title = ({ text }) => text ? (
+  <TitleStyled>{text}</TitleStyled>
+) : null
+
+const ActionStyled = styled(Button)`
+  margin: ${spaceSizes.lg} auto 0;
+`
+
+const Action = ({ action }) => action ? (
+  <ActionStyled isPrimary {...action} />
+) : null
+
+export default ({ title, type, align = 'center', size = 'md', action, body, children }) => (
   <Callout type={type} align={align} size={size}>
     <Container size={size}>
-      {title && <Title>{title}</Title>}
+      <Title text={title} />
       {children}
+      {body}
+      <Action action={action} />
     </Container>
   </Callout>
 )
