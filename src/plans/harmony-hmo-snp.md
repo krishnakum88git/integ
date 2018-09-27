@@ -6,7 +6,7 @@ introduction:
     body: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin convallis cursus lectus eu iaculis. Mauris pulvinar nisi metus, vitae facilisis risus aliquam at.
     action:
       text: Download Plan
-      icon: file-alt
+      icon: file-download
       url: /files/H1205_2019-SB-Plan-Harmony_M_v4_Draft.pdf
       target: _blank
 lists:
