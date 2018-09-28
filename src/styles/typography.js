@@ -78,3 +78,29 @@ export const paragraphs = css`
     line-height: 1.75;
   }
 `
+
+export const lists = css`
+  ul {
+    margin-bottom: 0;
+    padding: 0;
+    list-style-type: none;
+  }
+
+  li {
+    margin-bottom: 1em;
+
+    &:before {
+      display: inline-block;
+      margin: .09em .55em 0;
+      content: " ";
+      width: 12px;
+      height: 12px;
+      background-color: ${colors.blacks[5]};
+      border-radius: 50%;
+    }
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+`
