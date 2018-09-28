@@ -102,7 +102,7 @@ class ContactUsTemplate extends Component {
               Submit
             </Button>
           </ContactForm>
-          <Lists items={this.props.lists} />
+          <Lists items={this.props.contactLists} />
         </ContactColumns>
       </section>
     );
@@ -133,6 +133,7 @@ const ContactUs = ({ data }) => {
       <ContactUsTemplate
         contentComponent={HTMLContent}
         content={post.html}
+        contactLists={data.contactInfo.edges[0].node.frontmatter.lists}
         {...post.frontmatter}
       />
     </Layout>
@@ -143,6 +144,22 @@ export default ContactUs;
 
 export const contactUsQuery = graphql`
   query ContactUs($id: String!) {
+    contactInfo: allMarkdownRemark(filter:{fields:{slug :{eq : "/contact-info/"}}}) {
+      edges {
+        node {
+          frontmatter {
+            lists {
+              title
+              items {
+                title
+                icon
+              }
+            }
+          }
+        }
+      }
+    }
+    
     markdownRemark(id: { eq: $id }) {
       html
       frontmatter {
@@ -166,16 +183,6 @@ export const contactUsQuery = graphql`
             icon
             url
             target
-          }
-        }
-        lists {
-          title
-          type
-          items {
-            title
-            url
-            icon
-            type
           }
         }
         magnets {

@@ -38,6 +38,9 @@ const Page = ({ data }) => {
   const magnets = (post.frontmatter.magnets || []).map(magnet => ({
     node: magnet
   }));
+
+  const contactInfo = post.frontmatter.shouldIncludeContactInfo ? data.contactInfo.edges[0].node.frontmatter.lists : []
+  const lists = [...contactInfo, ...(post.frontmatter.lists || [])];
   return (
     <Layout
       hero={hero}
@@ -49,6 +52,7 @@ const Page = ({ data }) => {
         contentComponent={HTMLContent}
         content={post.html}
         {...post.frontmatter}
+        lists={lists}
       />
     </Layout>
   );
@@ -70,6 +74,7 @@ export const pageQuery = graphql`
         iconName
         indicatorColor
         isLarge
+        shouldIncludeContactInfo
         disclaimers
         listDirection
         banner {
@@ -111,6 +116,22 @@ export const pageQuery = graphql`
                 fixed(width: 300) {
                   ...GatsbyImageSharpFixed
                 }
+              }
+            }
+          }
+        }
+      }
+    }
+
+    contactInfo: allMarkdownRemark(filter:{fields:{slug :{eq : "/contact-info/"}}}) {
+      edges {
+        node {
+          frontmatter {
+            lists {
+              title
+              items {
+                title
+                icon
               }
             }
           }
