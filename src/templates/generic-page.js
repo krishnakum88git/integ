@@ -161,6 +161,8 @@ export const pageQuery = graphql`
               items {
                 title
                 icon
+                url
+                type
               }
             }
           }
