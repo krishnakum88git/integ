@@ -91,11 +91,11 @@ export const lists = css`
 
     &:before {
       display: inline-block;
-      margin: .09em .55em 0;
+      margin: .09em .55em;
       content: " ";
-      width: 12px;
-      height: 12px;
-      background-color: ${colors.blacks[5]};
+      width: .55em;
+      height: .55em;
+      background-color: ${colors.black.lighter};
       border-radius: 50%;
     }
 
