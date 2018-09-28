@@ -70,7 +70,7 @@ export default () => (
           <Icon icon="exclamation-triangle" />
           <Title>Leaving This Site</Title>
           <SubTitle>
-            You are about to leave Integra Managed Care.
+            You are about to leave Integra Plan’s website.
             <br />
             Press OK to continue or cancel to remain on the site.
           </SubTitle>
