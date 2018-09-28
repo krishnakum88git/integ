@@ -6,7 +6,7 @@ indicatorColor: '#FA8231'
 iconName: 'user-friends'
 banner: '../../img/about.jpg'
 lists:
-  - title: 'Member and Provider Services'
+  - title: 'Member & Provider Services'
     items: 
       - title: '1-877-388-5191 TTY: 711'
         icon: 'phone'
@@ -38,7 +38,7 @@ lists:
         icon: 'envelope'
 magnets:
     - new-to-medicare
-    - plans
+    - our-plans
     - member-resources
     - provider-search
 disclaimers:

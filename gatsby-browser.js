@@ -24,7 +24,10 @@ const icons = [
   "faClock",
   "faCalendar",
   "faFax",
-  "faFileDownload"
+  "faFileDownload",
+  "faInfo",
+  "faInfoCircle",
+  "faCheck"
 ];
 
 export const onClientEntry = () =>

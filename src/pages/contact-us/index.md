@@ -6,12 +6,22 @@ indicatorColor: '#45AAF2'
 iconName: 'phone'
 banner: '../../img/contact-us.jpg'
 lists:
-  - title: Our Offices
+  - title: 'Member & Provider Services'
     items: 
-      - title: +1 855-800-4683 \n TTY - 711
-        icon: phone
-      - title: 1981 Marcus Avenue, \n Suite 100 \n Lake Success, New York \n 11042
-        icon: map-marker
+      - title: '1-877-388-5191 TTY: 711'
+        icon: 'phone'
+      - title: 'Hours - 8:00AM to 8:00PM\nSunday through Saturday'
+        icon: 'clock'
+      - title: 'October 15, 2018 through\nMarch 31, 2019'
+        icon: 'calendar'
+  - title: 'Sales Representative'
+    items: 
+      - title: '1-877-388-5190 TTY: 711'
+        icon: 'phone'
+      - title: 'Hours - 8:00AM to 8:00PM\nMonday through Sunday'
+        icon: 'clock'
+      - title: 'From February 15th through September 30th, hours are\nMonday - Friday only'
+        icon: 'calendar'
 magnets:
     - new-to-medicare
     - provider-search

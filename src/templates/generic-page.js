@@ -7,12 +7,12 @@ import Content, { HTMLContent } from "../components/Content";
 import Container from "../components/Container";
 import Lists from "../components/Lists";
 
-export const PageTemplate = ({ content, lists, contentComponent }) => {
+export const PageTemplate = ({ content, listDirection, lists, contentComponent }) => {
   const PageContent = contentComponent || Content;
   return (
     <Container size="lg" vpad={!!content} flex>
       <PageContent content={content} />
-      <Lists items={lists} />
+      <Lists items={lists} direction={listDirection} />
     </Container>
   );
 };
@@ -71,6 +71,7 @@ export const pageQuery = graphql`
         indicatorColor
         isLarge
         disclaimers
+        listDirection
         banner {
           childImageSharp {
             fluid(maxWidth: 1440) {
