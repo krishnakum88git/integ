@@ -45,7 +45,8 @@ const Page = ({ data }) => {
   }));
 
   const contactInfo = post.frontmatter.shouldIncludeContactInfo ? data.contactInfo.edges[0].node.frontmatter.lists : []
-  const lists = [...contactInfo, ...(post.frontmatter.lists || [])];
+  const enrollmentInfo = post.frontmatter.shouldIncludeEnrollmentInfo ? data.enrollmentInfo.edges[0].node.frontmatter.lists : []
+  const lists = [...contactInfo, ...enrollmentInfo, ...(post.frontmatter.lists || [])];
   return (
     <Layout
       hero={hero}
@@ -80,6 +81,7 @@ export const pageQuery = graphql`
         indicatorColor
         isLarge
         shouldIncludeContactInfo
+        shouldIncludeEnrollmentInfo
         disclaimers
         pageSize
         listDirection
@@ -133,6 +135,22 @@ export const pageQuery = graphql`
     }
 
     contactInfo: allMarkdownRemark(filter:{fields:{slug :{eq : "/contact-info/"}}}) {
+      edges {
+        node {
+          frontmatter {
+            lists {
+              title
+              items {
+                title
+                icon
+              }
+            }
+          }
+        }
+      }
+    }
+
+    enrollmentInfo: allMarkdownRemark(filter:{fields:{slug :{eq : "/enrollment-info/"}}}) {
       edges {
         node {
           frontmatter {

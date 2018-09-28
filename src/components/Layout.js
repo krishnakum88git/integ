@@ -1,8 +1,8 @@
 import React, { Component } from "react";
 import Helmet from "react-helmet";
 import styled, { injectGlobal } from "styled-components";
-import { font, headings, links, paragraphs } from '../styles/typography'
-import { blacks } from '../styles/colors'
+import { font, headings, links, paragraphs, spaceSizes } from '../styles/typography'
+import { black } from '../styles/colors'
 import favicon from '../img/favicon.ico'
 
 import Navbar from "./Navbar";
@@ -24,8 +24,14 @@ injectGlobal`
   body, html {
     margin: 0;
     background-color: #fafafa;
-    color: ${blacks[0]};
+    color: ${black.darkest};
     ${font}
+  }
+
+  hr {
+    margin: ${spaceSizes.lg} ${spaceSizes.md};
+    border: 2px solid ${black.lightest};
+    border-radius: 4px;
   }
 
   ${headings}
