@@ -16,7 +16,7 @@ export const PageTemplate = ({
   return (
     <Container size="lg" vpad flex>
       <div>
-        <h3 style={{marginTop: 0}}>Plan Information</h3>
+        <h3>Plan Information</h3>
         <PageContent content={content} />
       </div>
       <Lists items={lists} />

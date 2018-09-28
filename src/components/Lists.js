@@ -6,12 +6,10 @@ import { black } from '../styles/colors'
 import List from './List'
 
 const Lists = styled.div`
-  margin-left: ${spaceSizes.xl};
-  padding: ${spaceSizes.md};
+  margin-top: 41px;
+  margin-left: ${spaceSizes.xxl};
   width: 300px;
   flex-shrink: 0;
-  background-color: ${black.ultralight};
-  border-radius: ${spaceSizes.sm};
   box-sizing: border-box;
 `
 
