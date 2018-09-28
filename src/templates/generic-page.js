@@ -7,13 +7,15 @@ import Content, { HTMLContent } from "../components/Content";
 import Container from "../components/Container";
 import Lists from "../components/Lists";
 
-export const PageTemplate = ({ content, listDirection, pagePadTop = !!content, pagePadBot = !!content, lists, pageSize, contentComponent }) => {
+export const PageTemplate = ({ content, listDirection, pagePadTop, pagePadBot, lists, pageSize, contentComponent }) => {
   const PageContent = contentComponent || Content;
+  const shouldPadTop = pagePadTop !== null ? pagePadTop: !!content;
+  const shouldPadBot = pagePadBot !== null ? pagePadBot: !!content;
   return (
     <Container
       size={pageSize || "lg"}
-      pagePadTop={pagePadTop}
-      pagePadBot={pagePadBot}
+      pagePadTop={shouldPadTop}
+      pagePadBot={shouldPadBot}
       flex
     >
       <PageContent content={content} />
