@@ -1,5 +1,5 @@
 import styled, { css } from 'styled-components'
-import { spaceSizes, lists } from '../styles/typography'
+import { spaceSizes } from '../styles/typography'
 
 const containerSize = props => {
   switch (props.size) {
@@ -36,7 +36,6 @@ const Container = styled.div`
   justify-content: ${props => props.justifyContent || 'flex-start'};
   align-items: ${props => props.alignItems || 'flex-start'};
   ${containerSize}
-  ${lists}
 `
 
 export default Container

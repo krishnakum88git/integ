@@ -1,8 +1,11 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 import styled from 'styled-components'
+import { lists } from '../styles/typography'
 
-const ContentContainer = styled.div``
+const ContentContainer = styled.div`
+  ${lists}
+`
 
 export const HTMLContent = ({ content, className }) => (
   <ContentContainer className={className} dangerouslySetInnerHTML={{ __html: content }} />
