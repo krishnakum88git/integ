@@ -6,36 +6,36 @@ indicatorColor: '#FA8231'
 iconName: 'user-friends'
 banner: '../../img/about.jpg'
 lists:
-  - title: Member and Provider Services
+  - title: 'Member and Provider Services'
     items: 
-      - title: 1-877-388-5191 TTY – 711
-        icon: phone
-      - title: Hours - 8:00AM to 8:00PM\nSunday through Saturday
-        icon: clock
-      - title: October 15, 2018 through March 31, 2019
-        icon: calendar
-  - title: Sales Representative
+      - title: '1-877-388-5191 TTY: 711'
+        icon: 'phone'
+      - title: 'Hours - 8:00AM to 8:00PM\nSunday through Saturday'
+        icon: 'clock'
+      - title: 'October 15, 2018 through\nMarch 31, 2019'
+        icon: 'calendar'
+  - title: 'Sales Representative'
     items: 
-      - title: 1-877-388-5190 TTY - 711
-        icon: phone
-      - title: Hours - 8:00AM to 8:00PM\nMonday through Sunday
-        icon: clock
-      - title: From February 15th through September 30th, hours are Monday - Friday only
-        icon: calendar
-  - title: Enrollment
+      - title: '1-877-388-5190 TTY: 711'
+        icon: 'phone'
+      - title: 'Hours - 8:00AM to 8:00PM\nMonday through Sunday'
+        icon: 'clock'
+      - title: 'From February 15th through September 30th, hours are\nMonday - Friday only'
+        icon: 'calendar'
+  - title: 'Enrollment'
     items:
-      - title: You may download, complete, sign and date an enrollment form
-        icon: file-alt
-      - title: Enrollment Form
-        url: /
-        type: document
-      - title: Application Instructions
-        url: /
-        type: resource
-      - title: Once you have completed the form please fax it to\n1-xxx-xxx-xxxx
-        icon: fax
-      - title: Or mail it to\nIntegra Managed Care 1981 Marcus Avenue – Suite 100 Attention Medicare Lake Success, NY 11042
-        icon: envelope
+      - title: 'You may download, complete, sign and date an enrollment form'
+        icon: 'file-alt'
+      - title: 'Enrollment Form'
+        url: '/'
+        type: 'document'
+      - title: 'Application Instructions'
+        url: '/'
+        type: 'resource'
+      - title: 'Once you have completed the form please fax it to: 1-xxx-xxx-xxxx'
+        icon: 'fax'
+      - title: 'Or mail it to:\nIntegra Managed Care\n1981 Marcus Avenue – Suite 100\nAttention: Medicare\nLake Success, NY 11042'
+        icon: 'envelope'
 magnets:
     - new-to-medicare
     - plans

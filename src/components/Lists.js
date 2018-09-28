@@ -1,7 +1,6 @@
 import React from 'react'
 import styled from 'styled-components'
 import { spaceSizes } from '../styles/typography'
-import { black } from '../styles/colors'
 
 import List from './List'
 
