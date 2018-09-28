@@ -5,7 +5,7 @@ import { spaceSizes } from '../styles/typography'
 import List from './List'
 
 const getMargin = props => props.direction === 'column'
-  ? `41px 0 0 ${spaceSizes.xxl}`
+  ? `59px 0 0 ${spaceSizes.xxl}`
   : 0 
 
 const Lists = styled.div`
