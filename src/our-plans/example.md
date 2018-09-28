@@ -7,7 +7,7 @@ introduction:
     action:
       text: Download Plan
       icon: file-alt
-      url: /static/H1205_2019-SB-Plan-Harmony_M_v4_Draft.pdf
+      url: /files/H1205_2019-SB-Plan-Harmony_M_v4_Draft.pdf
       target: _blank
 lists:
   - title: Documents

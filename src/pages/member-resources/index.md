@@ -10,7 +10,7 @@ introduction:
     body: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin convallis cursus lectus eu iaculis. Mauris pulvinar nisi metus, vitae facilisis risus aliquam at.
 magnets:
     - new-to-medicare
-    - plans
+    - our-plans
     - member-resources
-    - providers
+    - provider-search
 ---

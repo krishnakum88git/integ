@@ -12,7 +12,7 @@ disclaimers:
     - Integra Managed Care cumple con las leyes federales de derechos civiles aplicables y no discrimina por motivos de raza, color, nacionalidad, edad, discapacidad o sexo. ATTENTION - If you speak Spanish, language assistance services, free of charge, are available to you. Call 1-877-388-5195 (TTY - 711). ATENCIÓN - si habla español, tiene a su disposición servicios gratuitos de asistencia lingüística. Llame al 1- 877-388-5195 (TTY - 711). Assistance services for other languages are also available free of charge at the number above. All plan materials and information is available upon request in a different language or alternate formats such as braille, large print and audio.
 magnets:
     - new-to-medicare
-    - plans
+    - our-plans
     - member-resources
-    - providers
+    - provider-search
 ---

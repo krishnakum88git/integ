@@ -61,7 +61,7 @@ export default PlanPage;
 
 export const planPageQuery = graphql`
   query PlanPage($id: String!) {
-    allMarkdownRemark(filter: { frontmatter: { slug: { eq: "plans" } } }) {
+    allMarkdownRemark(filter: { frontmatter: { slug: { eq: "our-plans" } } }) {
       edges {
         node {
           frontmatter {

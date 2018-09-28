@@ -32,6 +32,9 @@ const Container = styled.div`
   margin: ${props => props.vmrg ? spaceSizes.lg : 0} auto;
   padding-top: ${props => props.vpad ? spaceSizes.lg : 0};
   padding-bottom: ${props => props.vpad ? spaceSizes.lg : 0};
+  flex-direction: ${props => props.flexDirection || 'row'};
+  justify-content: ${props => props.justifyContent || 'flex-start'};
+  align-items: ${props => props.alignItems || 'flex-start'};
   ${containerSize}
 `
 

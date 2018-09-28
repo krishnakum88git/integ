@@ -30,7 +30,7 @@ exports.createPages = ({ actions, graphql }) => {
     const posts = result.data.allMarkdownRemark.edges
 
     const pages = posts.filter(edge => edge.node.fileAbsolutePath.indexOf('/pages/') !== -1)
-    const plans = posts.filter(edge => edge.node.fileAbsolutePath.indexOf('/plans/') !== -1)
+    const plans = posts.filter(edge => edge.node.fileAbsolutePath.indexOf('/our-plans/') !== -1)
 
     pages.forEach(edge => {
       const id = edge.node.id
@@ -49,7 +49,7 @@ exports.createPages = ({ actions, graphql }) => {
     plans.forEach(edge => {
       const id = edge.node.id
       createPage({
-        path: `plans/${edge.node.frontmatter.slug}`,
+        path: `our-plans/${edge.node.frontmatter.slug}`,
         component: path.resolve(
           `src/templates/plan-page.js`
         ),

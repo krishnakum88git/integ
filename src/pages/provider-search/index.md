@@ -1,15 +1,15 @@
 ---
 templateKey: 'generic-page'
-slug: providers
+slug: provider-search
 title: Provider Search
 indicatorColor: '#A55EEA'
 iconName: 'user-md'
-banner: '../../img/providers.jpg'
+banner: '../../img/provider-search.jpg'
 introduction:
-    title: Need help finding a Provider or Pharmacy?
+    title: Need help finding\na Provider or Pharmacy?
     body: We can help you in several ways.
 magnets: 
-    - plans
+    - our-plans
     - compliance
     - about-us
     - contact-us

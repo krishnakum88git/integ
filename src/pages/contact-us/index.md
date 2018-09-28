@@ -14,7 +14,7 @@ lists:
         icon: map-marker
 magnets:
     - new-to-medicare
-    - providers
+    - provider-search
     - about-us
     - compliance
 introduction:

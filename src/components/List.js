@@ -47,7 +47,7 @@ const Title = props => props.text ? (
   </TitleBody>
 ) : null
 
-const parseNewlines = text => text.split("\\n").join("\n")
+const parseNewlines = text => text ? text.split("\\n").join("\n") : text
 
 export const ListItem = props => (
   <ListItemBody>

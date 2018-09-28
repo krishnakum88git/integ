@@ -33,7 +33,7 @@ export default class IndexPage extends React.Component {
           action={{
             text: "View Our Plans",
             icon: "book-open",
-            url: "/plans"
+            url: "/our-plans"
           }}
         >
           <ul>

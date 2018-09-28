@@ -35,6 +35,8 @@ const calloutAlignment = props => {
   }
 }
 
+const parseNewlines = text => typeof text === 'string' ? text.split("\\n").join("\n") : text
+
 const Callout = styled.div`
   padding: ${spaceSizes.xxl} 0;
   font-size: ${fontSizes.sm};
@@ -68,14 +70,16 @@ const Callout = styled.div`
 
 const TitleStyled = styled.h2`
   margin-top: 0;
+  white-space: pre-wrap;
 `
 
 const Title = ({ text }) => text ? (
-  <TitleStyled>{text}</TitleStyled>
+  <TitleStyled>{parseNewlines(text)}</TitleStyled>
 ) : null
 
 const ActionStyled = styled(Button)`
   margin: ${spaceSizes.lg} auto 0;
+  white-space: pre-wrap;
 `
 
 const Action = ({ action }) => action ? (
