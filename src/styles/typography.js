@@ -27,6 +27,7 @@ export const textShadow = '0px 2px 5px rgba(0, 0, 0, 0.75)'
 
 export const headings = css`
   h1, h2, h3, h4, h5 {
+    margin: 1.5em 0 0.25em;
     font-weight: 800;
     letter-spacing: -0.025em;
     line-height: 1;
@@ -87,16 +88,26 @@ export const lists = css`
   }
 
   li {
-    margin-bottom: 1em;
+    position: relative;
+    margin-bottom: 0.55em;
+    padding-left: 2.2em;
+    line-height: 1.75;
+    text-align: left;
+
+    p {
+      margin-top: 0;
+    }
 
     &:before {
-      display: inline-block;
-      margin: .09em .55em;
+      position: absolute;
+      top: 0.55em;
+      left: 0.55em;
       content: " ";
       width: .55em;
       height: .55em;
       background-color: ${colors.black.lighter};
       border-radius: 50%;
+      flex-shrink: 0;
     }
 
     &:last-child {
