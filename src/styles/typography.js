@@ -72,3 +72,9 @@ export const links = css`
     }
   }
 `
+
+export const paragraphs = css`
+  p {
+    line-height: 1.5;
+  }
+`

@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import Helmet from "react-helmet";
 import styled, { injectGlobal } from "styled-components";
-import { font, headings, links } from '../styles/typography'
+import { font, headings, links, paragraphs } from '../styles/typography'
 import { blacks } from '../styles/colors'
 import favicon from '../img/favicon.ico'
 
@@ -30,6 +30,7 @@ injectGlobal`
 
   ${headings}
   ${links}
+  ${paragraphs}
 `;
 
 class TemplateWrapper extends Component {
