@@ -27,7 +27,7 @@ const Lists = styled.div`
 export default ({items = [], direction}) => items && items.length ? (
   <Lists direction={direction || 'column'}>
     {items.map(item =>
-      <List key="item.title" {...item} />
+      <List key={item.title} {...item} />
     )}
   </Lists>
 ) : null
