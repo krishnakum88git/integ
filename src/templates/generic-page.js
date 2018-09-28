@@ -111,6 +111,7 @@ export const pageQuery = graphql`
           id
           frontmatter {
             title
+            subTitle
             iconName
             indicatorColor
             slug

@@ -39,7 +39,7 @@ export default class IndexPage extends React.Component {
           <ul>
             <li>Low cost premiums, some as low as $0</li>
             <li>Out-of-pocket maximums to help prevent financial surprises</li>
-            <li>Prescription drug coverage for thousands of brand name and generic drugs</li>
+            <li>Prescription drug coverage for thousands of brand name &amp; generic drugs</li>
           </ul>
         </Callout>
       </Layout>
