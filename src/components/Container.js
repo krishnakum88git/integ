@@ -30,8 +30,8 @@ const containerSize = props => {
 const Container = styled.div`
   display: ${props => props.flex ? 'flex' : 'block'};
   margin: ${props => props.vmrg ? spaceSizes.lg : 0} auto;
-  padding-top: ${props => props.vpad ? spaceSizes.lg : 0};
-  padding-bottom: ${props => props.vpad ? spaceSizes.lg : 0};
+  padding-top: ${props => props.pagePadTop ? spaceSizes.lg : 0};
+  padding-bottom: ${props => props.pagePadBot ? spaceSizes.lg : 0};
   flex-direction: ${props => props.flexDirection || 'row'};
   justify-content: ${props => props.justifyContent || 'flex-start'};
   align-items: ${props => props.alignItems || 'flex-start'};

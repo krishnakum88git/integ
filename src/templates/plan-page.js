@@ -31,6 +31,7 @@ const PlanPage = ({ data }) => {
 
   const hero = {
     title: planPage.title,
+    subTitle: planPage.subTitle,
     image: plansPage.banner.childImageSharp.fluid,
     iconColor: plansPage.indicatorColor,
     iconName: plansPage.iconName,
@@ -102,6 +103,7 @@ export const planPageQuery = graphql`
       html
       frontmatter {
         title
+        subTitle
         disclaimers
         introduction {
           title

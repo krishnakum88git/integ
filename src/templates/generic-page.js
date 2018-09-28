@@ -7,10 +7,15 @@ import Content, { HTMLContent } from "../components/Content";
 import Container from "../components/Container";
 import Lists from "../components/Lists";
 
-export const PageTemplate = ({ content, listDirection, lists, contentComponent }) => {
+export const PageTemplate = ({ content, listDirection, pagePadTop = !!content, pagePadBot = !!content, lists, pageSize, contentComponent }) => {
   const PageContent = contentComponent || Content;
   return (
-    <Container size="lg" vpad={!!content} flex>
+    <Container
+      size={pageSize || "lg"}
+      pagePadTop={pagePadTop}
+      pagePadBot={pagePadBot}
+      flex
+    >
       <PageContent content={content} />
       <Lists items={lists} direction={listDirection} />
     </Container>
@@ -76,7 +81,10 @@ export const pageQuery = graphql`
         isLarge
         shouldIncludeContactInfo
         disclaimers
+        pageSize
         listDirection
+        pagePadTop
+        pagePadBot
         banner {
           childImageSharp {
             fluid(maxWidth: 1440) {
@@ -108,6 +116,7 @@ export const pageQuery = graphql`
           id
           frontmatter {
             title
+            subTitle
             iconName
             indicatorColor
             slug

@@ -1,11 +1,12 @@
 ---
-title: Integra Harmony (HMO SNP) Plan
+title: Our Plans
+subTitle: Integra Managed Care’s (HMO SNP) Harmony
 slug: 2019-harmony-hmo-snp
 introduction:
-    title: Dolor Sit Amet
-    body: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin convallis cursus lectus eu iaculis. Mauris pulvinar nisi metus, vitae facilisis risus aliquam at.
+    title: Harmony
+    body: Integra Managed Care’s (HMO SNP) Harmony Plan is for beneficiaries who qualify for Medicare and Medicaid, better known as dual eligible.
     action:
-      text: Download Plan
+      text: Download Plan Summary
       icon: file-download
       url: /files/H1205_2019-SB-Plan-Harmony_M_v4_Draft.pdf
       target: _blank
@@ -13,26 +14,21 @@ lists:
   - title: Documents
     type: document
     items: 
-      - title: Lorem ipsum dolor sit amet
-        url: /files/test.pdf
-      - title: Consectetur adipiscing elit
-        url: /files/test2.pdf
+      - title: 2019 Summary of Benefits Integra Harmony (HMO SNP) Plan
+        url: /files/H1205_2019-SB-Plan-Harmony_M_v4_Draft.pdf
   - title: Resources
     type: resource
     items: 
-      - title: Sit amet est laoreet euismod vel pretium
-        url: https://google.com
-      - title: Turpis nunc quis dictum ipsum
-        url: https://wikipedia.com
+      - title: Medicare.gov
+        url: http://www.medicare.gov/
 ---
-This is a summary of drug and health services covered by Integra Harmony Plan (HMO SNP). It does not list every service that we cover or list every limitation or exclusion. To get a complete list of services we cover, you can access the “Evidence of Coverage” on our website at http://www.integraplan.org, or call us and ask that a copy be sent to you.
+Integra Managed Care’s (HMO SNP) Harmony Plan is for people who qualify for Medicare and Medicaid, who are known as dual eligible. As a dual eligible, you are eligible for benefits under both the federal Medicare program and the state-operated Medicaid program. The Harmony Plan includes prescription drug coverage. This plan provides all the coverage of traditional Medicare, plus more personalized care with additional benefits such as;
 
-To join Integra Harmony Plan (HMO SNP), you must be entitled to Medicare Part A, be enrolled in Medicare Part B and the New York State Medicaid Program, and live in our service area. 
+* Vision
+* Dental
+* Hearing Aids 
+* Over the counter products
 
-Our service area includes the following counties in New York: Bronx, Kings, New York, Queens and Nassau. 
-
-Integra Harmony Plan (HMO SNP) has a network of doctors, hospitals, pharmacies, and other providers. Except in emergency situations, if you use the providers that are not in our network, the plan may not pay for these services.
-
-You must generally use network pharmacies to fill your prescriptions for covered Part D drugs. 
+The kind of Medicaid benefits you receive are determined by New York State and may vary based upon your income and resources.
 
 If you want to know more about the coverage and costs of Original Medicare, look in your current "Medicare & You" handbook. View it online at http://www.medicare.gov or get a copy by calling 1-800-MEDICARE (1-800-633-4227), 24 hours a day, 7 days a week. TTY users should call 1-877-486-2048. 

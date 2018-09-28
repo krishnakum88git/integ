@@ -25,7 +25,7 @@ export default class IndexPage extends React.Component {
           title={<span>Need help finding a plan<br />that may be a good fit for you?</span>}
           type="secondary"
         >
-          Call Toll-Free <a href='tel:1-877-388-5195'>1-877-388-5195</a>, TTY 711
+          Call Toll-Free 1-877-388-5195 TTY: 711
         </Callout>
 
         <Callout
@@ -39,7 +39,7 @@ export default class IndexPage extends React.Component {
           <ul>
             <li>Low cost premiums, some as low as $0</li>
             <li>Out-of-pocket maximums to help prevent financial surprises</li>
-            <li>Prescription drug coverage for thousands of brand name and generic drugs</li>
+            <li>Prescription drug coverage for thousands of brand name &amp; generic drugs</li>
           </ul>
         </Callout>
       </Layout>

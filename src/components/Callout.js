@@ -1,6 +1,6 @@
 import React from 'react';
 import styled, { css } from "styled-components";
-import { fontSizes, spaceSizes } from "../styles/typography";
+import { fontSizes, spaceSizes, lists } from "../styles/typography";
 import colors from "../styles/colors";
 import Container from './Container'
 import Button from './Button'
@@ -42,29 +42,7 @@ const Callout = styled.div`
   font-size: ${fontSizes.sm};
   ${calloutColors}
   ${calloutAlignment}
-
-  ul {
-    margin-bottom: 0;
-    padding: 0;
-    list-style-type: none;
-  }
-
-  li {
-    margin-bottom: 1em;
-
-    &:before {
-      display: inline-block;
-      margin: 2px 12px;
-      content: " ";
-      width: 12px;
-      height: 12px;
-      background-color: ${colors.blacks[5]};
-      border-radius: 50%;
-    }
-
-    &:last-child {
-      margin-bottom: 0;
-    }
+  ${lists}
   }
 `
 
@@ -88,7 +66,7 @@ const Action = ({ action }) => action ? (
 
 export default ({ title, type, align = 'center', size = 'md', action, body, children }) => (
   <Callout type={type} align={align} size={size}>
-    <Container size={size}>
+    <Container size={size} flex={true} flexDirection="column" alignItems="center">
       <Title text={title} />
       {children}
       {body}
