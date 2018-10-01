@@ -13,6 +13,7 @@ export const PageTemplate = ({ content, listDirection, pagePadTop, pagePadBot, l
   const shouldPadBot = pagePadBot !== null ? pagePadBot: !!content;
   return (
     <Container
+      id="content"
       size={pageSize || "lg"}
       pagePadTop={shouldPadTop}
       pagePadBot={shouldPadBot}
@@ -51,6 +52,7 @@ const Page = ({ data }) => {
   const lists = [...contactInfo, ...enrollmentInfo, ...(post.frontmatter.lists || [])];
   return (
     <Layout
+      title={post.frontmatter.title}
       hero={hero}
       introduction={post.frontmatter.introduction}
       magnets={magnets}

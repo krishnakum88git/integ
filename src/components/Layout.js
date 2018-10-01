@@ -11,6 +11,7 @@ import Magnets from "./Magnets";
 import Hero from "./Hero";
 import Callout from "./Callout";
 import ExternalLinkWarningModal from './ExternalLinkWarningModal';
+import SkipNavLink from "./SkipNavLink"
 
 const Wrapper = styled.div`
   margin: 0 auto;
@@ -43,7 +44,8 @@ class TemplateWrapper extends Component {
   render() {
     return (
       <Wrapper>
-        <Helmet title="Integra Managed Care"><html lang="en" />
+        <Helmet title={`${this.props.title ? `${this.props.title} - ` : ''}Integra Managed Care`}>
+          <html lang="en" />
           <link rel="icon" href={favicon} />
           {/* General tags */}
           {/* <meta name="image" content={shareImage} />
@@ -65,6 +67,7 @@ class TemplateWrapper extends Component {
           <meta name="twitter:image" content={shareImage} />
           <meta name="twitter:description" content={description} /> */}
         </Helmet>
+        <SkipNavLink />
         <Navbar />
         <Hero {...this.props.hero} />
         {this.props.introduction && <Callout {...this.props.introduction} />}

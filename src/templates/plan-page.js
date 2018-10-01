@@ -14,7 +14,7 @@ export const PageTemplate = ({
 }) => {
   const PageContent = contentComponent || Content;
   return (
-    <Container size="lg" vpad flex>
+    <Container id="content" size="lg" vpad flex>
       <div>
         <h3>Plan Information</h3>
         <PageContent content={content} />
@@ -40,6 +40,7 @@ const PlanPage = ({ data }) => {
   const magnets = (plansPage.magnets || []).map(magnet => ({ node: magnet }));
   return (
     <Layout
+      title={planPage.subTitle}
       hero={hero}
       introduction={planPage.introduction}
       magnets={magnets}

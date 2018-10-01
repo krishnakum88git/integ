@@ -76,6 +76,7 @@ const Icon = styled(FontAwesomeIcon)`
 
 const Link = styled(GatsbyLink)`
   text-decoration: none;
+  z-index: 99;
 `;
 
 const Title = styled.h5`

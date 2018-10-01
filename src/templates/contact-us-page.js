@@ -78,7 +78,7 @@ class ContactUsTemplate extends Component {
   handleBlur = _ => this.setState({ focusedField: undefined });
   render() {
     return (
-      <section>
+      <section id="content">
         <ContactColumns>
           <ContactForm>
             <h3>Request Additional Information</h3>
@@ -125,6 +125,7 @@ const ContactUs = ({ data }) => {
   }));
   return (
     <Layout
+      title={post.frontmatter.title}
       hero={hero}
       introduction={post.frontmatter.introduction}
       magnets={magnets}
