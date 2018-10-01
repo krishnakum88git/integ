@@ -6,7 +6,7 @@ const SVG = styled.svg`
 `
 
 export default ({isFooter}) => isFooter ? (
-	<SVG version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="1280px" height="197.411px" viewBox="0 0 1280 197.411" enable-background="new 0 0 1280 197.411">
+	<SVG version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" viewBox="0 0 1280 197.411" enable-background="new 0 0 1280 197.411">
 		<path fill="#00245D" d="M497.4,121.097C348.139,95.526,161.249,125.989-1,168.009v29.402h1281V12.474 C1035.278,192.204,808.606,174.41,497.4,121.097z"/>
 	</SVG>
 ) : (
