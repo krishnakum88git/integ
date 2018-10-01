@@ -32,6 +32,13 @@ const Nav = styled.nav`
         opacity: 1;
       }
     }
+
+    &:active,
+    &:visited,
+    &:hover,
+    &:focus {
+      color: ${black.darker};
+    }
   }
 `;
 

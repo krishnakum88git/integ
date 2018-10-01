@@ -24,6 +24,13 @@ const FooterWrapper = styled.footer`
   h5,
   a {
     color: white;
+
+    &:active,
+    &:visited,
+    &:hover,
+    &:focus {
+      color: white;
+    }
   }
 `;
 
