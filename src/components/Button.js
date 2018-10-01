@@ -15,6 +15,13 @@ const buttonStyles = css`
   display: block;
   cursor: pointer;
   width: ${props => props.fullWidth ? '100%' : 'auto'};
+
+  &:active,
+    &:visited,
+    &:hover,
+    &:focus {
+      color: ${props => (props.isPrimary ? "#ffffff" : "#495969")};
+    }
 `
 
 const ButtonStyled = styled.button`

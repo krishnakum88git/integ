@@ -47,6 +47,7 @@ const ContactItemContainer = styled.div`
 
 const ContactItemText = styled.p`
   margin-left: ${spaceSizes.xs};
+  margin-bottom: 0;
   text-align: left;
 `;
 

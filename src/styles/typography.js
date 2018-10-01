@@ -68,7 +68,9 @@ export const links = css`
 
     &:active,
     &:visited,
+    &:hover,
     &:focus {
+      color: ${colors.link};
       text-decoration: none;
     }
   }
