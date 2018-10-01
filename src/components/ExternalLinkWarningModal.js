@@ -1,4 +1,4 @@
-import React from "react";
+import React, { Component } from "react";
 import { Consumer } from "../store/createContext";
 import styled from "styled-components";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
@@ -35,7 +35,7 @@ const Icon = styled(FontAwesomeIcon)`
   && {
     width: 64px;
     height: 64px;
-    color: #F7B731;
+    color: #f7b731;
   }
 `;
 
@@ -62,38 +62,59 @@ const Modal = ({ onClose, children }) => (
   </ModalWrapper>
 );
 
-export default () => (
+class ExternalLinkWarningModal extends Component {
+  constructor(props) {
+    super(props);
+    this.acceptButtonRef = React.createRef();
+  }
+  componentDidMount() {
+    if (this.acceptButtonRef.current) {
+      this.acceptButtonRef.current.focus();
+    }
+  }
+  render() {
+    return (
+      <Modal onClose={this.props.closeExternalLinkModal}>
+        <Icon icon="exclamation-triangle" />
+        <Title>Leaving This Site</Title>
+        <SubTitle>
+          You are about to leave Integra Plan’s website.
+          <br />
+          Press OK to continue or cancel to remain on the site.
+        </SubTitle>
+        <ButtonContainer>
+          <IntegraButton
+            innerRef={this.acceptButtonRef}
+            isPrimary={true}
+            fullWidth={true}
+            onClick={e => {
+              e.stopPropagation();
+              window.location.href = this.props.externalLinkURL;
+            }}
+          >
+            OK
+          </IntegraButton>
+          <CancelButton fullWidth={true} onClick={this.props.closeExternalLinkModal}>
+            Cancel
+          </CancelButton>
+        </ButtonContainer>
+      </Modal>
+    );
+  }
+}
+
+const WrappedModal = () => (
   <Consumer>
-    {({ isExternalLinkModalOpen, closeExternalLinkModal, externalLinkURL }) => {
-      return isExternalLinkModalOpen ? (
-        <Modal onClose={closeExternalLinkModal}>
-          <Icon icon="exclamation-triangle" />
-          <Title>Leaving This Site</Title>
-          <SubTitle>
-            You are about to leave Integra Plan’s website.
-            <br />
-            Press OK to continue or cancel to remain on the site.
-          </SubTitle>
-          <ButtonContainer>
-            <IntegraButton
-              isPrimary={true}
-              fullWidth={true}
-              onClick={e => {
-                e.stopPropagation();
-                window.location.href = externalLinkURL;
-              }}
-            >
-              OK
-            </IntegraButton>
-            <CancelButton
-              fullWidth={true}
-              onClick={closeExternalLinkModal}
-            >
-              Cancel
-            </CancelButton>
-          </ButtonContainer>
-        </Modal>
+    {({ isExternalLinkModalOpen, closeExternalLinkModal, externalLinkURL }) =>
+      isExternalLinkModalOpen ? (
+        <ExternalLinkWarningModal
+          closeExternalLinkModal={closeExternalLinkModal}
+          externalLinkURL={externalLinkURL}
+        />
       ) : null
-    }}
+    }
   </Consumer>
 );
+
+
+export default WrappedModal;
