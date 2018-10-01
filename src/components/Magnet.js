@@ -15,6 +15,7 @@ const Wrapper = styled.div`
   align-items: center;
   box-shadow: 0px 2px 0px #a5b1c2;
   margin: 45px 15px;
+  z-index: 100;
 `;
 
 const Dot = styled.div`
