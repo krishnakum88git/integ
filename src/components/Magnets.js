@@ -1,9 +1,11 @@
 import React from "react";
 import styled from "styled-components";
 import Magnet from "./Magnet";
+import { spaceSizes } from "../styles/typography";
 
 const Magnets = styled.section`
   position: relative;
+  padding-bottom: ${spaceSizes.xl};
   
   &:before {
     position: absolute;

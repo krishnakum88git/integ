@@ -32,10 +32,10 @@ lists:
       - title: 'Privacy Statement'
         url: '/#'
 magnets:
-    - new-to-medicare
-    - our-plans
-    - member-resources
     - provider-search
+    - about-us
+    - compliance
+    - contact-us
 ---
 ### Getting the Care You Need, When Urgently Needed
 While your primary care physician or other treating physician is the preferred first point of contact for care, Urgent Care is an important alternative to going to the Hospital Emergency Department for non-life threatening conditions and provides immediate medical treatment for minor and moderate illnesses and injuries.

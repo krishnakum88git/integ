@@ -5,13 +5,15 @@ import LinkExternal from "./Link";
 import Container from "./Container";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
+import DividerCurve from "./DividerCurve";
 import logo from "../img/white-logo.png";
 import { spaceSizes, fontSizes } from "../styles/typography";
-import { blacks } from "../styles/colors";
+import { blacks, blue } from "../styles/colors";
 
 const FooterWrapper = styled.footer`
   display: flex;
-  background-color: #333;
+  position: relative;
+  background-color: ${blue};
   flex-direction: column;
   align-items: center;
   padding: ${spaceSizes.lg} 0;
@@ -24,10 +26,18 @@ const FooterWrapper = styled.footer`
   h5,
   a {
     color: white;
+
+    &:active,
+    &:visited,
+    &:hover,
+    &:focus {
+      color: white;
+    }
   }
 `;
 
 const ContactMessage = styled.p`
+  margin-top: ${spaceSizes.sm};
   font-size: ${fontSizes.sm};
 `;
 
@@ -47,6 +57,7 @@ const ContactItemContainer = styled.div`
 
 const ContactItemText = styled.p`
   margin-left: ${spaceSizes.xs};
+  margin-bottom: 0;
   text-align: left;
 `;
 
@@ -68,8 +79,22 @@ const Disclaimers = ({ disclaimers }) => (
   </Fragment>
 );
 
+const DividerStyled = styled.div`
+  position: absolute;
+  left: 0;
+  bottom: 100%;
+  width: 100%;
+`
+
+const Divider = () => (
+  <DividerStyled>
+    <DividerCurve isFooter />
+  </DividerStyled>
+)
+
 const Footer = ({ disclaimers }) => (
   <FooterWrapper>
+    <Divider />
     <Container size="lg">
       <FooterHeader>
         <Link to="/">

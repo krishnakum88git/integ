@@ -68,7 +68,9 @@ export const links = css`
 
     &:active,
     &:visited,
+    &:hover,
     &:focus {
+      color: ${colors.link};
       text-decoration: none;
     }
   }
@@ -82,7 +84,7 @@ export const paragraphs = css`
 
 export const lists = css`
   ul {
-    margin-bottom: 0;
+    // margin-bottom: 0;
     padding: 0;
     list-style-type: none;
   }

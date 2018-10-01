@@ -37,7 +37,9 @@ const PlanPage = ({ data }) => {
     iconName: plansPage.iconName,
     isLarge: false
   };
+
   const magnets = (plansPage.magnets || []).map(magnet => ({ node: magnet }));
+
   return (
     <Layout
       title={planPage.subTitle}
@@ -45,6 +47,14 @@ const PlanPage = ({ data }) => {
       introduction={planPage.introduction}
       magnets={magnets}
       disclaimers={planPage.disclaimers}
+      breadcrumbs={[
+        {
+          title: 'Our Plans',
+          url: '/our-plans'
+        },{
+          title: planPage.introduction.title
+        }
+      ]}
     >
       <PageTemplate
         contentComponent={HTMLContent}

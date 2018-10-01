@@ -11,10 +11,10 @@ pagePadBot: true
 shouldIncludeContactInfo: true
 shouldIncludeEnrollmentInfo: true
 magnets:
-    - new-to-medicare
     - our-plans
-    - member-resources
     - provider-search
+    - about-us
+    - contact-us
 ---
 ### When Can I Enroll?
 

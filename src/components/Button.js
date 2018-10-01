@@ -3,10 +3,11 @@ import styled, { css } from "styled-components";
 import { fontSizes, spaceSizes } from "../styles/typography";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { Link } from "gatsby";
+import colors from '../styles/colors';
 
 const buttonStyles = css`
   padding: ${spaceSizes.sm} ${spaceSizes.md};
-  background-color: ${props => (props.isPrimary ? "#006EF5" : "#D1D8DF")};
+  background-color: ${props => (props.isPrimary ? colors.blue : "#D1D8DF")};
   border: none;
   border-radius: 32px;
   color: ${props => (props.isPrimary ? "#ffffff" : "#495969")};
@@ -15,6 +16,13 @@ const buttonStyles = css`
   display: block;
   cursor: pointer;
   width: ${props => props.fullWidth ? '100%' : 'auto'};
+
+  &:active,
+    &:visited,
+    &:hover,
+    &:focus {
+      color: ${props => (props.isPrimary ? "#ffffff" : "#495969")};
+    }
 `
 
 const ButtonStyled = styled.button`

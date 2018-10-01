@@ -25,6 +25,7 @@ const Image = ({image}) => image ? (
 ) : null
 
 const IconBase = styled(FontAwesomeIcon)`
+  box-sizing: content-box;
   padding: 32px;
   width: 48px;
   min-width: 48px;

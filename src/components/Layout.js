@@ -1,14 +1,16 @@
 import React, { Component } from "react";
 import Helmet from "react-helmet";
-import styled, { injectGlobal } from "styled-components";
+import styled, { createGlobalStyle } from "styled-components";
 import { font, headings, links, paragraphs, spaceSizes } from '../styles/typography'
 import { black } from '../styles/colors'
 import favicon from '../img/favicon.ico'
+import reboot from '../styles/bootstrap-reboot'
 
 import Navbar from "./Navbar";
 import Footer from "./Footer";
 import Magnets from "./Magnets";
 import Hero from "./Hero";
+import Breadcrumbs from "./Breadcrumbs";
 import Callout from "./Callout";
 import ExternalLinkWarningModal from './ExternalLinkWarningModal';
 import SkipNavLink from "./SkipNavLink"
@@ -21,7 +23,9 @@ const Wrapper = styled.div`
   box-shadow: 0 0 2px 2px rgba(0, 0, 0, 0.05);
 `;
 
-injectGlobal`
+const GlobalStyles = createGlobalStyle`
+  ${reboot}
+
   body, html {
     margin: 0;
     background-color: #fafafa;
@@ -71,10 +75,12 @@ class TemplateWrapper extends Component {
         <Navbar />
         <Hero {...this.props.hero} />
         {this.props.introduction && <Callout {...this.props.introduction} />}
+        {this.props.breadcrumbs && <Breadcrumbs items={this.props.breadcrumbs} />}
         {this.props.children}
         {this.props.magnets && <Magnets magnets={this.props.magnets} />}
         <Footer disclaimers={this.props.disclaimers} />
         <ExternalLinkWarningModal />
+        <GlobalStyles />
       </Wrapper>
     );
   }
