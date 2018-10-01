@@ -6,9 +6,9 @@ lists:
         icon: 'phone'
       - title: '8:00 a.m. to 8:00 p.m. Eastern time'
         icon: 'clock'
-      - title: '7 days a week\nOctober 1 to March 31'
+      - title: 'October 1 to March 31\n7 days a week'
         icon: 'calendar'
-      - title: 'Monday through Friday\nApril 1 to September 30'
+      - title: 'April 1 to September 30\nMonday through Friday'
         icon: 'calendar'
   - title: 'Sales Representative'
     items: 
@@ -16,8 +16,8 @@ lists:
         icon: 'phone'
       - title: '8:00 a.m. to 8:00 p.m. Eastern time'
         icon: 'clock'
-      - title: '7 days a week\nOctober 1 to March 31'
+      - title: 'October 1 to March 31\n7 days a week'
         icon: 'calendar'
-      - title: 'Monday through Friday\nApril 1 to September 30'
+      - title: 'April 1 to September 30\nMonday through Friday'
         icon: 'calendar'
 ---
