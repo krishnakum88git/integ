@@ -17,10 +17,10 @@ lists:
       - title: 'Lorem Ipsum'
         url: '/#'
 magnets:
-    - new-to-medicare
-    - our-plans
     - member-resources
     - provider-search
+    - about-us
+    - contact-us
 ---
 ### Disclaimers
 Integra Managed Care is a HMO plan with Medicare and Medicaid contracts. Enrollment in Integra Managed Care depends on contract renewal. This information is not a complete description of benefits. Contact the plan for more information. Limitations, copayments, and restrictions may apply. Benefits, premiums and/or co-payments/co-insurance may change on January 1 of each year. You must continue to pay your Medicare Part B premium. The Formulary, pharmacy network, and/or provider network may change at any time. You will receive notice when necessary. Premiums, copays, co-insurance and deductibles may vary based on the level of Extra Help you receive. Please contact the Integra Managed Care for further details. Certain plans are available to anyone who has both Medical Assistance from the State and Medicare. Integra Managed Care is available to anyone with Medicare who meets the Skilled Nursing Facility (SNF) level of care and resides in a nursing home. Integra Managed Care complies with applicable Federal civil rights laws and does not discriminate on the basis of race, color, national origin, age, disability, or sex.

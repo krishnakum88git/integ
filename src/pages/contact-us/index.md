@@ -7,10 +7,10 @@ iconName: 'phone'
 banner: '../../img/contact-us.jpg'
 shouldIncludeContactInfo: true
 magnets:
-    - new-to-medicare
+    - our-plans
+    - member-resources
     - provider-search
     - about-us
-    - compliance
 introduction:
     body: For more information call and speak with one of our associates, or fill out the form below to have an associate contact you. There is no obligation to enroll.
 ---
