@@ -7,7 +7,7 @@ import colors from '../styles/colors';
 
 const buttonStyles = css`
   padding: ${spaceSizes.sm} ${spaceSizes.md};
-  background-color: ${props => (props.isPrimary ? colors.link : "#D1D8DF")};
+  background-color: ${props => (props.isPrimary ? colors.blue : "#D1D8DF")};
   border: none;
   border-radius: 32px;
   color: ${props => (props.isPrimary ? "#ffffff" : "#495969")};
