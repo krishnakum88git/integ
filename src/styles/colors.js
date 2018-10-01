@@ -9,6 +9,7 @@ export const blacks = [
 ]
 
 export const link = '#006AEB';
+export const blue = '#00235D';
 
 export const black = {
   darkest: blacks[0],
@@ -20,4 +21,4 @@ export const black = {
   ultralight: blacks[6]
 }
 
-export default { blacks, black, link }
+export default { blacks, black, link, blue }

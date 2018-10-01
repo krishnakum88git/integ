@@ -9,7 +9,7 @@ const calloutColors = props => {
   switch (props.type) {
     case 'secondary':
       return css`
-        background-color: ${colors.link};
+        background-color: ${colors.blue};
         color: white;
 
         a {

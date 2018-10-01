@@ -8,12 +8,12 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import DividerCurve from "./DividerCurve";
 import logo from "../img/white-logo.png";
 import { spaceSizes, fontSizes } from "../styles/typography";
-import { blacks } from "../styles/colors";
+import { blacks, blue } from "../styles/colors";
 
 const FooterWrapper = styled.footer`
   display: flex;
   position: relative;
-  background-color: #00235d;
+  background-color: ${blue};
   flex-direction: column;
   align-items: center;
   padding: ${spaceSizes.lg} 0;
