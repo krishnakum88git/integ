@@ -10,6 +10,7 @@ import Navbar from "./Navbar";
 import Footer from "./Footer";
 import Magnets from "./Magnets";
 import Hero from "./Hero";
+import Breadcrumbs from "./Breadcrumbs";
 import Callout from "./Callout";
 import ExternalLinkWarningModal from './ExternalLinkWarningModal';
 
@@ -72,6 +73,7 @@ class TemplateWrapper extends Component {
         <Navbar />
         <Hero {...this.props.hero} />
         {this.props.introduction && <Callout {...this.props.introduction} />}
+        {this.props.breadcrumbs && <Breadcrumbs items={this.props.breadcrumbs} />}
         {this.props.children}
         {this.props.magnets && <Magnets magnets={this.props.magnets} />}
         <Footer disclaimers={this.props.disclaimers} />

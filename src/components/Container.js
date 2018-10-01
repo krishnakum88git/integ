@@ -29,6 +29,7 @@ const containerSize = props => {
 
 const Container = styled.div`
   display: ${props => props.flex ? 'flex' : 'block'};
+  position: relative;
   margin: ${props => props.vmrg ? spaceSizes.lg : 0} auto;
   padding-top: ${props => props.pagePadTop ? spaceSizes.lg : 0};
   padding-bottom: ${props => props.pagePadBot ? spaceSizes.lg : 0};

@@ -28,7 +28,8 @@ const icons = [
   "faFileDownload",
   "faInfo",
   "faInfoCircle",
-  "faCheck"
+  "faCheck",
+  "faAngleRight"
 ];
 
 export const onClientEntry = () =>
