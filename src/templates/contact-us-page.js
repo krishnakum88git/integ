@@ -80,7 +80,8 @@ class ContactUsTemplate extends Component {
     return (
       <section id="content">
         <ContactColumns>
-          <ContactForm name="contact" data-netlify="true" method="POST" netlify>
+          <ContactForm name="contact" data-netlify="true" method="POST">
+            <input type="hidden" name="form-name" value="contact" />
             <h3>Request Additional Information</h3>
             {fields.map(field => (
               <div key={field.slug}>
