@@ -19,6 +19,14 @@ const Icon = styled(FontAwesomeIcon)`
   }
 `;
 
+const SuccessIcon = styled(FontAwesomeIcon)`
+  && {
+    color: #20be6b;
+    height: 64px;
+    width: 64px;
+  }
+`;
+
 const Field = styled.div`
   border: 2px solid ${props => (props.isFocused ? "#45aaf2" : "#d1d8df")};
   border-radius: 32px;
@@ -60,6 +68,30 @@ const ContactColumns = styled.div`
   margin-bottom: 100px;
 `;
 
+const ContactSuccess = styled.div`
+  margin-top: 63px;
+  height: 442px;
+  width: 600px;
+  background-color: rgba(209, 216, 223, 0.1);
+  border: 2px solid #d1d8df;
+  border-radius: 32px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+
+  h4 {
+    font-weight: normal;
+    font-size: 32px;
+    margin: 40px 0 20px;
+  }
+
+  p {
+    text-align: center;
+    font-size: 16px;
+  }
+`;
+
 const fields = [
   { title: "First Name", slug: "firstName", type: "text", iconName: "user" },
   { title: "Last Name", slug: "lastName", type: "text", iconName: "user" },
@@ -76,6 +108,17 @@ class ContactUsTemplate extends Component {
   }
   handleFocus = focusedField => _ => this.setState({ focusedField });
   handleBlur = _ => this.setState({ focusedField: undefined });
+  renderSuccess = _ => (
+    <ContactSuccess>
+      <SuccessIcon icon="check-circle" />
+      <h4>Request Submitted</h4>
+      <p>
+        Thank you for submitting a request for more information.
+        <br />
+        An associate will contact you at the phone number or email provided.
+      </p>
+    </ContactSuccess>
+  );
   renderForm = _ => (
     <ContactForm
       action="/contact-us?success=true"
@@ -107,17 +150,19 @@ class ContactUsTemplate extends Component {
     </ContactForm>
   );
   render() {
-    const isSuccess = typeof(window) !== "undefined" && window.location.search.indexOf("success") !== -1
+    const isSuccess =
+      typeof window !== "undefined" &&
+      window.location.search.indexOf("success") !== -1;
     return (
       <section id="content">
         <ContactColumns>
-          {isSuccess ? <h1>success</h1> : this.renderForm()}
+          {isSuccess ? this.renderSuccess() : this.renderForm()}
           <Lists items={this.props.contactLists} />
         </ContactColumns>
       </section>
     );
   }
-};
+}
 
 const ContactUs = ({ data }) => {
   const { markdownRemark: post } = data;

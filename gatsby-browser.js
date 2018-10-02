@@ -29,6 +29,7 @@ const icons = [
   "faInfo",
   "faInfoCircle",
   "faCheck",
+  "faCheckCircle",
   "faAngleRight"
 ];
 
