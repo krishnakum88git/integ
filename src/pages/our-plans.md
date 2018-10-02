@@ -4,7 +4,7 @@ slug: 'our-plans'
 title: 'Our Plans'
 indicatorColor: '#F7B731'
 iconName: 'book-open'
-banner: '../../img/our-plans.jpg'
+banner: '../img/our-plans.jpg'
 pageSize: 'md'
 pagePadTop: false
 pagePadBot: true

@@ -4,7 +4,7 @@ slug: about-us
 title: About Us
 indicatorColor: '#FA8231'
 iconName: 'user-friends'
-banner: '../../img/about.jpg'
+banner: '../img/about.jpg'
 shouldIncludeContactInfo: true
 shouldIncludeEnrollmentInfo: true
 magnets:

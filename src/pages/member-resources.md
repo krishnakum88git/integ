@@ -4,7 +4,7 @@ slug: member-resources
 title: Member Resources
 indicatorColor: '#4B7BEC'
 iconName: 'file-medical-alt'
-banner: '../../img/member-resources.jpg'
+banner: '../img/member-resources.jpg'
 pagePadTop: true
 pagePadBot: true
 lists:

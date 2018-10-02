@@ -5,7 +5,7 @@ title: Provider Search
 indicatorColor: '#A55EEA'
 iconName: 'user-md'
 listDirection: row
-banner: '../../img/provider-search.jpg'
+banner: '../img/provider-search.jpg'
 introduction:
     title: Need help finding\na Provider or Pharmacy?
     body: We can help you in several ways.

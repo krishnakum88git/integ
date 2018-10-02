@@ -4,7 +4,7 @@ slug: compliance
 title: Compliance
 indicatorColor: '#0FB8B1'
 iconName: 'balance-scale'
-banner: '../../img/compliance.jpg'
+banner: '../img/compliance.jpg'
 lists:
   - title: Documents
     type: document

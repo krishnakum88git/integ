@@ -1,24 +1,100 @@
 backend:
-  name: test-repo
+  name: git-gateway
+  branch: master
 
-media_folder: static/img
-public_folder: /img
+media_folder: static/files
+public_folder: /files
 
 collections:
-  - name: "pages"
-    label: "Pages"
-    files:
-      - file: "src/pages/about/index.md"
-        label: "About"
-        name: "about"
+  - name: pages
+    label: Pages
+    folder: "src/pages"
+    create: false
+    fields:
+      - label: Title
+        name: title
+        widget: string
+      - label: Magnets
+        name: magnets
+        required: false
+        widget: list
+      - label: Introduction
+        name: introduction
+        widget: object
+        required: false
         fields:
-          - {label: "Template Key", name: "templateKey", widget: "hidden", default: "about-page"}
-          - {label: "Title", name: "title", widget: "string"}
-          - {label: "Body", name: "body", widget: "markdown"}
-      - file: "src/pages/home/index.md"
-        label: "Products Page"
-        name: "products"
+          - label: Title
+            name: title
+            widget: string
+          - label: Body
+            name: body
+            widget: string
+      - label: Lists
+        name: lists
+        widget: list
+        required: false
         fields:
-          - {label: "Template Key", name: "templateKey", widget: "hidden", default: "about-page"}
-          - {label: "Title", name: "title", widget: "string"}
-          - {label: "Body", name: "body", widget: "markdown"}
+          - { label: Title, name: title, widget: string }
+          - { label: Type, name: type, widget: string }
+          - label: Items
+            name: items
+            widget: list
+            fields:
+              - label: Title
+                name: title
+                widget: string
+              - label: Type
+                name: type
+                widget: string
+              - label: File
+                name: file
+                widget: file
+              - label: URL
+                name: url
+                widget: string
+              - label: Icon
+                name: icon
+                widget: string
+      - label: Body
+        name: body
+        required: false
+        widget: markdown
+      - label: Slug
+        name: slug
+        widget: hidden
+      - label: templateKey
+        name: templateKey
+        widget: hidden
+      - label: Subtitle
+        name: subTitle
+        widget: hidden
+      - label: indicatorColor
+        name: indicatorColor
+        widget: hidden
+      - label: pagePadTop
+        name: pagePadTop
+        widget: hidden
+      - label: pagePadBot
+        name: pagePadBot
+        widget: hidden
+      - label: pageSize
+        name: pageSize
+        widget: hidden
+      - label: disclaimers
+        name: disclaimers
+        widget: hidden
+      - label: iconName
+        name: iconName
+        widget: hidden
+      - label: shouldIncludeContactInfo
+        name: shouldIncludeContactInfo
+        widget: hidden
+      - label: shouldIncludeEnrollmentInfo
+        name: shouldIncludeEnrollmentInfo
+        widget: hidden
+      - label: listDirection
+        name: listDirection
+        widget: hidden
+      - label: banner
+        name: banner
+        widget: hidden
