@@ -76,39 +76,48 @@ class ContactUsTemplate extends Component {
   }
   handleFocus = focusedField => _ => this.setState({ focusedField });
   handleBlur = _ => this.setState({ focusedField: undefined });
+  renderForm = _ => (
+    <ContactForm
+      action="/contact-us?success=true"
+      name="contact"
+      data-netlify="true"
+      method="POST"
+    >
+      <input type="hidden" name="form-name" value="contact" />
+      <h3>Request Additional Information</h3>
+      {fields.map(field => (
+        <div key={field.slug}>
+          <FieldLabel htmlFor={field.slug}>{field.title}</FieldLabel>
+          <Field isFocused={this.state.focusedField === field.slug}>
+            <Icon icon={field.iconName} />
+            <FieldInput
+              onFocus={this.handleFocus(field.slug)}
+              onBlur={this.handleBlur}
+              type={field.type}
+              id={field.slug}
+              name={field.slug}
+              placeholder={field.title}
+            />
+          </Field>
+        </div>
+      ))}
+      <Button isPrimary={true} fullWidth={true}>
+        Submit
+      </Button>
+    </ContactForm>
+  );
   render() {
+    const isSuccess = typeof(window) !== "undefined" && window.location.search.indexOf("success") !== -1
     return (
       <section id="content">
         <ContactColumns>
-          <ContactForm name="contact" data-netlify="true" method="POST">
-            <input type="hidden" name="form-name" value="contact" />
-            <h3>Request Additional Information</h3>
-            {fields.map(field => (
-              <div key={field.slug}>
-                <FieldLabel htmlFor={field.slug}>{field.title}</FieldLabel>
-                <Field isFocused={this.state.focusedField === field.slug}>
-                  <Icon icon={field.iconName} />
-                  <FieldInput
-                    onFocus={this.handleFocus(field.slug)}
-                    onBlur={this.handleBlur}
-                    type={field.type}
-                    id={field.slug}
-                    name={field.slug}
-                    placeholder={field.title}
-                  />
-                </Field>
-              </div>
-            ))}
-            <Button isPrimary={true} fullWidth={true}>
-              Submit
-            </Button>
-          </ContactForm>
+          {isSuccess ? <h1>success</h1> : this.renderForm()}
           <Lists items={this.props.contactLists} />
         </ContactColumns>
       </section>
     );
   }
-}
+};
 
 const ContactUs = ({ data }) => {
   const { markdownRemark: post } = data;
@@ -146,7 +155,9 @@ export default ContactUs;
 
 export const contactUsQuery = graphql`
   query ContactUs($id: String!) {
-    contactInfo: allMarkdownRemark(filter:{fields:{slug :{eq : "/contact-info/"}}}) {
+    contactInfo: allMarkdownRemark(
+      filter: { fields: { slug: { eq: "/contact-info/" } } }
+    ) {
       edges {
         node {
           frontmatter {
@@ -161,7 +172,7 @@ export const contactUsQuery = graphql`
         }
       }
     }
-    
+
     markdownRemark(id: { eq: $id }) {
       html
       frontmatter {
