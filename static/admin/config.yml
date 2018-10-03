@@ -1,6 +1,7 @@
 backend:
   name: bitbucket
   repo: ccgideas/integra
+  branch: dev
 
 media_folder: static/files
 public_folder: /files
