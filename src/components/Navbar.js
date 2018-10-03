@@ -3,7 +3,6 @@ import { Link } from "gatsby";
 import styled from "styled-components";
 import logo from "../img/logo.png";
 import { black } from "../styles/colors";
-import { spaceSizes } from "../styles/typography";
 import Container from "./Container"
 import NavbarContact from "./NavbarContact"
 
@@ -17,10 +16,10 @@ const Nav = styled.nav`
   a {
     display: flex;
     position: relative;
-    margin: 0 ${spaceSizes.sm};
+    margin: 0 14px;
     align-items: center;
     color: ${black.darker};
-    font-weight: bold;
+    font-weight: 800;
     text-decoration: none;
 
     &.is-active {
