@@ -25,7 +25,7 @@ const Nav = styled.nav`
     &.is-active {
       margin-left: 24px;
       color: ${black.darkest};
-      font-weight: 700;
+      font-weight: 800;
 
       .navigation-indicator {
         opacity: 1;
