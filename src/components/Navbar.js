@@ -20,7 +20,7 @@ const Nav = styled.nav`
     margin: 0 ${spaceSizes.sm};
     align-items: center;
     color: ${black.darker};
-    font-weight: normal;
+    font-weight: bold;
     text-decoration: none;
 
     &.is-active {

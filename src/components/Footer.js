@@ -60,6 +60,11 @@ const ContactItemText = styled.p`
   text-align: left;
 `;
 
+const MaterialID = styled.p`
+  text-align: center;
+  margin: 20px 0;
+`;
+
 const ContactItem = ({ icon, children }) => (
   <ContactItemContainer>
     <FontAwesomeIcon icon={icon} size="2x" fixedWidth />
@@ -119,6 +124,7 @@ const Footer = ({ disclaimers }) => (
             Lake Success, New York 11042
           </ContactItem>
         </ContactItems>
+        <MaterialID>H1205_2019 Website</MaterialID>
       </FooterHeader>
 
       {disclaimers && disclaimers.length > 0 && <Disclaimers disclaimers={disclaimers} />}

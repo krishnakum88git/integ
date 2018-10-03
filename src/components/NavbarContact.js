@@ -30,7 +30,7 @@ const Icon = styled(FontAwesomeIcon)`
 export default () => (
   <NavbarContact>
     <Title>Call for Eligibility and Enrollment</Title>
-    <Item><Icon icon="phone" fixedWidth /> 1-877-388-5195 TTY: 711</Item>
+    <Item><Icon icon="phone" fixedWidth /> 1-877-388-5190 TTY: 711</Item>
     <Item><Icon icon="clock" fixedWidth /> 8:00 am to 8:00 pm</Item>
   </NavbarContact>
 )
