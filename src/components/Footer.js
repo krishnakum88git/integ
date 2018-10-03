@@ -1,7 +1,6 @@
 import React, { Fragment } from "react";
 import { Link } from "gatsby";
 import styled from "styled-components";
-import LinkExternal from "./Link";
 import Container from "./Container";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
@@ -123,10 +122,6 @@ const Footer = ({ disclaimers }) => (
       </FooterHeader>
 
       {disclaimers && disclaimers.length > 0 && <Disclaimers disclaimers={disclaimers} />}
-      <LinkExternal
-        to="https://google.com"
-        title="External link test: google.com"
-      />
     </Container>
   </FooterWrapper>
 );

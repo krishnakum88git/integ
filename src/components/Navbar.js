@@ -5,7 +5,7 @@ import logo from "../img/logo.png";
 import { black } from "../styles/colors";
 import { spaceSizes } from "../styles/typography";
 import Container from "./Container"
-
+import NavbarContact from "./NavbarContact"
 
 const Nav = styled.nav`
   display: flex;
@@ -113,6 +113,7 @@ const Navbar = () => (
             {item.title}
           </Link>
         ))}
+      <NavbarContact />
     </Container>
   </Nav>
 );
