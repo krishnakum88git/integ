@@ -42,7 +42,7 @@ const ItemLink = styled.a`
 `;
 
 const ButtonLink = styled(ItemLink)`
-  && {
+  &&&& {
     font-weight: bold;
     color: #ffffff;
   }
