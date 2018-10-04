@@ -7,8 +7,7 @@ iconName: 'user-md'
 listDirection: row
 banner: '../img/provider-search.jpg'
 introduction:
-    title: Need help finding\na Provider or Pharmacy?
-    body: We can help you in several ways.
+    title: Please call our us for the Provider Directory 1-877-388-5195
 lists:
   - title: 'View our Searchable Directories'
     type: resource
