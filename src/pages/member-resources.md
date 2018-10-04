@@ -14,28 +14,40 @@ lists:
       - title: 'Appeals & Grievance'
         url: '/#'
       - title: 'Appoint a Representative'
-        url: '/#'
+        url: '/files/Integra Managed Care_How to appoint a representative_Final.pdf'
       - title: 'Covered Drugs\n(Formulary & Medication)'
-        url: '/#'
+        url: '/files/H1205_2019 Formulary Integra Managed Care_C_Final.pdf'
+      - title: 'Evidence of Coverage'
+        url: '/files/H1205_2019_EOC Harmony_Placeholder.pdf'
       - title: 'Find a Provider'
         url: '/#'
       - title: 'Getting Medicare'
         url: '/#'
       - title: 'Medication Therapy Management'
-        url: '/#'
+        url: '/files/Integra Managed Care_MTM_Final.pdf'
       - title: 'Member Rights & Responsibilities'
-        url: '/#'
+        url: '/files/Integra MCR Website Member Rights  Responsibilities.pdf'
       - title: 'Multi-Language Insert'
-        url: '/#'
+        url: '/files/H1205_Multi Language Insert_C_Final.pdf'
       - title: 'Part D Quality Assurance'
         url: '/#'
+      - title: 'Prescription Drug Transition Policy'
+        url: '/files/Prescription Drug Transition Policy_Final.pdf'
       - title: 'Privacy Statement'
-        url: '/#'
+        url: '/files/H1205_2019 Integra_HIPAA_Privacy Notice_C_Final.pdf'
+      - title: 'Standard Non-Formulary Exception Request Form'
+        url: '/files/Integra Standard Non Formulary Exception Form_Final.pdf'
+      - title: 'Tier Exception Request Form'
+        url: '/files/Integra Tier Exception Request Form_Final.pdf'
 magnets:
     - provider-search
     - about-us
     - compliance
     - contact-us
+disclaimers:
+    - Integra Managed Care is an HMO Plan with a Medicare Advantage contract and a contract with the New York State Medicaid program. Enrollment in Integra Managed Care depends on contract renewal. This information is not a complete description of benefits. Limitations, copayments, and restrictions may apply. Benefits, premiums and/or co-payments/co-insurance may change on January 1 of each year. You must continue to pay your Medicare Part B premium. Certain plans are available to anyone who has both Medicaid from New York State and Medicare. Integra Managed Care complies with applicable Federal civil rights laws and does not discriminate on the basis of race, color, national origin, age, disability, or sex.
+    - Please contact our Member Services number at 1.877-388-5195 for additional information (TTY users should call 711). Hours are Sunday through Saturday 8am to 8pm. NOTE - Between April 1 and September 30 Member Services hours for Saturday and Sunday will be operated by alternate technology.
+    - ATTENTION - If you speak Spanish, language assistance services, free of charge, are available to you. Call 1-877-388-5195 (TTY 711). ATENCIÓN - si habla español, tiene a su disposición servicios gratuitos de asistencia lingüística. Llame al 1- 877-388-5195 (TTY 711). Assistance services for other languages are also available free of charge at the number above. All plan materials and information are available upon request in a different language or alternate formats such as braille, large print and audio.
 ---
 ### Getting the Care You Need, When Urgently Needed
 While your primary care physician or other treating physician is the preferred first point of contact for care, Urgent Care is an important alternative to going to the Hospital Emergency Department for non-life threatening conditions and provides immediate medical treatment for minor and moderate illnesses and injuries.
