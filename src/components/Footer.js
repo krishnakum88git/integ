@@ -128,6 +128,7 @@ const Footer = ({ disclaimers }) => (
       </FooterHeader>
 
       {disclaimers && disclaimers.length > 0 && <Disclaimers disclaimers={disclaimers} />}
+      <a target="_blank" href="/files/H1205_Non-Discrimation Statement_C.pdf">Non-Discrimination Statement</a>
     </Container>
   </FooterWrapper>
 );

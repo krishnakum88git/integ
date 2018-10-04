@@ -81,7 +81,7 @@ const Link = styled(GatsbyLink)`
 `;
 
 const Title = styled.h5`
-  color: #777777;
+  color: #757575;
   text-align: center;
   text-decoration: none;
   font-weight: 700;
