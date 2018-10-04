@@ -54,7 +54,7 @@ lists:
       - title: 'Davis Vision – Glasses & Eye Exam Care\n1-XXX-XXX-XXXX TTY Users call 711'
         icon: 'phone'
 magnets: 
-    - new-to-medicare
+    - medicare-101
     - our-plans
     - about-us
     - contact-us

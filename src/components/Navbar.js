@@ -55,11 +55,6 @@ const Indicator = styled.div`
 
 const items = [
   {
-    title: "New to Medicare",
-    path: "new-to-medicare",
-    color: "#20BE6B"
-  },
-  {
     title: "Our Plans",
     path: "our-plans",
     color: "#F7B731"
@@ -73,6 +68,11 @@ const items = [
     title: "Provider Search",
     path: "provider-search",
     color: "#A55EEA"
+  },
+  {
+    title: "Medicare 101",
+    path: "medicare-101",
+    color: "#20BE6B"
   },
   {
     title: "About Us",

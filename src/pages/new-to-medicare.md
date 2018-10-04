@@ -1,11 +1,11 @@
 ---
 templateKey: 'generic-page'
-slug: new-to-medicare
+slug: medicare-101
 title: 'Are you new To Medicare?'
 subTitle: 'What you need to know:'
 indicatorColor: '#20BE6B'
 iconName: 'question'
-banner: '../img/new-to-medicare.jpg'
+banner: '../img/medicare-101.jpg'
 pagePadTop: true
 pagePadBot: true
 shouldIncludeContactInfo: true

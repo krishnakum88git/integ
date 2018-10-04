@@ -27,7 +27,7 @@ const Icon = styled(FontAwesomeIcon)`
   margin-right: ${spaceSizes.xs};
 `
 
-const PhoneLink = styled.a`
+const ItemLink = styled.a`
   && {
     margin: 0;
     display: inline;
@@ -41,10 +41,17 @@ const PhoneLink = styled.a`
   }
 `;
 
+const ButtonLink = styled(ItemLink)`
+  && {
+    font-weight: bold;
+  }
+`;
+
 export default () => (
   <NavbarContact>
     <Title>Call for Eligibility and Enrollment</Title>
-    <Item><Icon icon="phone" fixedWidth /> <PhoneLink href="tel:1-877-388-5190">1-877-388-5190 TTY: 711</PhoneLink></Item>
+    <Item><Icon icon="phone" fixedWidth /> <ItemLink href="tel:1-877-388-5190">1-877-388-5190 TTY: 711</ItemLink></Item>
     <Item><Icon icon="clock" fixedWidth /> 8:00 am to 8:00 pm</Item>
+    <Item><Icon icon="check" fixedWidth /> <ButtonLink href="/files/H1205_2019 Enrollment Form_M_Final.pdf">Enroll Now</ButtonLink></Item>
   </NavbarContact>
 )

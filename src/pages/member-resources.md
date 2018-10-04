@@ -29,6 +29,8 @@ lists:
         url: '/files/Integra MCR Website Member Rights  Responsibilities.pdf'
       - title: 'Multi-Language Insert'
         url: '/files/H1205_Multi Language Insert_C_Final.pdf'
+      - title: 'Part D Model Coverage Determination and Redetermination Request Form'
+        url: '/files/H1205_2019 RXCoverageDetermination_C_Final.pdf'
       - title: 'Part D Quality Assurance'
         url: '/#'
       - title: 'Prescription Drug Transition Policy'

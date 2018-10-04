@@ -17,7 +17,7 @@ introduction:
       url: our-plans/2019-harmony-hmo-snp
       target: _blank
 magnets:
-    - new-to-medicare
+    - medicare-101
     - provider-search
     - about-us
     - contact-us
