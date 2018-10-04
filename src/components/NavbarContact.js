@@ -27,10 +27,24 @@ const Icon = styled(FontAwesomeIcon)`
   margin-right: ${spaceSizes.xs};
 `
 
+const PhoneLink = styled.a`
+  && {
+    margin: 0;
+    display: inline;
+    color: white;
+    font-weight: normal;
+
+    &:hover {
+      color: white;
+      text-decoration: underline;
+    }
+  }
+`;
+
 export default () => (
   <NavbarContact>
     <Title>Call for Eligibility and Enrollment</Title>
-    <Item><Icon icon="phone" fixedWidth /> 1-877-388-5190 TTY: 711</Item>
+    <Item><Icon icon="phone" fixedWidth /> <PhoneLink href="tel:1-877-388-5190">1-877-388-5190 TTY: 711</PhoneLink></Item>
     <Item><Icon icon="clock" fixedWidth /> 8:00 am to 8:00 pm</Item>
   </NavbarContact>
 )

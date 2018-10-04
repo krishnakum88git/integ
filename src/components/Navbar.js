@@ -12,7 +12,7 @@ const Nav = styled.nav`
   position: relative;
   height: 80px;
   align-items: center;
-  z-index: 1;
+  z-index: 4;
 
   a {
     display: flex;

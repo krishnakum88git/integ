@@ -5,6 +5,10 @@ import { lists } from '../styles/typography'
 
 const ContentContainer = styled.div`
   ${lists}
+
+  h5 {
+    margin: 0 0 1rem 0;
+  }
 `
 
 export const HTMLContent = ({ content, className }) => (

@@ -12,7 +12,7 @@ introduction:
     title: 'Harmony'
     body: Integra Managed Care’s (HMO SNP) Harmony is a plan for people who qualify for Medicare and Medicaid, who are known as dual eligible.
     action:
-      text: Learn More
+      text: Learn More About Harmony
       icon: book-open
       url: our-plans/2019-harmony-hmo-snp
       target: _blank

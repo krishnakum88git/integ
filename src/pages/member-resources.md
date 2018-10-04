@@ -49,14 +49,14 @@ If you get non-emergency care from non-plan (out-of-network) providers without p
 
 Our provider manual requires primary care providers to have patient telephone access and appropriate back up if absent 24 hours a day, 7 days a week.
 
-**Please contact member services for more information at 1-877-388-5195 or 711 for TTY callers.**
+#####Please contact member services for more information at 1-877-388-5195 or 711 for TTY callers.#####
 
 **Contact Hours:** Hours are 7 days a week from 8:00 am to 8:00 pm. Note: From April 1st to September 30, we may use alternate technologies on Weekends and Federal holidays.
 
 ### Getting Care in a Medical Emergency
 A “medical emergency” is when you have medical symptoms that require immediate medical attention to prevent loss of life, loss of a limb, or loss of function of a limb. The medical symptoms may be an illness, injury, severe pain, or a medical condition that is quickly getting worse.
 
-**If you have a medical emergency:**
+#####If you have a medical emergency:#####
 
 * Get help as quickly as possible. Call 911 for help or go to the nearest emergency room or hospital.
 
