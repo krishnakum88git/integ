@@ -8,14 +8,14 @@ introduction:
     action:
       text: Download Plan Summary
       icon: file-download
-      url: /files/H1205_2019-SB-Plan-Harmony_M_v4_Draft.pdf
+      url: /files/H1205_2019 SB Plan Harmony_M_Placeholder.pdf
       target: _blank
 lists:
   - title: Documents
     type: document
     items: 
       - title: 2019 Summary of Benefits Integra Harmony (HMO SNP) Plan
-        url: /files/H1205_2019-SB-Plan-Harmony_M_v4_Draft.pdf
+        url: /files/H1205_2019 SB Plan Harmony_M_Placeholder.pdf
   - title: Resources
     type: resource
     items: 
