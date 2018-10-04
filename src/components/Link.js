@@ -9,7 +9,10 @@ const ExternalLink = ({ children, to }) => (
 
 class Link extends Component {
   render() {
-    const LinkComponent = this.props.to[0] === "/" ? GatsbyLink : ExternalLink;
+    const LinkComponent =
+      this.props.to[0] === "/" && this.props.to.indexOf("/files/") === -1
+        ? GatsbyLink
+        : ExternalLink;
     return (
       <LinkComponent {...this.props}>
         {this.props.title || this.props.children}
