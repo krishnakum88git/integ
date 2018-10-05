@@ -67,7 +67,7 @@ const ImageContainer = styled.div`
     & {
       height: auto; 
       width: auto;
-      border-radius: initial;
+      border-radius: 0px;
     }
   }
 `;
