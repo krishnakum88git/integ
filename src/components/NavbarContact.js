@@ -33,10 +33,11 @@ const ItemLink = styled.a`
     display: inline;
     color: white;
     font-weight: normal;
+    cursor: default;
 
-    &:hover {
+    &&:hover, &&:visited {
       color: white;
-      text-decoration: underline;
+      text-decoration: none;
     }
   }
 `;
@@ -45,6 +46,10 @@ const ButtonLink = styled(ItemLink)`
   &&&& {
     font-weight: bold;
     color: #ffffff;
+    cursor: pointer;
+    &&&&:hover {
+      text-decoration: underline;
+    }
   }
 `;
 

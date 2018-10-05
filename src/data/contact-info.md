@@ -2,7 +2,7 @@
 lists:
   - title: 'Member & Provider Services'
     items: 
-      - title: '1-877-388-5191 TTY: 711'
+      - title: '1-877-388-5195 TTY: 711'
         icon: 'phone'
       - title: '8:00 a.m. to 8:00 p.m. Eastern time'
         icon: 'clock'

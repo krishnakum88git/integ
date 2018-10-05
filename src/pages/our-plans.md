@@ -41,4 +41,4 @@ The kind of Medicaid benefits you receive are determined by New York State and m
 
 Integra Managed Care’s goal is to improve the quality of life of our members in the communities where they live. We recognize that access to care, quality providers and reasonable costs are major concerns and we also recognize that many other issues impact the quality of life such as lifestyle issues, disease management and access to services within the community. It is our goal to understand and respond to these life issues by partnering with and helping community organizations in a variety of ways. We believe this comprehensive approach will result in not only improved health care but also improved health. 
 
-Please review our plan on this site or call Member Services at 1-877-388-5295 to answer your questions and to arrange a visit with one of our representatives. We look forward to hearing from you. 
+Please review our plan on this site or call Member Services at 1-877-388-5195 (TTY 711) to answer your questions and to arrange a visit with one of our representatives. We look forward to hearing from you. 

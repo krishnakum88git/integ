@@ -14,7 +14,9 @@ lists:
   - title: Resources
     type: resource
     items: 
-      - title: 'Lorem Ipsum'
+      - title: 'Code Of Conduct (Coming Soon)'
+        url: '/#'
+      - title: 'Compliance Program (Coming Soon)'
         url: '/#'
 magnets:
     - member-resources

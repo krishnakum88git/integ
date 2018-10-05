@@ -44,7 +44,7 @@ lists:
         type: resource
   - title: 'Important Numbers to Remember'
     items:
-      - title: 'Below are some useful phone numbers. Synergy uses these providers to administer our benefits.'
+      - title: 'Below are some useful phone numbers. Integra Managed Care uses these providers to administer our benefits.'
         icon: 'info-circle'
       - title: 'LogistiCare - Routine Transportation\n1-XXX-XXX-XXXX TTY Users call 711'
         icon: 'phone'

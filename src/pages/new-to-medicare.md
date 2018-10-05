@@ -1,7 +1,7 @@
 ---
 templateKey: 'generic-page'
 slug: medicare-101
-title: 'Are you new To Medicare?'
+title: 'Medicare 101'
 subTitle: 'What you need to know:'
 indicatorColor: '#20BE6B'
 iconName: 'question'

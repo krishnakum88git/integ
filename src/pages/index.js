@@ -30,7 +30,7 @@ export default class IndexPage extends React.Component {
         </Callout>
 
         <Callout
-          title={<span>Integra Managed Care<sup>®</sup> Medicare Advantage plans may offer:</span>}
+          title={<span>Integra Managed Care Medicare Advantage plans may offer:</span>}
           action={{
             text: "View Our Plans",
             icon: "book-open",
