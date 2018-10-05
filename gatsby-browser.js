@@ -33,8 +33,20 @@ const icons = [
   "faAngleRight"
 ];
 
-export const onClientEntry = () =>
+export const onClientEntry = () => {
   icons.forEach(icon => library.add(svgIcons[icon]));
+  if (typeof window.IntersectionObserver === `undefined`) {
+    require(`intersection-observer`)
+  }
+
+  const testImg = document.createElement(`img`)
+  if (
+    typeof testImg.style.objectFit === `undefined` ||
+    typeof testImg.style.objectPosition === `undefined`
+  ) {
+    require(`object-fit-images`)()
+  }
+}
 
 class ExternalLinkCatcher extends Component {
   componentDidMount() {

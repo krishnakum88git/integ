@@ -2,7 +2,7 @@ import React from "react";
 import styled from "styled-components";
 import { Link as GatsbyLink } from "gatsby";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import Img from "gatsby-image";
+import Img from "./Image";
 
 const Wrapper = styled.div`
   position: relative;
