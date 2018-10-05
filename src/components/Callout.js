@@ -64,9 +64,9 @@ const Action = ({ action }) => action ? (
   <ActionStyled isPrimary {...action} />
 ) : null
 
-export default ({ title, type, align = 'center', size = 'md', action, body, children }) => (
+export default ({ title, type, align = 'center', size = 'md', action, body, children, flex = true }) => (
   <Callout type={type} align={align} size={size}>
-    <Container size={size} flex={true} flexDirection="column" alignItems="center">
+    <Container size={size} flex={flex} flexDirection="column" alignItems="center">
       <Title text={title} />
       {children}
       {body}

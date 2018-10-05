@@ -74,7 +74,7 @@ class TemplateWrapper extends Component {
         <SkipNavLink />
         <Navbar />
         <Hero {...this.props.hero} />
-        {this.props.introduction && <Callout {...this.props.introduction} />}
+        {this.props.introduction && <Callout flex={false} {...this.props.introduction} />}
         {this.props.breadcrumbs && <Breadcrumbs items={this.props.breadcrumbs} />}
         {this.props.children}
         {this.props.magnets && <Magnets magnets={this.props.magnets} />}
