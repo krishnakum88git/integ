@@ -46,6 +46,7 @@ const Indicator = styled.div`
   left: -16px;
   width: 8px;
   height: 8px;
+  top: 8px;
   border-radius: 50%;
   background-color: ${props => props.color || 'transparent'};
   opacity: 0;

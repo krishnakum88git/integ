@@ -60,6 +60,16 @@ const ImageContainer = styled.div`
   align-items: flex-end;
   justify-content: center;
   flex-shrink: 0;
+
+  // IE hack
+  @media all and (-ms-high-contrast:none)
+  {
+    & {
+      height: auto; 
+      width: auto;
+      border-radius: initial;
+    }
+  }
 `;
 
 const Icon = styled(FontAwesomeIcon)`

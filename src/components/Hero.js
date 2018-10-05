@@ -38,6 +38,7 @@ const IconContainer = styled.div`
   background-color: #fff;
   border-radius: 50%;
   bottom: -38px;
+  z-index: 9;
 `
 
 const Icon = props => (
@@ -93,6 +94,7 @@ const Footer = styled.div`
 
 const DividerContainer = styled.div`
   transform: translateY(2px);
+  -ms-transform: translateY(20px);
   width: 100%;
 `
 

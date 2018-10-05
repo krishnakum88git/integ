@@ -5,10 +5,14 @@ const SVG = styled.svg`
 	display: block;
 `
 
+const FooterSVG = styled(SVG)`
+	width: 100%;
+`;
+
 export default ({isFooter}) => isFooter ? (
-	<SVG version="1.1" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" viewBox="0 0 1280 197.411" enable-background="new 0 0 1280 197.411">
+	<FooterSVG version="1.1" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" height="197.411" width="1280" viewBox="0 0 1280 197.411" enable-background="new 0 0 1280 197.411">
 		<path fill="#00245D" d="M497.4,121.097C348.139,95.526,161.249,125.989-1,168.009v29.402h1281V12.474 C1035.278,192.204,808.606,174.41,497.4,121.097z"/>
-	</SVG>
+	</FooterSVG>
 ) : (
   <SVG version="1.1" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" viewBox="-123 0 300 21.875" enableBackground="new -123 0 300 21.875">
 		<path fill="#FFFFFF" d="M160.388,4.015c-20.605,4.232-42.247,6.798-63.899,8.328C73.441,13.965,50.221,14.578,27,14.518
