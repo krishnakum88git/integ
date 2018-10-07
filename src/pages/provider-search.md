@@ -7,7 +7,7 @@ iconName: 'user-md'
 listDirection: row
 banner: '../img/provider-search.jpg'
 introduction:
-    title: Please call our us for the Provider Directory 1-877-388-5195
+    title: Please call us for our Provider Directory 1-877-388-5195
 lists:
   - title: 'View our Searchable Directories'
     type: resource
