@@ -14,8 +14,7 @@ introduction:
     action:
       text: Learn More About Harmony
       icon: book-open
-      url: our-plans/2019-harmony-hmo-snp
-      target: _blank
+      url: /our-plans/2019-harmony-hmo-snp
 magnets:
     - medicare-101
     - provider-search

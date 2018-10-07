@@ -1,8 +1,8 @@
 import React, { Component } from "react";
 import { Link as GatsbyLink } from "gatsby";
 
-const ExternalLink = ({ children, to }) => (
-  <a href={to} target="_blank" rel="noopener noreferrer">
+const ExternalLink = ({ children, to, ...props }) => (
+  <a href={to} target="_blank" rel="noopener noreferrer" {...props}>
     {children}
   </a>
 );

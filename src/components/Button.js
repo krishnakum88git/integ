@@ -2,7 +2,7 @@ import React from "react";
 import styled, { css } from "styled-components";
 import { fontSizes, spaceSizes } from "../styles/typography";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { Link } from "gatsby";
+import Link from './Link';
 import colors from '../styles/colors';
 
 const buttonStyles = css`
