@@ -1,4 +1,5 @@
 ---
+abbreviatedHours: '8:00 am to 8:00 pm ET'
 lists:
   - title: 'Member & Provider Services'
     items: 
