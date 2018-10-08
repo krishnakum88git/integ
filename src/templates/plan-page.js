@@ -48,6 +48,7 @@ const PlanPage = ({ data }) => {
       magnets={magnets}
       disclaimers={planPage.disclaimers}
       navContact={data.contactInfo.edges[0].node.frontmatter}
+      cmsInfo={data.cmsInfo.edges[0].node.frontmatter}
       breadcrumbs={[
         {
           title: 'Our Plans',
@@ -118,6 +119,17 @@ export const planPageQuery = graphql`
             enrollmentContactNumber
             abbreviatedHours
             enrollNowURL
+          }
+        }
+      }
+    }
+
+    cmsInfo: allMarkdownRemark(filter:{fields:{slug :{eq : "/cms-info/"}}}) {
+      edges {
+        node {
+          frontmatter {
+            cmsMaterialID
+            lastModified
           }
         }
       }

@@ -10,6 +10,16 @@ collections:
   - name: info
     label: Info
     files:
+      - label: "CMS Info"
+        name: "cmsInfo"
+        file: "src/data/cms-info.md"
+        fields:
+          - label: "CMS ID"
+            name: "cmsMaterialID"
+            widget: string
+          - label: Last Modified"
+            name: "lastModified"
+            widget: string
       - label: "Contact Info"
         name: "contactInfo"
         file: "src/data/contact-info.md"

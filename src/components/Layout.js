@@ -78,7 +78,7 @@ class TemplateWrapper extends Component {
         {this.props.breadcrumbs && <Breadcrumbs items={this.props.breadcrumbs} />}
         {this.props.children}
         {this.props.magnets && <Magnets magnets={this.props.magnets} />}
-        <Footer disclaimers={this.props.disclaimers} />
+        <Footer disclaimers={this.props.disclaimers} {...this.props.cmsInfo} />
         <ExternalLinkWarningModal />
         <GlobalStyles />
       </Wrapper>

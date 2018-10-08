@@ -60,6 +60,7 @@ const Page = ({ data }) => {
       magnets={magnets}
       disclaimers={post.frontmatter.disclaimers}
       navContact={contactInfo}
+      cmsInfo={data.cmsInfo.edges[0].node.frontmatter}
     >
       <PageTemplate
         contentComponent={HTMLContent}
@@ -136,6 +137,17 @@ export const pageQuery = graphql`
                 }
               }
             }
+          }
+        }
+      }
+    }
+
+    cmsInfo: allMarkdownRemark(filter:{fields:{slug :{eq : "/cms-info/"}}}) {
+      edges {
+        node {
+          frontmatter {
+            cmsMaterialID
+            lastModified
           }
         }
       }

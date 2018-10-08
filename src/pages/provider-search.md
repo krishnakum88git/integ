@@ -43,11 +43,11 @@ lists:
     items:
       - title: 'Below are some useful phone numbers. Integra Managed Care uses these providers to administer our benefits.'
         icon: 'info-circle'
-      - title: 'LogistiCare - Routine Transportation\n1-XXX-XXX-XXXX TTY Users call 711'
+      - title: 'LogistiCare - Transportation Services\nCustomer Service 1-877-831-3146\n"Where’s My Ride" Line 1-877-831-3147\nTTY Service 1-866-288-3133'
         icon: 'phone'
-      - title: 'Healthplex – Dental Care\n1-XXX-XXX-XXXX TTY Users call 711'
+      - title: 'Healthplex – Dental Services\n1-800-468-9868 TTY Users call 711'
         icon: 'phone'
-      - title: 'Davis Vision – Glasses & Eye Exam Care\n1-XXX-XXX-XXXX TTY Users call 711'
+      - title: 'Davis Vision – Vision Services\n1-800-999-5431 TTY Users call 711'
         icon: 'phone'
 magnets: 
     - medicare-101
