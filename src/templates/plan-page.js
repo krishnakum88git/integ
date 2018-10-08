@@ -47,6 +47,7 @@ const PlanPage = ({ data }) => {
       introduction={planPage.introduction}
       magnets={magnets}
       disclaimers={planPage.disclaimers}
+      navContact={data.contactInfo.edges[0].node.frontmatter}
       breadcrumbs={[
         {
           title: 'Our Plans',
@@ -105,6 +106,18 @@ export const planPageQuery = graphql`
                 }
               }
             }
+          }
+        }
+      }
+    }
+
+    contactInfo: allMarkdownRemark(filter:{fields:{slug :{eq : "/contact-info/"}}}) {
+      edges {
+        node {
+          frontmatter {
+            enrollmentContactNumber
+            abbreviatedHours
+            enrollNowURL
           }
         }
       }

@@ -185,6 +185,7 @@ const ContactUs = ({ data }) => {
       introduction={post.frontmatter.introduction}
       magnets={magnets}
       disclaimers={post.frontmatter.disclaimers}
+      navContact={data.contactInfo.edges[0].node.frontmatter}
     >
       <ContactUsTemplate
         contentComponent={HTMLContent}
@@ -206,6 +207,9 @@ export const contactUsQuery = graphql`
       edges {
         node {
           frontmatter {
+            enrollmentContactNumber
+            abbreviatedHours
+            enrollNowURL
             lists {
               title
               items {
