@@ -6,11 +6,6 @@ indicatorColor: '#0FB8B1'
 iconName: 'balance-scale'
 banner: '../img/compliance.jpg'
 lists:
-  - title: Documents
-    type: document
-    items: 
-      - title: 'Lorem Ipsum'
-        url: '/#'
   - title: Resources
     type: resource
     items: 

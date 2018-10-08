@@ -15,33 +15,30 @@ lists:
       - title: Our most up to date listings
         icon: check
       - title: 'Integra Harmony Provider Directory'
-        url: '/#'
+        url: '/files/Integra_coming-soon.pdf'
       - title: 'Integra Harmony Pharmacy Search'
-        url: '/#'
+        url: 'http://client.formularynavigator.com/Search.aspx?siteCode=7360064946'
       - title: 'Integra Harmony Vision & Eye Exam Providers'
-        url: '/#'
+        url: '/files/Integra_coming-soon.pdf'
       - title: 'Healthplex Dental Care Providers'
-        url: 'http://www.healthplex.com/our_dentists/options?groupnumber=GG-440'
+        url: '/files/Integra_coming-soon.pdf'
   - title: 'View & Print our Directories'
     type: document
     items: 
       - title: Downloadable directories
         icon: file-download
       - title: 'Integra Harmony Provider Directory'
-        url: '/#'
+        url: '/files/Integra_coming-soon.pdf'
       - title: 'Integra Harmony Pharmacy Directory'
-        url: '/#'
+        url: 'http://client.formularynavigator.com/Search.aspx?siteCode=7360064946'
       - title: 'Integra Harmony Vision & Eye Exam Providers'
-        url: '/#'
+        url: '/files/Integra_coming-soon.pdf'
       - title: 'Healthplex Dental Care Providers'
-        url: 'https://www.lhany.com/sites/default/files/pdf/Healthplex.pdf'
+        url: '/files/Integra_coming-soon.pdf'
   - title: 'Call Member Services'
     items:
       - title: '1-877-388-5195\nTTY Users call 711'
         icon: 'phone'
-      - title: 'Ask us to mail you a directory'
-        url: '/#'
-        type: resource
   - title: 'Important Numbers to Remember'
     items:
       - title: 'Below are some useful phone numbers. Integra Managed Care uses these providers to administer our benefits.'
