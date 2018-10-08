@@ -53,11 +53,11 @@ const ButtonLink = styled(ItemLink)`
   }
 `;
 
-export default () => (
+export default ({abbreviatedHours, enrollmentContactNumber, enrollNowURL}) => (
   <NavbarContact>
     <Title>Call for Eligibility and Enrollment</Title>
-    <Item><Icon icon="phone" fixedWidth /> <ItemLink href="tel:1-877-388-5190">1-877-388-5190 TTY: 711</ItemLink></Item>
-    <Item><Icon icon="clock" fixedWidth /> 8:00 am to 8:00 pm</Item>
-    <Item><Icon icon="check" fixedWidth /> <ButtonLink href="/files/H1205_2019 Enrollment Form_M_Final.pdf">Enroll Now</ButtonLink></Item>
+    <Item><Icon icon="phone" fixedWidth /> <ItemLink href={`tel:${enrollmentContactNumber.slice(0,14)}`}>{enrollmentContactNumber}</ItemLink></Item>
+    <Item><Icon icon="clock" fixedWidth /> {abbreviatedHours}</Item>
+    <Item><Icon icon="check" fixedWidth /> <ButtonLink href={enrollNowURL}>Enroll Now</ButtonLink></Item>
   </NavbarContact>
 )

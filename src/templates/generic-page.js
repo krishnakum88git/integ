@@ -47,9 +47,11 @@ const Page = ({ data }) => {
     node: magnet
   }));
 
-  const contactInfo = post.frontmatter.shouldIncludeContactInfo ? data.contactInfo.edges[0].node.frontmatter.lists : []
+  const { contactListsRaw, ...contactInfo } = data.contactInfo.edges[0].node.frontmatter;
+
+  const contactLists = post.frontmatter.shouldIncludeContactInfo ? contactListsRaw : []
   const enrollmentInfo = post.frontmatter.shouldIncludeEnrollmentInfo ? data.enrollmentInfo.edges[0].node.frontmatter.lists : []
-  const lists = [...contactInfo, ...enrollmentInfo, ...(post.frontmatter.lists || [])];
+  const lists = [...contactLists, ...enrollmentInfo, ...(post.frontmatter.lists || [])];
   return (
     <Layout
       title={post.frontmatter.title}
@@ -57,6 +59,7 @@ const Page = ({ data }) => {
       introduction={post.frontmatter.introduction}
       magnets={magnets}
       disclaimers={post.frontmatter.disclaimers}
+      navContact={contactInfo}
     >
       <PageTemplate
         contentComponent={HTMLContent}
@@ -142,6 +145,9 @@ export const pageQuery = graphql`
       edges {
         node {
           frontmatter {
+            enrollmentContactNumber
+            abbreviatedHours
+            enrollNowURL
             lists {
               title
               items {

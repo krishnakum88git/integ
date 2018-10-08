@@ -72,7 +72,7 @@ class TemplateWrapper extends Component {
           <meta name="twitter:description" content={description} /> */}
         </Helmet>
         <SkipNavLink />
-        <Navbar />
+        <Navbar navContact={this.props.navContact} />
         <Hero {...this.props.hero} />
         {this.props.introduction && <Callout flex={false} {...this.props.introduction} />}
         {this.props.breadcrumbs && <Breadcrumbs items={this.props.breadcrumbs} />}

@@ -6,7 +6,8 @@ import Callout from "../components/Callout";
 
 export default class IndexPage extends React.Component {
   render() {
-    const homeContent = this.props.data.allMarkdownRemark.edges[0].node.frontmatter;
+    const homeContent = this.props.data.allMarkdownRemark.edges[0].node
+      .frontmatter;
     const hero = {
       title: homeContent.title,
       subTitle: homeContent.subTitle,
@@ -16,21 +17,39 @@ export default class IndexPage extends React.Component {
       isLarge: homeContent.isLarge
     };
     return (
-      <Layout hero={hero} magnets={homeContent.magnets} disclaimers={homeContent.disclaimers}>
-        <div id="content"></div>
+      <Layout
+        hero={hero}
+        magnets={homeContent.magnets}
+        disclaimers={homeContent.disclaimers}
+        navContact={this.props.data.contactInfo.edges[0].node.frontmatter}
+      >
+        <div id="content" />
         <Callout flex={false}>
-          Integra Managed Care offers Medicare Advantage Prescription Drug Plans and a Medicare-Medicaid Plan option that gives you flexibility in choosing a health plan that’s right for you and helps maintain your overall health and well-being.
+          Integra Managed Care offers Medicare Advantage Prescription Drug Plans
+          and a Medicare-Medicaid Plan option that gives you flexibility in
+          choosing a health plan that’s right for you and helps maintain your
+          overall health and well-being.
         </Callout>
 
         <Callout
-          title={<span>Need help finding a plan<br />that may be a good fit for you?</span>}
+          title={
+            <span>
+              Need help finding a plan
+              <br />
+              that may be a good fit for you?
+            </span>
+          }
           type="secondary"
         >
           Call Toll-Free 1-877-388-5190 TTY: 711
         </Callout>
 
         <Callout
-          title={<span>Integra Managed Care Medicare Advantage plans may offer:</span>}
+          title={
+            <span>
+              Integra Managed Care Medicare Advantage plans may offer:
+            </span>
+          }
           action={{
             text: "View Our Plans",
             icon: "book-open",
@@ -40,7 +59,10 @@ export default class IndexPage extends React.Component {
           <ul>
             <li>Low cost premiums, some as low as $0</li>
             <li>Out-of-pocket maximums to help prevent financial surprises</li>
-            <li>Prescription drug coverage for thousands of brand name &amp; generic drugs</li>
+            <li>
+              Prescription drug coverage for thousands of brand name &amp;
+              generic drugs
+            </li>
           </ul>
         </Callout>
       </Layout>
@@ -54,6 +76,20 @@ export const pageQuery = graphql`
       childImageSharp {
         fluid(maxWidth: 1440) {
           ...GatsbyImageSharpFluid
+        }
+      }
+    }
+
+    contactInfo: allMarkdownRemark(
+      filter: { fields: { slug: { eq: "/contact-info/" } } }
+    ) {
+      edges {
+        node {
+          frontmatter {
+            enrollmentContactNumber
+            abbreviatedHours
+            enrollNowURL
+          }
         }
       }
     }

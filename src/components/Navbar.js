@@ -97,7 +97,7 @@ const isPartiallyActive = ({isPartiallyCurrent}) =>
     ? { className: "is-active" }
     : null
 
-const Navbar = () => (
+const Navbar = ({navContact}) => (
   <Nav>
     <Container flex={true} alignItems="center">
       <Link to="/" style={{marginRight: 'auto'}}>
@@ -113,7 +113,7 @@ const Navbar = () => (
             {item.title}
           </Link>
         ))}
-      <NavbarContact />
+      <NavbarContact {...navContact} />
     </Container>
   </Nav>
 );

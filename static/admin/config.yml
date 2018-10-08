@@ -14,8 +14,14 @@ collections:
         name: "contactInfo"
         file: "src/data/contact-info.md"
         fields:
+          - label: "Enrollment Contact Number"
+            name: "enrollmentContactNumber"
+            widget: string
           - label: "Abbreviated Hours"
             name: "abbreviatedHours"
+            widget: string
+          - label: "Enroll Now URL"
+            name: "enrollNowURL"
             widget: string
           - label: Lists
             name: lists
