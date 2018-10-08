@@ -186,6 +186,7 @@ const ContactUs = ({ data }) => {
       magnets={magnets}
       disclaimers={post.frontmatter.disclaimers}
       navContact={data.contactInfo.edges[0].node.frontmatter}
+      cmsInfo={data.cmsInfo.edges[0].node.frontmatter}
     >
       <ContactUsTemplate
         contentComponent={HTMLContent}
@@ -217,6 +218,17 @@ export const contactUsQuery = graphql`
                 icon
               }
             }
+          }
+        }
+      }
+    }
+
+    cmsInfo: allMarkdownRemark(filter:{fields:{slug :{eq : "/cms-info/"}}}) {
+      edges {
+        node {
+          frontmatter {
+            cmsMaterialID
+            lastModified
           }
         }
       }

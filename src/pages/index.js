@@ -22,6 +22,7 @@ export default class IndexPage extends React.Component {
         magnets={homeContent.magnets}
         disclaimers={homeContent.disclaimers}
         navContact={this.props.data.contactInfo.edges[0].node.frontmatter}
+        cmsInfo={this.props.data.cmsInfo.edges[0].node.frontmatter}
       >
         <div id="content" />
         <Callout flex={false}>
@@ -89,6 +90,17 @@ export const pageQuery = graphql`
             enrollmentContactNumber
             abbreviatedHours
             enrollNowURL
+          }
+        }
+      }
+    }
+
+    cmsInfo: allMarkdownRemark(filter:{fields:{slug :{eq : "/cms-info/"}}}) {
+      edges {
+        node {
+          frontmatter {
+            cmsMaterialID
+            lastModified
           }
         }
       }

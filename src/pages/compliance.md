@@ -35,3 +35,9 @@ If you suspect a case of non-compliance, Fraud, Waste or Abuse, or any other vio
 - Email us at [complianceofficer@integraplan.org](mailto:complianceofficer@integraplan.org)
 - Call the Integra Managed Care’s Corporate Compliance Department **1-855-800-4683, ext. 3572**
 - Write to the Corporate Compliance Department at **Integra Managed Care, 1981 Marcus Ave, Suite 100, Lake Success, NY 11042**
+
+
+####Medicare fraud can also be reported directly to these agencies:####
+- You can call Medicare at: 1-800-MEDICARE (1-800-633-4227).
+- Report it online to the Office of the Inspector General here: https://forms.oig.hhs.gov/hotlineoperations/report-fraud-form.aspx
+- Call the Office of the Inspector General at 1‑800‑HHS‑TIPS (1‑800‑447‑8477). TTY: 1‑800‑377‑4950.

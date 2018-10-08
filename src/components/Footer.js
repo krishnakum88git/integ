@@ -60,7 +60,7 @@ const ContactItemText = styled.p`
   text-align: left;
 `;
 
-const MaterialID = styled.p`
+const ComplianceInfo = styled.p`
   text-align: center;
   margin: 20px 0;
 `;
@@ -96,7 +96,7 @@ const Divider = () => (
   </DividerStyled>
 )
 
-const Footer = ({ disclaimers }) => (
+const Footer = ({ disclaimers, cmsMaterialID, lastModified }) => (
   <FooterWrapper>
     <Divider />
     <Container size="lg">
@@ -124,7 +124,7 @@ const Footer = ({ disclaimers }) => (
             Lake Success, New York 11042
           </ContactItem>
         </ContactItems>
-        <MaterialID>H1205_2019 Website</MaterialID>
+        <ComplianceInfo>{cmsMaterialID}<br />{lastModified}</ComplianceInfo>
       </FooterHeader>
 
       {disclaimers && disclaimers.length > 0 && <Disclaimers disclaimers={disclaimers} />}
