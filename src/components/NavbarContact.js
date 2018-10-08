@@ -56,7 +56,7 @@ const ButtonLink = styled(ItemLink)`
 export default ({abbreviatedHours, enrollmentContactNumber, enrollNowURL}) => (
   <NavbarContact>
     <Title>Call for Eligibility and Enrollment</Title>
-    <Item><Icon icon="phone" fixedWidth /> <ItemLink href={`tel:${enrollmentContactNumber.slice(0,14)}`}>{enrollmentContactNumber}</ItemLink></Item>
+    <Item><Icon icon="phone" fixedWidth /> <ItemLink href={`tel:${(enrollmentContactNumber || "").slice(0,14)}`}>{enrollmentContactNumber}</ItemLink></Item>
     <Item><Icon icon="clock" fixedWidth /> {abbreviatedHours}</Item>
     <Item><Icon icon="check" fixedWidth /> <ButtonLink href={enrollNowURL}>Enroll Now</ButtonLink></Item>
   </NavbarContact>

@@ -47,7 +47,7 @@ const Page = ({ data }) => {
     node: magnet
   }));
 
-  const { contactListsRaw, ...contactInfo } = data.contactInfo.edges[0].node.frontmatter;
+  const { lists: contactListsRaw, ...contactInfo } = data.contactInfo.edges[0].node.frontmatter;
 
   const contactLists = post.frontmatter.shouldIncludeContactInfo ? contactListsRaw : []
   const enrollmentInfo = post.frontmatter.shouldIncludeEnrollmentInfo ? data.enrollmentInfo.edges[0].node.frontmatter.lists : []
