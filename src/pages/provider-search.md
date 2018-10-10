@@ -15,26 +15,26 @@ lists:
       - title: Our most up to date listings
         icon: check
       - title: 'Integra Harmony Provider Directory'
-        url: '/files/Integra_coming-soon.pdf'
+        file: '/files/Integra_coming-soon.pdf'
       - title: 'Integra Harmony Pharmacy Search'
-        url: 'http://client.formularynavigator.com/Search.aspx?siteCode=7360064946'
+        file: 'http://client.formularynavigator.com/Search.aspx?siteCode=7360064946'
       - title: 'Integra Harmony Vision & Eye Exam Providers'
-        url: '/files/Integra_coming-soon.pdf'
+        file: '/files/Integra_coming-soon.pdf'
       - title: 'Healthplex Dental Care Providers'
-        url: '/files/Integra_coming-soon.pdf'
+        file: '/files/Integra_coming-soon.pdf'
   - title: 'View & Print our Directories'
     type: document
     items: 
       - title: Downloadable directories
         icon: file-download
       - title: 'Integra Harmony Provider Directory'
-        url: '/files/Integra_coming-soon.pdf'
+        file: '/files/Integra_coming-soon.pdf'
       - title: 'Integra Harmony Pharmacy Directory'
-        url: 'http://client.formularynavigator.com/Search.aspx?siteCode=7360064946'
+        file: 'http://client.formularynavigator.com/Search.aspx?siteCode=7360064946'
       - title: 'Integra Harmony Vision & Eye Exam Providers'
-        url: '/files/Integra_coming-soon.pdf'
+        file: '/files/Integra_coming-soon.pdf'
       - title: 'Healthplex Dental Care Providers'
-        url: '/files/Integra_coming-soon.pdf'
+        file: '/files/Integra_coming-soon.pdf'
   - title: 'Call Member Services'
     items:
       - title: '1-877-388-5195\nTTY Users call 711'

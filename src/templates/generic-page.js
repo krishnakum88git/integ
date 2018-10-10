@@ -118,6 +118,7 @@ export const pageQuery = graphql`
           items {
             title
             url
+            file
             icon
             type
           }
@@ -182,6 +183,7 @@ export const pageQuery = graphql`
                 title
                 icon
                 url
+                file
                 type
               }
             }

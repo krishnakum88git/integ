@@ -157,6 +157,7 @@ export const planPageQuery = graphql`
           items {
             title
             url
+            file
             icon
             type
           }

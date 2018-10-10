@@ -20,6 +20,36 @@ collections:
           - label: Last Modified"
             name: "lastModified"
             widget: string
+      - label: "Enrollment Info"
+        name: "enrollmentInfo"
+        file: "src/data/enrollment-info.md"
+        fields:
+          - label: Lists
+            name: lists
+            widget: list
+            required: false
+            fields:
+              - { label: Title, name: title, widget: string }
+              - { label: Type, name: type, widget: string }
+              - label: Items
+                name: items
+                widget: list
+                fields:
+                  - label: Title
+                    name: title
+                    widget: string
+                  - label: Type
+                    name: type
+                    widget: string
+                  - label: URL
+                    name: url
+                    widget: string
+                  - label: File
+                    name: file
+                    widget: file
+                  - label: Icon
+                    name: icon
+                    widget: string
       - label: "Contact Info"
         name: "contactInfo"
         file: "src/data/contact-info.md"
@@ -53,6 +83,9 @@ collections:
                   - label: URL
                     name: url
                     widget: string
+                  - label: File
+                    name: file
+                    widget: file
                   - label: Icon
                     name: icon
                     widget: string
