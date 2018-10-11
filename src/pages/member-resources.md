@@ -23,6 +23,8 @@ lists:
         file: '/provider-search'
       - title: 'Getting Medicare'
         file: '/medicare-101'
+      - title: 'Integra Harmony Searchable Formulary'
+        url: 'http://client.formularynavigator.com/Search.aspx?siteCode=7360064946'
       - title: 'Medication Therapy Management'
         file: '/files/Integra Managed Care_MTM_Final.pdf'
       - title: 'Member Rights & Responsibilities'
