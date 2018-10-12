@@ -37,6 +37,8 @@ lists:
         file: '/files/Integra MCR Website QA Policy.pdf'
       - title: 'Prescription Drug Transition Policy'
         file: '/files/Prescription Drug Transition Policy_Final.pdf'
+      - title: 'Prior Authorization Form'
+        file: '/files/Integra Prior Authorization Form.pdf'
       - title: 'Privacy Statement'
         file: '/files/H1205_2019 Integra_HIPAA_Privacy Notice_C_Final.pdf'
       - title: 'Standard Non-Formulary Exception Request Form'
