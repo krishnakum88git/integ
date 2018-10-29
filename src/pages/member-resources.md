@@ -18,7 +18,7 @@ lists:
       - title: 'Covered Drugs\n(Formulary & Medication)'
         file: '/files/H1205_2019 Formulary Integra Managed Care_C.pdf'
       - title: 'Evidence of Coverage'
-        file: '/files/imc_eoc.pdf'
+        file: '/files/H1205_2019 Harmony EOC_C.pdf'
       - title: 'Find a Provider'
         file: '/provider-search'
       - title: 'Getting Medicare'
