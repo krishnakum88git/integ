@@ -12,29 +12,17 @@ lists:
   - title: 'View our Searchable Directories'
     type: resource
     items: 
-      - title: Our most up to date listings
+      - title: Our most up to date listings (includes Providers, Specialists, Pharmacy, Vision and Dental)
         icon: check
-      - title: 'Integra Harmony Provider Directory'
-        file: '/files/Integra_coming-soon.pdf'
-      - title: 'Integra Harmony Pharmacy Search'
-        file: '/files/Integra_coming-soon.pdf'
-      - title: 'Integra Harmony Vision & Eye Exam Providers'
-        file: '/files/Integra_coming-soon.pdf'
-      - title: 'Healthplex Dental Care Providers'
-        file: '/files/Integra_coming-soon.pdf'
+      - title: 'Integra Harmony Directory'
+        file: '/files/Integra Provider Directory December 2018.pdf'
   - title: 'View & Print our Directories'
     type: document
     items: 
-      - title: Downloadable directories
+      - title: 'Downloadable directory includes: Providers, Specialists, Pharmacy, Vision and Dental'
         icon: file-download
-      - title: 'Integra Harmony Provider Directory'
-        file: '/files/Integra_coming-soon.pdf'
-      - title: 'Integra Harmony Pharmacy Directory'
-        file: '/files/Integra_coming-soon.pdf'
-      - title: 'Integra Harmony Vision & Eye Exam Providers'
-        file: '/files/Integra_coming-soon.pdf'
-      - title: 'Healthplex Dental Care Providers'
-        file: '/files/Integra_coming-soon.pdf'
+      - title: 'Integra Harmony Directory'
+        file: '/files/Integra Provider Directory December 2018.pdf'
   - title: 'Call Member Services'
     items:
       - title: '1-877-388-5195\nTTY Users call 711'
