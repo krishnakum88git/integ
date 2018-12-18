@@ -20,6 +20,9 @@ const getIcon = type => {
 const Icon = styled(FontAwesomeIcon)`
   margin: 4px ${spaceSizes.xs} 0 0;
   color: ${black.lighter};
+  width: 1.25em;
+  height: 1em;
+  overflow: visible;
 `;
 
 const List = styled.div``;

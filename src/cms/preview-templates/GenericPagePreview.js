@@ -12,7 +12,7 @@ const GenericPagePreview = ({ entry, widgetFor, widgetsFor, getAsset }) => {
   const introduction = widgetsFor('introduction')
   const breadcrumbs = entry.getIn(['data', 'breadcrumbs'])
   const lists = entry.getIn(['data', 'lists'])
-  console.log('lists', lists && lists.toJS())
+
   return (
     <StyleInjector>
         <Wrapper>
@@ -29,6 +29,7 @@ const GenericPagePreview = ({ entry, widgetFor, widgetsFor, getAsset }) => {
           <PageTemplate
             content={widgetFor('body')}
             lists={lists && lists.toJS()}
+            listDirection={entry.getIn(['data', 'listDirection'])}
           />
           {/* {this.props.magnets && <Magnets magnets={this.props.magnets} />} */}
           <Footer disclaimers={widgetsFor('disclaimers')} />
