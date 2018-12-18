@@ -12,7 +12,7 @@ lists:
   - title: 'View our Searchable Directories'
     type: resource
     items: 
-      - title: Our most up to date listings (includes Providers, Specialists, Pharmacy, Vision and Dental)
+      - title: 'Our most up to date listings (includes Providers, Specialists, Pharmacy, Vision and Dental)'
         icon: check
       - title: 'Integra Harmony Directory'
         file: '/files/Integra Provider Directory December 2018.pdf'

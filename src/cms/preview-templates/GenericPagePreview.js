@@ -19,7 +19,7 @@ const GenericPagePreview = ({ entry, widgetFor, widgetsFor, getAsset }) => {
           <Hero
             title= {entry.getIn(['data', 'title'])}
             subTitle= {entry.getIn(['data', 'subTitle'])}
-            imgSrc= {getAsset(entry.getIn(['data', 'banner'])).toString().replace('img', 'files')}
+            imgSrc= {getAsset(entry.getIn(['data', 'banner']))}
             iconColor= {entry.getIn(['data', 'indicatorColor'])}
             iconName= {entry.getIn(['data', 'iconName'])}
             isLarge= {entry.getIn(['data', 'isLarge'])}
