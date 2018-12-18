@@ -1,7 +1,7 @@
 import React from "react";
 import styled from "styled-components";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import Img from "./Image";
+import Img, { objectFitShim } from "./Image";
 
 import { fontSizes, textShadow } from "../styles/typography";
 import DividerCurve from "./DividerCurve";
@@ -13,16 +13,21 @@ const Hero = styled.div`
   flex-direction: column;
 `
 
-const Image = ({image}) => image ? (
-  <Img
-    style={{
-      width: '100%',
-      height: '100%',
-      position: "absolute",
-      top: 0
-    }}
-    fluid={image} />
-) : null
+const imgStyle = {
+  width: '100%',
+  height: '100%',
+  position: 'absolute',
+  top: 0
+}
+
+const Image = ({image, src, alt}) => image ? (
+  <Img style={imgStyle} fluid={image} />
+) : (
+  <img src={src} alt={alt} style={{
+    ...imgStyle,
+    ...objectFitShim()
+  }} />
+)
 
 const IconBase = styled(FontAwesomeIcon)`
   box-sizing: content-box;
@@ -104,9 +109,9 @@ const Divider = () => (
   </DividerContainer>
 )
 
-export default ({ browserWidth, iconColor, iconName, image, title, subTitle, isLarge = false }) => (
+export default ({ browserWidth, iconColor, iconName, image, imgSrc, title, subTitle, isLarge = false }) => (
   <Hero>
-    <Image aria-hidden="true" browserWidth={browserWidth} image={image} />
+    <Image aria-hidden="true" browserWidth={browserWidth} image={image} src={imgSrc} />
     <GradientOverlay aria-hidden="true" isLeftToRight={isLarge} />
     <Container isCentered={!isLarge}>
       <Title isCentered={!isLarge}>{title}</Title>

@@ -43,7 +43,6 @@ const Callout = styled.div`
   ${calloutColors}
   ${calloutAlignment}
   ${lists}
-  }
 `
 
 const TitleStyled = styled.h2`

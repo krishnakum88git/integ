@@ -5,7 +5,7 @@ title: Provider Search
 indicatorColor: '#A55EEA'
 iconName: 'user-md'
 listDirection: row
-banner: '../img/provider-search.jpg'
+banner: /files/provider-search.jpg
 introduction:
     title: Please call us for our Provider Directory 1-877-388-5195
 lists:

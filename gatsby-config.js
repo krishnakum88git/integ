@@ -1,3 +1,10 @@
+var netlifyCmsPaths = {
+  resolve: `gatsby-plugin-netlify-cms-paths`,
+  options: {
+    cmsConfig: `/static/admin/config.yml`,
+  }
+}
+
 module.exports = {
   mapping: {
     'MarkdownRemark.frontmatter.magnets': `MarkdownRemark.frontmatter.slug`
@@ -42,14 +49,24 @@ module.exports = {
         name: "images"
       }
     },
+    {
+      resolve: "gatsby-source-filesystem",
+      options: {
+        path: `${__dirname}/static/files`,
+        name: "files",
+        ignore: [`**/\*.doc`, `**/\*.pdf`]
+      }
+    },
+    netlifyCmsPaths, // Transform any paths in frontmatter
     "gatsby-plugin-sharp",
     "gatsby-transformer-sharp",
     {
       resolve: "gatsby-transformer-remark",
       options: {
         plugins: [
+          netlifyCmsPaths,
           {
-            resolve: "gatsby-remark-relative-images"
+            resolve: "gatsby-remark-images"
           }
         ]
       }
