@@ -1,7 +1,6 @@
 backend:
-  name: bitbucket
-  repo: ccgideas/integra
-  branch: dev
+  name: git-gateway
+  branch: master
 
 media_folder: static/files
 public_folder: /files
