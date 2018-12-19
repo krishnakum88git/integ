@@ -5,7 +5,7 @@ import { blue } from '../styles/colors'
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 const NavbarContact = styled.div`
-  position: absolute;
+  position: ${props => props.position};
   padding: ${spaceSizes.sm} ${spaceSizes.md};
   background-color: ${blue};
   top: 67px;
@@ -25,6 +25,8 @@ const Item = styled.p`
 
 const Icon = styled(FontAwesomeIcon)`
   margin-right: ${spaceSizes.xs};
+  width: 1.25em;
+  height: 1em;
 `
 
 const ItemLink = styled.a`
@@ -53,8 +55,8 @@ const ButtonLink = styled(ItemLink)`
   }
 `;
 
-export default ({abbreviatedHours, enrollmentContactNumber, enrollNowURL}) => (
-  <NavbarContact>
+export default ({abbreviatedHours, enrollmentContactNumber, enrollNowURL, position = 'absolute'}) => (
+  <NavbarContact position={position}>
     <Title>Call for Eligibility and Enrollment</Title>
     <Item><Icon icon="phone" fixedWidth /> <ItemLink href={`tel:${(enrollmentContactNumber || "").slice(0,14)}`}>{enrollmentContactNumber}</ItemLink></Item>
     <Item><Icon icon="clock" fixedWidth /> {abbreviatedHours}</Item>
