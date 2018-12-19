@@ -111,6 +111,19 @@ collections:
           - label: Body
             name: body
             widget: string
+          - label: Action
+            name: action
+            widget: object
+            fields:
+              - label: Text
+                name: text
+                widget: string
+              - label: Icon
+                name: icon
+                widget: string
+              - label: Url
+                name: url
+                widget: string
       - label: Lists
         name: lists
         widget: list

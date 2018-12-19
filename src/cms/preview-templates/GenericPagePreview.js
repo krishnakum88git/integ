@@ -9,10 +9,10 @@ import Breadcrumbs from '../../components/Breadcrumbs'
 import Footer from '../../components/Footer'
 
 const GenericPagePreview = ({ entry, widgetFor, widgetsFor, getAsset }) => {
-  const introductionTitle = widgetsFor('introduction').getIn(['data', 'title'])
+  const introduction = entry.getIn(['data', 'introduction'])
   const breadcrumbs = entry.getIn(['data', 'breadcrumbs'])
   const lists = entry.getIn(['data', 'lists'])
-
+  console.log('intro', introduction && introduction.toJS())
   return (
     <StyleInjector>
         <Wrapper>
@@ -24,7 +24,7 @@ const GenericPagePreview = ({ entry, widgetFor, widgetsFor, getAsset }) => {
             iconName= {entry.getIn(['data', 'iconName'])}
             isLarge= {entry.getIn(['data', 'isLarge'])}
           />
-          {introductionTitle && <Callout flex={false} title={introductionTitle} />}
+          {introduction && <Callout flex={false} {...introduction.toJS()} />}
           {breadcrumbs && <Breadcrumbs items={breadcrumbs} />}
           <PageTemplate
             content={widgetFor('body')}

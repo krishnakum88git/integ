@@ -42,6 +42,8 @@ const Button = ({url, ...props}) => props.to || url ? (
 
 const IconStyled = styled(FontAwesomeIcon)`
   margin-right: ${spaceSizes.sm};
+  width: 1.125em;
+  height: 1em;
 `
 
 const Icon = props => props.icon ? (
