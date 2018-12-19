@@ -9,7 +9,7 @@ import Breadcrumbs from '../../components/Breadcrumbs'
 import Footer from '../../components/Footer'
 
 const GenericPagePreview = ({ entry, widgetFor, widgetsFor, getAsset }) => {
-  const introduction = widgetsFor('introduction')
+  const introductionTitle = widgetsFor('introduction').getIn(['data', 'title'])
   const breadcrumbs = entry.getIn(['data', 'breadcrumbs'])
   const lists = entry.getIn(['data', 'lists'])
 
@@ -24,7 +24,7 @@ const GenericPagePreview = ({ entry, widgetFor, widgetsFor, getAsset }) => {
             iconName= {entry.getIn(['data', 'iconName'])}
             isLarge= {entry.getIn(['data', 'isLarge'])}
           />
-          {introduction && <Callout flex={false} title={introduction.getIn(['data', 'title'])} />}
+          {introductionTitle && <Callout flex={false} title={introductionTitle} />}
           {breadcrumbs && <Breadcrumbs items={breadcrumbs} />}
           <PageTemplate
             content={widgetFor('body')}
@@ -32,6 +32,7 @@ const GenericPagePreview = ({ entry, widgetFor, widgetsFor, getAsset }) => {
             listDirection={entry.getIn(['data', 'listDirection'])}
           />
           {/* {this.props.magnets && <Magnets magnets={this.props.magnets} />} */}
+          <div style={{height: 200}} />
           <Footer disclaimers={widgetsFor('disclaimers')} />
         </Wrapper>
     </StyleInjector>
