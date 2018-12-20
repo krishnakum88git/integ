@@ -12,6 +12,7 @@ const GenericPagePreview = ({ entry, widgetFor, widgetsFor, getAsset }) => {
   const introduction = entry.getIn(['data', 'introduction'])
   const breadcrumbs = entry.getIn(['data', 'breadcrumbs'])
   const lists = entry.getIn(['data', 'lists'])
+  const disclaimers = entry.getIn(['data', 'disclaimers'])
 
   return (
     <StyleInjector>
@@ -31,9 +32,8 @@ const GenericPagePreview = ({ entry, widgetFor, widgetsFor, getAsset }) => {
           lists={lists && lists.toJS()}
           listDirection={entry.getIn(['data', 'listDirection'])}
         />
-        {/* {this.props.magnets && <Magnets magnets={this.props.magnets} />} */}
         <div style={{height: 200}} />
-        <Footer disclaimers={widgetsFor('disclaimers')} />
+        <Footer disclaimers={disclaimers && disclaimers.toJS()} />
       </Wrapper>
     </StyleInjector>
   )

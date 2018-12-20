@@ -8,6 +8,7 @@ import Footer from '../../components/Footer'
 const HomePagePreview = ({ entry, widgetsFor, getAsset }) => {
   const callout = entry.getIn(['data', 'callout'])
   const callToAction = entry.getIn(['data', 'callToAction'])
+  const disclaimers = entry.getIn(['data', 'disclaimers'])
   return (
     <StyleInjector>
       <Wrapper>
@@ -25,7 +26,7 @@ const HomePagePreview = ({ entry, widgetsFor, getAsset }) => {
           callToAction={callToAction && callToAction.toJS()}
         />
         <div style={{height: 200}} />
-        <Footer disclaimers={widgetsFor('disclaimers')} />
+        <Footer disclaimers={disclaimers && disclaimers.toJS()} />
       </Wrapper>
     </StyleInjector>
   )
