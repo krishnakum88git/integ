@@ -1,22 +1,34 @@
-import React from "react";
-import { graphql } from "gatsby";
+import React from "react"
+import { graphql } from "gatsby"
 
-import Layout from "../components/Layout";
-import Callout from "../components/Callout";
+import Layout from "../components/Layout"
+import Callout from "../components/Callout"
+
+export const PageTemplate = ({ lead, callout, callToAction }) => {
+  return (
+    <React.Fragment>
+      <div id="content" />
+      <Callout flex={false}>
+        {lead}
+      </Callout>
+      <Callout {...callout} type="secondary" />
+      <Callout {...callToAction} />
+    </React.Fragment>
+  );
+};
 
 export default class IndexPage extends React.Component {
   render() {
-    const { allMarkdownRemark, file, contactInfo, cmsInfo } = this.props.data
-    const homeContent = allMarkdownRemark.edges[0].node
-      .frontmatter;
+    const { allMarkdownRemark, contactInfo, cmsInfo } = this.props.data
+    const homeContent = allMarkdownRemark.edges[0].node.frontmatter
     const hero = {
       title: homeContent.title,
       subTitle: homeContent.subTitle,
-      image: file.childImageSharp.fluid,
+      image: homeContent.banner.childImageSharp.fluid,
       iconColor: homeContent.indicatorColor,
       iconName: homeContent.iconName,
       alignLeft: homeContent.alignLeft
-    };
+    }
     return (
       <Layout
         hero={hero}
@@ -25,63 +37,18 @@ export default class IndexPage extends React.Component {
         navContact={contactInfo.edges[0].node.frontmatter}
         cmsInfo={cmsInfo.edges[0].node.frontmatter}
       >
-        <div id="content" />
-        <Callout flex={false}>
-          Integra Managed Care offers Medicare Advantage Prescription Drug Plans
-          and a Medicare-Medicaid Plan option that gives you flexibility in
-          choosing a health plan that’s right for you and helps maintain your
-          overall health and well-being.
-        </Callout>
-
-        <Callout
-          title={
-            <span>
-              Need help finding a plan
-              <br />
-              that may be a good fit for you?
-            </span>
-          }
-          type="secondary"
-        >
-          Call Toll-Free 1-877-388-5190 TTY: 711
-        </Callout>
-
-        <Callout
-          title={
-            <span>
-              Integra Managed Care Medicare Advantage plans may offer:
-            </span>
-          }
-          action={{
-            text: "View Our Plans",
-            icon: "book-open",
-            url: "/our-plans"
-          }}
-        >
-          <ul>
-            <li>Low cost premiums, some as low as $0</li>
-            <li>Out-of-pocket maximums to help prevent financial surprises</li>
-            <li>
-              Prescription drug coverage for thousands of brand name &amp;
-              generic drugs
-            </li>
-          </ul>
-        </Callout>
+        <PageTemplate
+          lead={homeContent.lead}
+          callout={homeContent.callout}
+          callToAction={homeContent.callToAction}
+        />
       </Layout>
-    );
+    )
   }
 }
 
 export const pageQuery = graphql`
   query IndexQuery {
-    file(relativePath: { regex: "/home.jpg/" }) {
-      childImageSharp {
-        fluid(maxWidth: 1440) {
-          ...GatsbyImageSharpFluid
-        }
-      }
-    }
-
     contactInfo: allMarkdownRemark(
       filter: { fields: { slug: { eq: "/contact-info/" } } }
     ) {
@@ -116,6 +83,28 @@ export const pageQuery = graphql`
             iconName
             indicatorColor
             alignLeft
+            banner {
+              childImageSharp {
+                fluid(maxWidth: 1440) {
+                  ...GatsbyImageSharpFluid
+                }
+              }
+            }
+            lead
+            callout {
+              title
+              body
+            }
+            callToAction {
+              title
+              points
+              action {
+                text
+                icon
+                url
+                target
+              }
+            }
             disclaimers
             magnets {
               id
@@ -138,4 +127,4 @@ export const pageQuery = graphql`
       }
     }
   }
-`;
+`

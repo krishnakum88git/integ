@@ -63,12 +63,19 @@ const Action = ({ action }) => action ? (
   <ActionStyled isPrimary {...action} />
 ) : null
 
-export default ({ title, type, align = 'center', size = 'md', action, body, children, flex = true }) => (
+export default ({ title, type, align = 'center', size = 'md', action, body, points, children, flex = true }) => (
   <Callout type={type} align={align} size={size}>
     <Container size={size} flex={flex} flexDirection="column" alignItems="center">
       <Title text={title} />
       {children}
       {body}
+      {points && (
+        <ul>
+          {points.map((point, i) => (
+            <li key={i}>{point}</li>
+          ))}
+        </ul>
+      )}
       <Action action={action} />
     </Container>
   </Callout>

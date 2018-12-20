@@ -96,6 +96,9 @@ collections:
       - label: Title
         name: title
         widget: string
+      - label: Banner Image
+        name: banner
+        widget: file
       - label: Magnets
         name: magnets
         required: false
@@ -189,9 +192,6 @@ collections:
         widget: hidden
       - label: listDirection
         name: listDirection
-        widget: hidden
-      - label: banner
-        name: banner
         widget: hidden
   - name: homepage
     label: Home Page
@@ -201,6 +201,60 @@ collections:
       - label: Title
         name: title
         widget: string
+      - label: Banner Image
+        name: banner
+        widget: file
+      - label: Lead Message
+        name: lead
+        widget: string
+      - label: Callout
+        name: callout
+        widget: object
+        required: false
+        fields:
+          - label: Title
+            name: title
+            widget: string
+          - label: Body
+            name: body
+            widget: string
+          - label: Action
+            name: action
+            widget: object
+            fields:
+              - label: Text
+                name: text
+                widget: string
+              - label: Icon
+                name: icon
+                widget: string
+              - label: Url
+                name: url
+                widget: string
+      - label: Call to Action
+        name: callToAction
+        widget: object
+        required: false
+        fields:
+          - label: Title
+            name: title
+            widget: string
+          - label: Points
+            name: points
+            widget: list
+          - label: Action
+            name: action
+            widget: object
+            fields:
+              - label: Text
+                name: text
+                widget: string
+              - label: Icon
+                name: icon
+                widget: string
+              - label: Url
+                name: url
+                widget: string
       - label: Magnets
         name: magnets
         required: false
@@ -295,12 +349,10 @@ collections:
       - label: listDirection
         name: listDirection
         widget: hidden
-      - label: banner
-        name: banner
-        widget: hidden
   - name: plans
     label: Plans
     folder: "src/our-plans"
+    create: true
     fields:
       - label: Title
         name: title

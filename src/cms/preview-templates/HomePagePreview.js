@@ -1,18 +1,13 @@
 import React from 'react'
-import PropTypes from 'prop-types'
-import { PageTemplate } from '../../templates/generic-page'
+import { PageTemplate } from '../../pages/index'
 import StyleInjector from '../../components/StyleInjector'
 import { Wrapper } from '../../components/Layout'
 import Hero from '../../components/Hero'
-import Callout from '../../components/Callout'
-import Breadcrumbs from '../../components/Breadcrumbs'
 import Footer from '../../components/Footer'
 
-const HomePagePreview = ({ entry, widgetFor, widgetsFor, getAsset }) => {
-  const introduction = entry.getIn(['data', 'introduction'])
-  const breadcrumbs = entry.getIn(['data', 'breadcrumbs'])
-  const lists = entry.getIn(['data', 'lists'])
-
+const HomePagePreview = ({ entry, widgetsFor, getAsset }) => {
+  const callout = entry.getIn(['data', 'callout'])
+  const callToAction = entry.getIn(['data', 'callToAction'])
   return (
     <StyleInjector>
       <Wrapper>
@@ -24,26 +19,16 @@ const HomePagePreview = ({ entry, widgetFor, widgetsFor, getAsset }) => {
           iconName= {entry.getIn(['data', 'iconName'])}
           alignLeft= {entry.getIn(['data', 'alignLeft'])}
         />
-        {introduction && <Callout flex={false} {...introduction.toJS()} />}
-        {breadcrumbs && <Breadcrumbs items={breadcrumbs} />}
         <PageTemplate
-          content={widgetFor('body')}
-          lists={lists && lists.toJS()}
-          listDirection={entry.getIn(['data', 'listDirection'])}
+          lead={entry.getIn(['data', 'lead'])}
+          callout={callout && callout.toJS()}
+          callToAction={callToAction && callToAction.toJS()}
         />
-        {/* {this.props.magnets && <Magnets magnets={this.props.magnets} />} */}
         <div style={{height: 200}} />
         <Footer disclaimers={widgetsFor('disclaimers')} />
       </Wrapper>
     </StyleInjector>
   )
-}
-
-HomePagePreview.propTypes = {
-  entry: PropTypes.shape({
-    getIn: PropTypes.func,
-  }),
-  widgetFor: PropTypes.func,
 }
 
 export default HomePagePreview
