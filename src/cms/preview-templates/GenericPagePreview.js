@@ -22,7 +22,7 @@ const GenericPagePreview = ({ entry, widgetFor, widgetsFor, getAsset }) => {
           imgSrc= {getAsset(entry.getIn(['data', 'banner']))}
           iconColor= {entry.getIn(['data', 'indicatorColor'])}
           iconName= {entry.getIn(['data', 'iconName'])}
-          isLarge= {entry.getIn(['data', 'isLarge'])}
+          alignLeft= {entry.getIn(['data', 'alignLeft'])}
         />
         {introduction && <Callout flex={false} {...introduction.toJS()} />}
         {breadcrumbs && <Breadcrumbs items={breadcrumbs} />}

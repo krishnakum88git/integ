@@ -173,7 +173,7 @@ const ContactUs = ({ data }) => {
     image: post.frontmatter.banner.childImageSharp.fluid,
     iconColor: post.frontmatter.indicatorColor,
     iconName: post.frontmatter.iconName,
-    isLarge: false
+    alignLeft: false
   };
   const magnets = (post.frontmatter.magnets || []).map(magnet => ({
     node: magnet

@@ -109,13 +109,13 @@ const Divider = () => (
   </DividerContainer>
 )
 
-export default ({ browserWidth, iconColor, iconName, image, imgSrc, title, subTitle, isLarge = false }) => (
+export default ({ browserWidth, iconColor, iconName, image, imgSrc, title, subTitle, alignLeft = false }) => (
   <Hero>
     <Image aria-hidden="true" browserWidth={browserWidth} image={image} src={imgSrc} />
-    <GradientOverlay aria-hidden="true" isLeftToRight={isLarge} />
-    <Container isCentered={!isLarge}>
-      <Title isCentered={!isLarge}>{title}</Title>
-      <Subtitle isCentered={!isLarge}>{subTitle}</Subtitle>
+    <GradientOverlay aria-hidden="true" isLeftToRight={alignLeft} />
+    <Container isCentered={!alignLeft}>
+      <Title isCentered={!alignLeft}>{title}</Title>
+      <Subtitle isCentered={!alignLeft}>{subTitle}</Subtitle>
     </Container>
     <Footer>
       <Divider />

@@ -6,23 +6,24 @@ import Callout from "../components/Callout";
 
 export default class IndexPage extends React.Component {
   render() {
-    const homeContent = this.props.data.allMarkdownRemark.edges[0].node
+    const { allMarkdownRemark, file, contactInfo, cmsInfo } = this.props.data
+    const homeContent = allMarkdownRemark.edges[0].node
       .frontmatter;
     const hero = {
       title: homeContent.title,
       subTitle: homeContent.subTitle,
-      image: this.props.data.file.childImageSharp.fluid,
+      image: file.childImageSharp.fluid,
       iconColor: homeContent.indicatorColor,
       iconName: homeContent.iconName,
-      isLarge: homeContent.isLarge
+      alignLeft: homeContent.alignLeft
     };
     return (
       <Layout
         hero={hero}
         magnets={homeContent.magnets}
         disclaimers={homeContent.disclaimers}
-        navContact={this.props.data.contactInfo.edges[0].node.frontmatter}
-        cmsInfo={this.props.data.cmsInfo.edges[0].node.frontmatter}
+        navContact={contactInfo.edges[0].node.frontmatter}
+        cmsInfo={cmsInfo.edges[0].node.frontmatter}
       >
         <div id="content" />
         <Callout flex={false}>
@@ -114,7 +115,7 @@ export const pageQuery = graphql`
             subTitle
             iconName
             indicatorColor
-            isLarge
+            alignLeft
             disclaimers
             magnets {
               id

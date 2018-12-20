@@ -3,7 +3,7 @@ templateKey: 'generic-page'
 slug: home
 title: Discover a plan that works to your advantage
 subTitle: ''
-isLarge: true
+alignLeft: true
 indicatorColor: '#EE4035'
 iconName: 'heart'
 banner: /files/home.jpg

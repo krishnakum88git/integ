@@ -40,7 +40,7 @@ const Page = ({ data }) => {
     image: post.frontmatter.banner.childImageSharp.fluid,
     iconColor: post.frontmatter.indicatorColor,
     iconName: post.frontmatter.iconName,
-    isLarge: post.frontmatter.isLarge
+    alignLeft: post.frontmatter.alignLeft
   };
 
   const magnets = (post.frontmatter.magnets || []).map(magnet => ({
@@ -87,7 +87,7 @@ export const pageQuery = graphql`
         subTitle
         iconName
         indicatorColor
-        isLarge
+        alignLeft
         shouldIncludeContactInfo
         shouldIncludeEnrollmentInfo
         disclaimers

@@ -35,7 +35,7 @@ const PlanPage = ({ data }) => {
     image: plansPage.banner.childImageSharp.fluid,
     iconColor: plansPage.indicatorColor,
     iconName: plansPage.iconName,
-    isLarge: false
+    alignLeft: false
   };
 
   const magnets = (plansPage.magnets || []).map(magnet => ({ node: magnet }));
@@ -83,7 +83,7 @@ export const planPageQuery = graphql`
             subTitle
             iconName
             indicatorColor
-            isLarge
+            alignLeft
             banner {
               childImageSharp {
                 fluid(maxWidth: 1440) {
