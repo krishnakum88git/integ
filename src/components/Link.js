@@ -9,12 +9,12 @@ const ExternalLink = ({ children, to, ...props }) => (
 
 class Link extends Component {
   render() {
+    const to = this.props.to.replace("../../static", "");
+
     const LinkComponent =
-      this.props.to[0] === "/" && this.props.to.indexOf("/files/") === -1
-        ? GatsbyLink
-        : ExternalLink;
+      to[0] === "/" && to.indexOf("/files/") === -1 ? GatsbyLink : ExternalLink;
     return (
-      <LinkComponent {...this.props}>
+      <LinkComponent {...this.props} to={to}>
         {this.props.title || this.props.children}
       </LinkComponent>
     );
