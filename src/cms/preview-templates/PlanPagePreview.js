@@ -8,10 +8,11 @@ import Callout from '../../components/Callout'
 import Breadcrumbs from '../../components/Breadcrumbs'
 import Footer from '../../components/Footer'
 
-const PlanPagePreview = ({ entry, widgetFor, widgetsFor, getAsset }) => {
+const PlanPagePreview = ({ entry, widgetFor, getAsset }) => {
   const introduction = entry.getIn(['data', 'introduction'])
   const breadcrumbs = entry.getIn(['data', 'breadcrumbs'])
   const lists = entry.getIn(['data', 'lists'])
+  const disclaimers = entry.getIn(['data', 'disclaimers'])
 
   return (
     <StyleInjector>
@@ -31,9 +32,8 @@ const PlanPagePreview = ({ entry, widgetFor, widgetsFor, getAsset }) => {
           lists={lists && lists.toJS()}
           listDirection={entry.getIn(['data', 'listDirection'])}
         />
-        {/* {this.props.magnets && <Magnets magnets={this.props.magnets} />} */}
         <div style={{height: 200}} />
-        <Footer disclaimers={widgetsFor('disclaimers')} />
+        <Footer disclaimers={disclaimers && disclaimers.toJS()} />
       </Wrapper>
     </StyleInjector>
   )
