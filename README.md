@@ -15,7 +15,7 @@ It follows the [JAMstack architecture](https://jamstack.org) by using Git as a s
 ```
 $ git clone https://[PATH TO PROJECT]/Integra.git
 $ cd Integra
-$ yarn
+$ npm install
 $ npm run develop
 ```
 To test the CMS locally, you'll need run a production build of the site:
