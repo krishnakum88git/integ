@@ -102,7 +102,6 @@ export const pageQuery = graphql`
                 text
                 icon
                 url
-                target
               }
             }
             disclaimers
