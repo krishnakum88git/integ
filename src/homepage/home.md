@@ -16,7 +16,7 @@ callToAction:
     text: View Our Plans
     url: /our-plans
   points:
-    - 'Low cost premiums,, some as low as $0'
+    - 'Low cost premiums, some as low as $0'
     - Out-of-pocket maximums to help prevent financial surprises
     - Prescription drug coverage for thousands of brand name & generic drugs
   title: 'Integra Managed Care Medicare Advantage plans may offer:'
