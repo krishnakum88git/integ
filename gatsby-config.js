@@ -13,7 +13,6 @@ module.exports = {
     title: "Integra Managed Care"
   },
   plugins: [
-    "gatsby-plugin-styled-components",
     "gatsby-plugin-react-helmet",
     {
       resolve: "gatsby-plugin-google-fonts",
@@ -84,6 +83,7 @@ module.exports = {
         modulePath: `${__dirname}/src/cms/cms.js`
       }
     },
+    "gatsby-plugin-styled-components",
     "gatsby-plugin-netlify" // make sure to keep it last in the array
   ]
 };
