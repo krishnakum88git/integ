@@ -12,7 +12,7 @@ lists:
         title: Appeals & Grievance
       - file: /files/Integra Managed Care_How to appoint a representative_Final.pdf
         title: Appoint a Representative
-      - file: /files/H1205_2019 Formulary Integra Managed Care_C.pdf
+      - file: /files/medicare_formulary_update_may2019_final.pdf
         title: Covered Drugs\n(Formulary & Medication)
       - file: /files/H1205_2019 Harmony EOC_C.pdf
         title: Evidence of Coverage
