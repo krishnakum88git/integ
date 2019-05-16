@@ -1,59 +1,80 @@
 ---
-templateKey: 'generic-page'
-slug: member-resources
 title: Member Resources
-indicatorColor: '#4B7BEC'
-iconName: 'file-medical-alt'
 banner: /files/member-resources.jpg
+magnets:
+  - provider-search
+  - about-us
+  - compliance
+  - contact-us
+lists:
+  - items:
+      - file: /files/Integra MCR Website Appeals Description.pdf
+        title: Appeals & Grievance
+      - file: /files/Integra Managed Care_How to appoint a representative_Final.pdf
+        title: Appoint a Representative
+      - file: /files/H1205_2019 Formulary Integra Managed Care_C.pdf
+        title: Covered Drugs\n(Formulary & Medication)
+      - file: /files/H1205_2019 Harmony EOC_C.pdf
+        title: Evidence of Coverage
+      - file: /provider-search
+        title: Find a Provider
+      - file: /medicare-101
+        title: Getting Medicare
+      - title: Integra Harmony Searchable Formulary
+        url: 'http://client.formularynavigator.com/Search.aspx?siteCode=7360064946'
+      - file: /files/mtm_update_final.pdf
+        title: Medication Therapy Management
+      - file: /files/Integra MCR Website Member Rights  Responsibilities.pdf
+        title: Member Rights & Responsibilities
+      - file: /files/H1205_Multi Language Insert_C_Final.pdf
+        title: Multi-Language Insert
+      - file: /files/H1205_2019 RXCoverageDetermination_C_Final.pdf
+        title: Part D Model Coverage Determination and Redetermination Request Form
+      - file: /files/Integra MCR Website QA Policy.pdf
+        title: Part D Quality Assurance
+      - file: /files/Prescription Drug Transition Policy.pdf
+        title: Prescription Drug Transition Policy
+      - file: /files/Integra Prior Authorization Form.pdf
+        title: Prior Authorization Form
+      - file: /files/H1205_2019 Integra_HIPAA_Privacy Notice_C_Final.pdf
+        title: Privacy Statement
+      - file: /files/Integra Standard Non Formulary Exception Form_Final.pdf
+        title: Standard Non-Formulary Exception Request Form
+      - file: /files/Integra Tier Exception Request Form_Final.pdf
+        title: Tier Exception Request Form
+    title: Resources
+    type: resource
+slug: member-resources
+templateKey: generic-page
+indicatorColor: '#4B7BEC'
 pagePadTop: true
 pagePadBot: true
-lists:
-  - title: Resources
-    type: resource
-    items: 
-      - title: 'Appeals & Grievance'
-        file: '/files/Integra MCR Website Appeals Description.pdf'
-      - title: 'Appoint a Representative'
-        file: '/files/Integra Managed Care_How to appoint a representative_Final.pdf'
-      - title: 'Covered Drugs\n(Formulary & Medication)'
-        file: '/files/H1205_2019 Formulary Integra Managed Care_C.pdf'
-      - title: 'Evidence of Coverage'
-        file: '/files/H1205_2019 Harmony EOC_C.pdf'
-      - title: 'Find a Provider'
-        file: '/provider-search'
-      - title: 'Getting Medicare'
-        file: '/medicare-101'
-      - title: 'Integra Harmony Searchable Formulary'
-        url: 'http://client.formularynavigator.com/Search.aspx?siteCode=7360064946'
-      - title: 'Medication Therapy Management'
-        file: '/files/Integra Managed Care MTM.pdf'
-      - title: 'Member Rights & Responsibilities'
-        file: '/files/Integra MCR Website Member Rights  Responsibilities.pdf'
-      - title: 'Multi-Language Insert'
-        file: '/files/H1205_Multi Language Insert_C_Final.pdf'
-      - title: 'Part D Model Coverage Determination and Redetermination Request Form'
-        file: '/files/H1205_2019 RXCoverageDetermination_C_Final.pdf'
-      - title: 'Part D Quality Assurance'
-        file: '/files/Integra MCR Website QA Policy.pdf'
-      - title: 'Prescription Drug Transition Policy'
-        file: '/files/Prescription Drug Transition Policy.pdf'
-      - title: 'Prior Authorization Form'
-        file: '/files/Integra Prior Authorization Form.pdf'
-      - title: 'Privacy Statement'
-        file: '/files/H1205_2019 Integra_HIPAA_Privacy Notice_C_Final.pdf'
-      - title: 'Standard Non-Formulary Exception Request Form'
-        file: '/files/Integra Standard Non Formulary Exception Form_Final.pdf'
-      - title: 'Tier Exception Request Form'
-        file: '/files/Integra Tier Exception Request Form_Final.pdf'
-magnets:
-    - provider-search
-    - about-us
-    - compliance
-    - contact-us
 disclaimers:
-    - Integra Managed Care is an HMO Plan with a Medicare Advantage contract and a contract with the New York State Medicaid program. Enrollment in Integra Managed Care depends on contract renewal. This information is not a complete description of benefits. Limitations, copayments, and restrictions may apply. Benefits, premiums and/or co-payments/co-insurance may change on January 1 of each year. You must continue to pay your Medicare Part B premium. Certain plans are available to anyone who has both Medicaid from New York State and Medicare. Integra Managed Care complies with applicable Federal civil rights laws and does not discriminate on the basis of race, color, national origin, age, disability, or sex.
-    - Please contact our Member Services number at 1.877-388-5195 for additional information (TTY users should call 711). Hours are Sunday through Saturday 8am to 8pm. NOTE - Between April 1 and September 30 Member Services hours for Saturday and Sunday will be operated by alternate technology.
-    - ATTENTION - If you speak Spanish, language assistance services, free of charge, are available to you. Call 1-877-388-5195 (TTY 711). ATENCIÓN - si habla español, tiene a su disposición servicios gratuitos de asistencia lingüística. Llame al 1- 877-388-5195 (TTY 711). Assistance services for other languages are also available free of charge at the number above. All plan materials and information are available upon request in a different language or alternate formats such as braille, large print and audio.
+  - >-
+    Integra Managed Care is an HMO Plan with a Medicare Advantage contract and a
+    contract with the New York State Medicaid program. Enrollment in Integra
+    Managed Care depends on contract renewal. This information is not a complete
+    description of benefits. Limitations, copayments, and restrictions may
+    apply. Benefits, premiums and/or co-payments/co-insurance may change on
+    January 1 of each year. You must continue to pay your Medicare Part B
+    premium. Certain plans are available to anyone who has both Medicaid from
+    New York State and Medicare. Integra Managed Care complies with applicable
+    Federal civil rights laws and does not discriminate on the basis of race,
+    color, national origin, age, disability, or sex.
+  - >-
+    Please contact our Member Services number at 1.877-388-5195 for additional
+    information (TTY users should call 711). Hours are Sunday through Saturday
+    8am to 8pm. NOTE - Between April 1 and September 30 Member Services hours
+    for Saturday and Sunday will be operated by alternate technology.
+  - >-
+    ATTENTION - If you speak Spanish, language assistance services, free of
+    charge, are available to you. Call 1-877-388-5195 (TTY 711). ATENCIÓN - si
+    habla español, tiene a su disposición servicios gratuitos de asistencia
+    lingüística. Llame al 1- 877-388-5195 (TTY 711). Assistance services for
+    other languages are also available free of charge at the number above. All
+    plan materials and information are available upon request in a different
+    language or alternate formats such as braille, large print and audio.
+iconName: file-medical-alt
 ---
 ### Getting the Care You Need, When Urgently Needed
 While your primary care physician or other treating physician is the preferred first point of contact for care, Urgent Care is an important alternative to going to the Hospital Emergency Department for non-life threatening conditions and provides immediate medical treatment for minor and moderate illnesses and injuries.
