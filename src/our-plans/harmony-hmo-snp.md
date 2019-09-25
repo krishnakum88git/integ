@@ -31,6 +31,8 @@ disclaimers:
     - Please contact our Member Services number at 1.877-388-5195 for additional information (TTY users should call 711). Hours are Sunday through Saturday 8am to 8pm. NOTE - Between April 1 and September 30 Member Services hours for Saturday and Sunday will be operated by alternate technology.
     - ATTENTION - If you speak Spanish, language assistance services, free of charge, are available to you. Call 1-877-388-5195 (TTY 711). ATENCIÓN - si habla español, tiene a su disposición servicios gratuitos de asistencia lingüística. Llame al 1- 877-388-5195 (TTY 711). Assistance services for other languages are also available free of charge at the number above. All plan materials and information are available upon request in a different language or alternate formats such as braille, large print and audio.
 ---
+### Plan Information
+
 With Integra Harmony (HMO SNP), you get all the benefits you would get under Original Medicare, plus extra benefits. In addition, you have access to all your Medicaid benefits, and Medicaid pays for your Medicare cost-sharing, which means you pay $0. Our plan also includes Part D prescription drugs – and because you receive “extra help” with prescription drugs, your copayments are low. Some of the extra benefits included with Integra Harmony (HMO SNP) include:
 
 * Vision
