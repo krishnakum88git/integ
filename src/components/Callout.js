@@ -45,6 +45,10 @@ const Callout = styled.div`
   ${lists}
 `
 
+const List = styled.ul`
+  min-width: 800px;
+`
+
 const TitleStyled = styled.h2`
   margin-top: 0;
   white-space: pre-wrap;
@@ -70,11 +74,11 @@ export default ({ title, type, align = 'center', size = 'md', action, body, poin
       {children}
       {body}
       {points && (
-        <ul>
+        <List>
           {points.map((point, i) => (
             <li key={i}>{point}</li>
           ))}
-        </ul>
+        </List>
       )}
       <Action action={action} />
     </Container>
