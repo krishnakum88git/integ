@@ -15,10 +15,7 @@ export const PageTemplate = ({
   const PageContent = contentComponent || Content;
   return (
     <Container id="content" size="lg" vpad flex>
-      <div>
-        <h3>Plan Information</h3>
-        <PageContent content={content} />
-      </div>
+      <PageContent content={content} />
       <Lists items={lists} />
     </Container>
   );
