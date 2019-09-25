@@ -20,7 +20,7 @@ lists:
         title: Find a Provider
       - file: /medicare-101
         title: Getting Medicare
-      - title: Integra Harmony Searchable Formulary
+      - title: Searchable Formulary
         url: 'http://client.formularynavigator.com/Search.aspx?siteCode=7360064946'
       - file: /files/mtm_update_final.pdf
         title: Medication Therapy Management
