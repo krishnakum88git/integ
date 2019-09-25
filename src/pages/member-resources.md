@@ -90,7 +90,7 @@ Our provider manual requires primary care providers to have patient telephone ac
 
 ##### Please contact member services for more information at 1-877-388-5195 or 711 for TTY callers.
 
-**Contact Hours:** Hours are 7 days a week from 8:00 am to 8:00 pm. Note: From April 1st to September 30, we may use alternate technologies on Weekends and Federal holidays.
+**Contact Hours:** Our hours are 8 am to 8 pm seven days a week from October 1 to March 31, and 8 am to 8 pm Monday through Friday from April 1 to September 30.
 
 ### Getting Care in a Medical Emergency
 A “medical emergency” is when you have medical symptoms that require immediate medical attention to prevent loss of life, loss of a limb, or loss of function of a limb. The medical symptoms may be an illness, injury, severe pain, or a medical condition that is quickly getting worse.
@@ -103,7 +103,7 @@ A “medical emergency” is when you have medical symptoms that require immedia
 
 * As soon as possible, make sure that our plan has been told about your emergency. We need to follow up on your emergency care. You or someone else should call to tell us about your emergency care, usually within 48 hours. Please call Member Services at **1-877-388-5195**.  TTY users should call **711**. The Member Services contact numbers can be found on the back of your member identification card.
 
-**Contact Hours:** Hours are 7 days a week from 8:00 am to 8:00 pm. Note: From April 1st  to September 30, we may use alternate technologies on Weekends and Federal holidays.
+**Contact Hours:** Our hours are 8 am to 8 pm seven days a week from October 1 to March 31, and 8 am to 8 pm Monday through Friday from April 1 to September 30.
 
 **What is covered if you have a medical emergency?**
 You may get covered emergency medical care whenever you need it, anywhere in the United States or its territories. Our plan covers ambulance services in situations where getting to the emergency room in any other way could endanger your health.
