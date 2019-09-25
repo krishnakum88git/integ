@@ -46,6 +46,7 @@ const Callout = styled.div`
 `
 
 const List = styled.ul`
+  margin-top: 32px;
   min-width: 800px;
 `
 
@@ -72,7 +73,9 @@ export default ({ title, type, align = 'center', size = 'md', action, body, poin
     <Container size={size} flex={flex} flexDirection="column" alignItems="center">
       <Title text={title} />
       {children}
-      {body}
+      {body && (
+        <p>{body}</p>
+      )}
       {points && (
         <List>
           {points.map((point, i) => (

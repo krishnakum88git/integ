@@ -3,8 +3,13 @@ title: Our Plans
 subTitle: Integra Managed Care’s (HMO SNP) Harmony
 slug: 2019-harmony-hmo-snp
 introduction:
-    title: Harmony
-    body: Integra Managed Care’s (HMO SNP) Harmony Plan is for beneficiaries who qualify for Medicare and Medicaid, better known as dual eligible.
+    title: Integra Harmony (HMO SNP)
+    body: "You may enroll in Integra Harmony (HMO SNP), if you meet the following criteria:"
+    size: lg
+    points: 
+      - Have both Medicare Parts A and B and full Medicaid benefits (QMB+ and SLMB+)
+      - Live in our service area of Bronx, Kings, New York, Queens or Nassau counties in New York
+      - Not have End Stage Renal Disease (ESRD)
     action:
       text: Download Plan Summary
       icon: file-download
@@ -26,13 +31,11 @@ disclaimers:
     - Please contact our Member Services number at 1.877-388-5195 for additional information (TTY users should call 711). Hours are Sunday through Saturday 8am to 8pm. NOTE - Between April 1 and September 30 Member Services hours for Saturday and Sunday will be operated by alternate technology.
     - ATTENTION - If you speak Spanish, language assistance services, free of charge, are available to you. Call 1-877-388-5195 (TTY 711). ATENCIÓN - si habla español, tiene a su disposición servicios gratuitos de asistencia lingüística. Llame al 1- 877-388-5195 (TTY 711). Assistance services for other languages are also available free of charge at the number above. All plan materials and information are available upon request in a different language or alternate formats such as braille, large print and audio.
 ---
-Integra Managed Care’s (HMO SNP) Harmony Plan is for people who qualify for Medicare and Medicaid, who are known as dual eligible. As a dual eligible, you are eligible for benefits under both the federal Medicare program and the state-operated Medicaid program. The Harmony Plan includes prescription drug coverage. This plan provides all the coverage of traditional Medicare, plus more personalized care with additional benefits such as;
+With Integra Harmony (HMO SNP), you get all the benefits you would get under Original Medicare, plus extra benefits. In addition, you have access to all your Medicaid benefits, and Medicaid pays for your Medicare cost-sharing, which means you pay $0. Our plan also includes Part D prescription drugs – and because you receive “extra help” with prescription drugs, your copayments are low. Some of the extra benefits included with Integra Harmony (HMO SNP) include:
 
 * Vision
 * Dental
-* Hearing Aids 
-* Over the counter products
+* Hearing Aids
+* Over the counter allowance
 
-The kind of Medicaid benefits you receive are determined by New York State and may vary based upon your income and resources.
-
-If you want to know more about the coverage and costs of Original Medicare, look in your current "Medicare & You" handbook. View it online at http://www.medicare.gov or get a copy by calling 1-800-MEDICARE (1-800-633-4227), 24 hours a day, 7 days a week. TTY users should call 1-877-486-2048. 
+If you want to know more about the coverage and costs of Original Medicare, look in your current "Medicare & You" handbook. View it online at http://www.medicare.gov or get a copy by calling 1-800-MEDICARE (1-800-633-4227), 24 hours a day, 7 days a week. TTY users should call 1-877-486-2048.

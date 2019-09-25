@@ -144,6 +144,8 @@ export const planPageQuery = graphql`
         introduction {
           title
           body
+          points
+          size
           action {
             text
             icon
