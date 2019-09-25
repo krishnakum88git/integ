@@ -113,7 +113,7 @@ const Footer = ({ disclaimers, cmsMaterialID, lastModified }) => (
 
         <ContactItems>
           <ContactItem icon="phone">
-            <a href="tel:+1-877-388-5195">+1 877-388-5195</a>
+            <a href="tel:1-877-388-5190">+1-877-388-5190</a>
             <br />
             TTY: 711
           </ContactItem>
