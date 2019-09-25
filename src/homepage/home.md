@@ -2,10 +2,7 @@
 title: Discover a plan that works to your advantage
 banner: /files/home.jpg
 lead: >-
-  Integra Managed Care offers Medicare Advantage Prescription Drug Plans and a
-  Medicare-Medicaid Plan option that gives you flexibility in choosing a health
-  plan that’s right for you and helps maintain your overall health and
-  well-being.
+  Integra Managed Care offers Medicare Advantage Prescription Drug Special Needs Plans for people with Medicare and Medicaid that meet certain eligibility requirements.
 alignLeft: true
 callout:
   body: 'Call Toll-Free 1-877-388-5190 TTY: 711'
@@ -16,9 +13,11 @@ callToAction:
     text: View Our Plans
     url: /our-plans
   points:
-    - 'Low cost premiums, some as low as $0'
-    - Out-of-pocket maximums to help prevent financial surprises
-    - Prescription drug coverage for thousands of brand name & generic drugs
+    - $0 or low cost premiums
+    - Vision care
+    - Dental services
+    - Over the counter allowance
+    - Prescription drug coverage
   title: 'Integra Managed Care Medicare Advantage plans may offer:'
 disclaimers:
   - >-
