@@ -40,8 +40,6 @@ lists:
         title: Privacy Statement
       - file: /files/Integra Standard Non Formulary Exception Form_Final.pdf
         title: Standard Non-Formulary Exception Request Form
-      - file: /files/Integra Tier Exception Request Form_Final.pdf
-        title: Tier Exception Request Form
     title: Resources
     type: resource
 slug: member-resources
