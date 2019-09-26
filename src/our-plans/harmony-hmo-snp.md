@@ -2,6 +2,13 @@
 title: Our Plans
 subTitle: Integra Managed Care’s (HMO SNP) Harmony
 slug: 2019-harmony-hmo-snp
+introductionFeature:
+    title: 'Integra Harmony (HMO SNP)'
+    body: Integra Harmony (HMO SNP) is a Medicare Advantage Prescription Drug Special Needs Plan for people who have Medicare and Medicaid.
+    action:
+      text: Learn More about Integra Harmony (HMO SNP)
+      icon: book-open
+      url: /our-plans/2019-harmony-hmo-snp
 introduction:
     title: Integra Harmony (HMO SNP)
     body: "You may enroll in Integra Harmony (HMO SNP), if you meet the following criteria:"

@@ -1,5 +1,5 @@
 ---
-templateKey: 'generic-page'
+templateKey: 'plans-page'
 slug: 'our-plans'
 title: 'Our Plans'
 indicatorColor: '#F7B731'
@@ -8,16 +8,9 @@ banner: /files/our-plans.jpg
 pageSize: 'md'
 pagePadTop: false
 pagePadBot: true
-introduction:
-    title: 'Integra Harmony (HMO SNP)'
-    body: Integra Harmony (HMO SNP) is a Medicare Advantage Prescription Drug Special Needs Plan for people who have Medicare and Medicaid.
-    action:
-      text: Learn More about Integra Harmony (HMO SNP)
-      icon: book-open
-      url: /our-plans/2019-harmony-hmo-snp
 plans:
-    - harmony
-    - synergy
+    - harmony-hmo-snp
+    - synergy-map-hmo-snp
 magnets:
     - medicare-101
     - provider-search
