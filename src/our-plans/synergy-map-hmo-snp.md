@@ -1,14 +1,14 @@
 ---
 title: Our Plans
 subTitle: Integra Managed Care’s (HMO SNP) Synergy MAP
-slug: 2019-synergy-map-hmo-snp
+slug: 2020-synergy-map-hmo-snp
 introductionFeature:
     title: 'Integra Synergy Medicaid Advantage Plus (MAP) (HMO SNP)'
     body: Integra Synergy MAP (HMO SNP) is a Medicare Advantage Prescription Drug Special Needs Plan for people who have both Medicare and Medicaid and need at least 120 days of community-based long-term care services.
     action:
       text: Learn More about Integra Synergy MAP (HMO SNP)
       icon: book-open
-      url: /our-plans/2019-synergy-map-hmo-snp
+      url: /our-plans/2020-synergy-map-hmo-snp
 introduction:
     title: Integra Synergy MAP (HMO SNP)
     body: Under Integra Synergy MAP (HMO SNP) you can get your Medicare and Medicaid services in one health plan. An Integra Synergy MAP (HMO SNP) care coordinator will help manage your health care needs.
@@ -16,14 +16,14 @@ introduction:
     action:
       text: Download Plan Summary
       icon: file-download
-      url: /files/H1205_2019 SB Synergy_M.pdf
+      url: /files/Integra_Synergy_MAP_SB_2020_NY_MAP_091219.pdf
       target: _blank
 lists:
   - title: Documents
     type: document
     items: 
-      - title: 2019 Summary of Benefits Integra Synergy (HMO SNP) Plan
-        url: /files/H1205_2019 SB Synergy_M.pdf
+      - title: 2020 Summary of Benefits Integra Synergy (HMO SNP) Plan
+        url: /files/Integra_Synergy_MAP_SB_2020_NY_MAP_091219.pdf
   - title: Resources
     type: resource
     items: 

@@ -8,20 +8,24 @@ magnets:
   - contact-us
 lists:
   - items:
+      - file: /files/H1205_2020_ANOC_Harmony_M.pdf
+        title: Annual Notice of Change (ANOC)
       - file: /files/Integra MCR Website Appeals Description.pdf
         title: Appeals & Grievance
       - file: /files/Integra Managed Care_How to appoint a representative_Final.pdf
         title: Appoint a Representative
-      - file: /files/medicare_formulary_update_august2019_final_.pdf
+      - file: /files/Integra_2020_Formulary_Comprhensive_Model_RevB_Oct_2019.pdf
         title: Covered Drugs\n(Formulary & Medication)
-      - file: /files/H1205_2019 Harmony EOC_C.pdf
-        title: Evidence of Coverage
+      - file: /files/2020_Harmony_EOC_092419.pdf
+        title: Evidence of Coverage - 2020 Integra Harmony (HMO SNP)
+      - file: /files/CY2020_Synergy_EOC_NYC.pdf
+        title: Evidence of Coverage - 2020 Integra Synergy MAP (HMO SNP)
       - file: /provider-search
         title: Find a Provider
       - file: /medicare-101
         title: Getting Medicare
       - title: Searchable Formulary
-        url: 'http://client.formularynavigator.com/Search.aspx?siteCode=7360064946'
+        url: 'http://client.formularynavigator.com/Search.aspx?siteCode=3037733490'
       - file: /files/mtm_update_final.pdf
         title: Medication Therapy Management
       - file: /files/Integra MCR Website Member Rights  Responsibilities.pdf
