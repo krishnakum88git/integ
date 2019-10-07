@@ -10,7 +10,7 @@ lists:
   - items:
       - file: /files/H1205_2020_ANOC_Harmony_M.pdf
         title: Annual Notice of Change (ANOC)
-      - file: /files/Integra MCR Website Appeals Description.pdf
+      - file: /files/Appeals_and_Grievances-Organization_Determinations_language.pdf
         title: Appeals & Grievance
       - file: /files/Integra Managed Care_How to appoint a representative_Final.pdf
         title: Appoint a Representative
