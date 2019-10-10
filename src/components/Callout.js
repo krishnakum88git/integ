@@ -64,11 +64,11 @@ const ActionStyled = styled(Button)`
   white-space: pre-wrap;
 `
 
-const Action = ({ action }) => action ? (
-  <ActionStyled isPrimary {...action} />
+const Action = ({ action, isPrimary = true }) => action ? (
+  <ActionStyled isPrimary={isPrimary} {...action} />
 ) : null
 
-export default ({ title, type, align = 'center', size = 'md', action, body, points, children, flex = true }) => (
+export default ({ title, type, align = 'center', size = 'md', action, actionSecondary, body, points, children, flex = true }) => (
   <Callout type={type} align={align} size={size}>
     <Container size={size} flex={flex} flexDirection="column" alignItems="center">
       <Title text={title} />
@@ -84,6 +84,12 @@ export default ({ title, type, align = 'center', size = 'md', action, body, poin
         </List>
       )}
       <Action action={action} />
+      {actionSecondary && (
+        <>
+          <br />
+          <Action action={actionSecondary} isPrimary={false} />
+        </>
+      )}
     </Container>
   </Callout>
 )

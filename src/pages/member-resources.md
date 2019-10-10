@@ -10,16 +10,24 @@ lists:
   - items:
       - file: /files/H1205_2020_ANOC_Harmony_M.pdf
         title: Annual Notice of Change (ANOC)
+      - file: /member-resources
+        title: Annual Notice of Change (ANOC) Spanish Coming Soon
       - file: /files/Appeals_and_Grievances-Organization_Determinations_language.pdf
         title: Appeals & Grievance
       - file: /files/Integra Managed Care_How to appoint a representative_Final.pdf
         title: Appoint a Representative
       - file: /files/Integra_2020_Formulary_Comprhensive_Model_RevB_Oct_2019.pdf
         title: Covered Drugs\n(Formulary & Medication)
+      - file: /member-resources
+        title: Covered Drugs\n(Formulary & Medication)\nSpanish Coming Soon
       - file: /files/2020_Harmony_EOC_092419.pdf
         title: Evidence of Coverage - 2020 Integra Harmony (HMO SNP)
-      - file: /files/CY2020_Synergy_EOC_NYC.pdf
+      - file: "/member-resources"
+        title: Evidence of Coverage - 2020 Integra Harmony (HMO SNP) Spanish Coming Soon
+      - file: /files/CY2020_Synergy_EOC_NYC_FINAL.pdf
         title: Evidence of Coverage - 2020 Integra Synergy MAP (HMO SNP)
+      - file: /member-resources
+        title: Evidence of Coverage - 2020 Integra Synergy MAP (HMO SNP) Spanish Coming Soon
       - file: /provider-search
         title: Find a Provider
       - file: /medicare-101
@@ -44,6 +52,10 @@ lists:
         title: Privacy Statement
       - file: /files/Integra Standard Non Formulary Exception Form_Final.pdf
         title: Standard Non-Formulary Exception Request Form
+      - file: /files/H1205_LIS_Premium Subsidy_Table_C.pdf
+        title: Low Income\nPremium Subsidy Table
+      - file: /member-resources
+        title: Low Income\nPremium Subsidy Table\nSpanish Coming Soon
     title: Resources
     type: resource
 slug: member-resources

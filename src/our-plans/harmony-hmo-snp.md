@@ -22,12 +22,19 @@ introduction:
       icon: file-download
       url: /files/H1205_2020_SB_Harmony_M.pdf
       target: _blank
+    actionSecondary:
+      text: Download Plan Summary Spanish
+      icon: file-download
+      url: /our-plans/2020-harmony-hmo-snp
+      target: _blank
 lists:
   - title: Documents
     type: document
     items: 
       - title: 2020 Summary of Benefits Integra Harmony (HMO SNP) Plan
         url: /files/H1205_2020_SB_Harmony_M.pdf
+      - title: 2020 Summary of Benefits Integra Harmony (HMO SNP) Plan\nSpanish Coming Soon
+        url: /our-plans/2020-harmony-hmo-snp
   - title: Resources
     type: resource
     items: 
