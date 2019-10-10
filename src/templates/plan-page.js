@@ -149,6 +149,12 @@ export const planPageQuery = graphql`
             url
             target
           }
+          actionSecondary {
+            text
+            icon
+            url
+            target
+          }
         }
         lists {
           title

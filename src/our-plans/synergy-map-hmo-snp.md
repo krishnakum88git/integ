@@ -16,14 +16,21 @@ introduction:
     action:
       text: Download Plan Summary
       icon: file-download
-      url: /files/Integra_Synergy_MAP_SB_2020_NY_MAP_091219.pdf
+      url: /files/Integra_Synergy_MAP_SB_2020_NY_MAP_091219_FINAL.pdf
+      target: _blank
+    actionSecondary:
+      text: Download Plan Summary Spanish
+      icon: file-download
+      url: /our-plans/2020-synergy-map-hmo-snp
       target: _blank
 lists:
   - title: Documents
     type: document
     items: 
       - title: 2020 Summary of Benefits Integra Synergy (HMO SNP) Plan
-        url: /files/Integra_Synergy_MAP_SB_2020_NY_MAP_091219.pdf
+        url: /files/Integra_Synergy_MAP_SB_2020_NY_MAP_091219_FINAL.pdf
+      - title: 2020 Summary of Benefits Integra Synergy (HMO SNP) Plan\nSpanish Coming Soon
+        url: /our-plans/2020-synergy-map-hmo-snp
   - title: Resources
     type: resource
     items: 
