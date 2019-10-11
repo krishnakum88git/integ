@@ -43,6 +43,7 @@ const IconContainer = styled.div`
   background-color: #fff;
   border-radius: 50%;
   bottom: -38px;
+  left: calc(50% - 56px);
   z-index: 9;
 `
 
@@ -90,6 +91,7 @@ const Subtitle = styled.p`
 
 const Footer = styled.div`
   width: 100%;
+  height: 93px;
   display: flex;
   justify-content: center;
   flex-direction: column;
