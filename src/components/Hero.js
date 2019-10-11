@@ -103,6 +103,7 @@ const DividerContainer = styled.div`
   transform: translateY(2px);
   -ms-transform: translateY(20px);
   width: 100%;
+  height: 100%;
 `
 
 const Divider = () => (
