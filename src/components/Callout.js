@@ -74,7 +74,7 @@ export default ({ title, type, align = 'center', size = 'md', action, actionSeco
       <Title text={title} />
       {children}
       {body && (
-        <p>{body}</p>
+        <p style={{maxWidth: "100%"}}>{body}</p>
       )}
       {points && (
         <List>
