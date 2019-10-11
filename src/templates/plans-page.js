@@ -139,7 +139,10 @@ export const pageQuery = graphql`
       }
     }
 
-    plans: allFile(filter: {internal: {mediaType: {eq: "text/markdown"}}, sourceInstanceName: {eq: "our-plans"}}) {
+    plans: allFile(
+      filter: {internal: {mediaType: {eq: "text/markdown"}}, sourceInstanceName: {eq: "our-plans"}}
+      sort: { fields: [name], order: ASC }
+    ) {
       edges {
         node {
           childMarkdownRemark {

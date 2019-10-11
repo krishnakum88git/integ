@@ -1,6 +1,6 @@
 ---
 title: Our Plans
-subTitle: Integra Managed Care’s (HMO SNP) Synergy MAP
+subTitle: Integra Synergy MAP (HMO SNP)
 slug: 2020-synergy-map-hmo-snp
 introductionFeature:
     title: 'Integra Synergy Medicaid Advantage Plus (MAP) (HMO SNP)'

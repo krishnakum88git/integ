@@ -1,6 +1,6 @@
 ---
 title: Our Plans
-subTitle: Integra Managed Care’s (HMO SNP) Harmony
+subTitle: Integra Harmony (HMO SNP)
 slug: 2020-harmony-hmo-snp
 introductionFeature:
     title: 'Integra Harmony (HMO SNP)'
