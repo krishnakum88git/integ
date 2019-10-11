@@ -7,7 +7,7 @@ import Img from "./Image";
 const Wrapper = styled.div`
   position: relative;
   background-color: #ffffff;
-  width: 280px;
+  width: 270px;
   border-radius: 10px;
   overflow: hidden;
   display: flex;
