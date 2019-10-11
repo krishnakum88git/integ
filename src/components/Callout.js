@@ -53,6 +53,7 @@ const List = styled.ul`
 const TitleStyled = styled.h2`
   margin-top: 0;
   white-space: pre-wrap;
+  max-width: 100%;
 `
 
 const Title = ({ text }) => text ? (
