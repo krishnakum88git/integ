@@ -16,7 +16,7 @@ lists:
         title: Appeals & Grievance
       - file: /files/Integra Managed Care_How to appoint a representative_Final.pdf
         title: Appoint a Representative
-      - file: /files/Integra_2020_Formulary_Comprhensive_Model_RevB_Oct_2019.pdf
+      - file: /files/H1205_2020_Comprehensive_Formulary_C_Final.doc
         title: Covered Drugs\n(Formulary & Medication)
       - file: /member-resources
         title: Covered Drugs\n(Formulary & Medication)\nSpanish Coming Soon
