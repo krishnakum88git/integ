@@ -11,7 +11,7 @@ introductionFeature:
       url: /our-plans/2020-synergy-map-hmo-snp
 introduction:
     title: Integra Synergy MAP (HMO SNP)
-    body: Under Integra Synergy MAP (HMO SNP) you can get your Medicare and Medicaid services in one health plan. An Integra Synergy MAP (HMO SNP) care coordinator will help manage your health care needs.
+    body: With Integra Synergy MAP (HMO SNP) you can get your Medicare and Medicaid services in one health plan. An Integra Synergy MAP (HMO SNP) care coordinator will help manage your health care needs.
     size: md
     action:
       text: Download Plan Summary
@@ -59,9 +59,9 @@ You may enroll in Integra Synergy MAP (HMO SNP), if you meet the following crite
 
 ### Plan Information
 
-Integra Synergy MAP (HMO SNP) is combines your Medicaid home care and long-term care services and your Medicare services. It combines your doctors, hospital, pharmacies, home care, nursing home care, and other health care providers into one coordinated health care system. It also has care coordinators to help you manage all your providers and services. They all work together to provide the care you need.
+Integra Synergy MAP (HMO SNP) combines your Medicaid home care and long-term care services and your Medicare services. It combines your doctors, hospital, pharmacies, home care, nursing home care, and other health care providers into one coordinated health care system. It also has care coordinators to help you manage all your providers and services. They all work together to provide the care you need.
 
-With Integra Harmony (HMO SNP), you get all the benefits you would get under Original Medicare, plus extra benefits. In addition, your Medicaid benefits (some are excluded from our plan but are available by using your Medicaid card). With our plan, you pay $0 for all your Medicare, Medicaid and prescription drug benefits.  
+With Integra Harmony (HMO SNP), you get all the benefits you would get under Original Medicare, plus extra benefits. In addition, you get your Medicaid benefits (some are excluded from our plan but are available by using your Medicaid card). With our plan, you pay $0 for all your Medicare, Medicaid and prescription drug benefits.  
 
 Examples of the benefits covered by Integra synergy MAP (HMO SNP) include:
 
