@@ -13,7 +13,7 @@ lists:
       - file: /files/2020 ANOC Harmony_M_102719_SP_508.pdf
         title: Annual Notice of Change (ANOC) Spanish
       - file: /files/Appeals_and_Grievances-Organization_Determinations_language.pdf
-        title: Appeals & Grievance
+        title: Appeals & Grievances
       - file: /files/Integra Managed Care_How to appoint a representative_Final.pdf
         title: Appoint a Representative
       - file: /files/H1205_2020 Comprehensive Formulary_C Final_110519_508.pdf
