@@ -20,14 +20,14 @@ lists:
         title: Covered Drugs\n(Formulary & Medication)
       - file: /member-resources
         title: Covered Drugs\n(Formulary & Medication)\nSpanish Coming Soon
-      - file: /files/2020_Harmony_EOC_092419.pdf
+      - file: /files/2020_Harmony_EOC_092419_Final_508.pdf
         title: Evidence of Coverage - 2020 Integra Harmony (HMO SNP)
-      - file: "/member-resources"
-        title: Evidence of Coverage - 2020 Integra Harmony (HMO SNP) Spanish Coming Soon
-      - file: /files/CY2020_Synergy_EOC_NYC_FINAL.pdf
+      - file: /files/2020_Harmony_EOC_092419_Final_SP_508.pdf
+        title: Evidence of Coverage - 2020 Integra Harmony (HMO SNP) Spanish
+      - file: /files/CY2020_Synergy_EOC_NYC FINAL_508.pdf
         title: Evidence of Coverage - 2020 Integra Synergy MAP (HMO SNP)
-      - file: /member-resources
-        title: Evidence of Coverage - 2020 Integra Synergy MAP (HMO SNP) Spanish Coming Soon
+      - file: /files/CY2020_Synergy_EOC_NYC FINAL_SP_508.pdf
+        title: Evidence of Coverage - 2020 Integra Synergy MAP (HMO SNP) Spanish
       - file: /provider-search
         title: Find a Provider
       - file: /medicare-101
