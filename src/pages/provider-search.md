@@ -15,14 +15,18 @@ lists:
       - title: 'Our most up to date listings (includes Providers, Specialists, Pharmacy, Vision and Dental)'
         icon: check
       - title: 'Integra Harmony (HMO SNP) Directory'
-        file: '/files/INT_MAPD_2020_proof__Integra_MAPD_Provider_Directory_September-v2.0.pdf'
+        file: '/files/INT_MAPD_2020_proof__Integra MAPD Provider Directory September - v3.0.pdf'
+      - title: 'Integra Synergy MAP (HMO SNP) Directory'
+        file: '/files/INT_SNG_2020_proof__Integra Synergy Provider Directory- v5.1.pdf'
   - title: 'View & Print our Directories'
     type: document
     items: 
       - title: 'Downloadable directory includes: Providers, Specialists, Pharmacy, Vision and Dental'
         icon: file-download
       - title: 'Integra Harmony (HMO SNP) Directory'
-        file: '/files/INT_MAPD_2020_proof__Integra_MAPD_Provider_Directory_September-v2.0.pdf'
+        file: '/files/INT_MAPD_2020_proof__Integra MAPD Provider Directory September - v3.0.pdf'
+      - title: 'Integra Synergy MAP (HMO SNP) Directory'
+        file: '/files/INT_SNG_2020_proof__Integra Synergy Provider Directory- v5.1.pdf'
   - title: 'Call Member Services'
     items:
       - title: '1-877-388-5195\nTTY Users call 711'
