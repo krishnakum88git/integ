@@ -52,10 +52,10 @@ lists:
         title: Privacy Statement
       - file: /files/Integra Standard Non Formulary Exception Form_Final.pdf
         title: Standard Non-Formulary Exception Request Form
-      - file: /files/H1205_LIS_Premium Subsidy_Table_C.pdf
+      - file: /files/H1205_LIS Premium Subsidy Table_C_508.pdf
         title: Low Income\nPremium Subsidy Table
-      - file: /member-resources
-        title: Low Income\nPremium Subsidy Table\nSpanish Coming Soon
+      - file: /files/H1205_LIS Premium Subsidy Table_C_SP_508.pdf
+        title: Low Income\nPremium Subsidy Table Spanish
     title: Resources
     type: resource
 slug: member-resources
