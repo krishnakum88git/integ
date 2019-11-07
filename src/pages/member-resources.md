@@ -8,18 +8,20 @@ magnets:
   - contact-us
 lists:
   - items:
-      - file: /files/H1205_2020_ANOC_Harmony_M.pdf
+      - file: /files/2020 ANOC Harmony_M_102719_508.pdf
         title: Annual Notice of Change (ANOC)
-      - file: /member-resources
-        title: Annual Notice of Change (ANOC) Spanish Coming Soon
+      - file: /files/2020 ANOC Harmony_M_102719_SP_508.pdf
+        title: Annual Notice of Change (ANOC) Spanish
       - file: /files/Appeals_and_Grievances-Organization_Determinations_language.pdf
         title: Appeals & Grievance
       - file: /files/Integra Managed Care_How to appoint a representative_Final.pdf
         title: Appoint a Representative
-      - file: /files/H1205_2020_Comprehensive_Formulary_C_Final.pdf
-        title: Covered Drugs\n(Formulary & Medication)
-      - file: /member-resources
-        title: Covered Drugs\n(Formulary & Medication)\nSpanish Coming Soon
+      - file: /files/H1205_2020 Comprehensive Formulary_C Final_110519_508.pdf
+        title: Covered Drugs - 2020\n(Formulary & Medication)
+      - file: /files/H1205_2020 Comprehensive Formulary_C Final_SP_508.pdf
+        title: Covered Drugs - 2020\n(Formulary & Medication) Spanish
+      - file: /files/Harmony_Formulary_11.19_Final.pdf
+        title: Covered Drugs - 2019\n(Formulary & Medication)
       - file: /files/2020_Harmony_EOC_092419_Final_508.pdf
         title: Evidence of Coverage - 2020 Integra Harmony (HMO SNP)
       - file: /files/2020_Harmony_EOC_092419_Final_SP_508.pdf
@@ -56,6 +58,10 @@ lists:
         title: Low Income\nPremium Subsidy Table
       - file: /files/H1205_LIS Premium Subsidy Table_C_SP_508.pdf
         title: Low Income\nPremium Subsidy Table Spanish
+      - file: /files/H1205_Part_D_Star_Rating_2020_English_508.pdf
+        title: Medicare Star Ratings - 2020
+      - file: /files/H1205_Part_D_Star_Rating_2020_Spanish_508.pdf
+        title: Medicare Star Ratings - 2020 Spanish
     title: Resources
     type: resource
 slug: member-resources
