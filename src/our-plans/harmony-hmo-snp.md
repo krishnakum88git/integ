@@ -20,21 +20,21 @@ introduction:
     action:
       text: Download Plan Summary
       icon: file-download
-      url: /files/2020 Harmony_SOB_508.pdf
+      url: /files/2020-Harmony_SOB_508.pdf
       target: _blank
     actionSecondary:
       text: Download Plan Summary Spanish
       icon: file-download
-      url: /files/2020 Harmony_SOB_SP_508.pdf
+      url: /files/2020-Harmony_SOB_SP_508.pdf
       target: _blank
 lists:
   - title: Documents
     type: document
     items: 
       - title: 2020 Summary of Benefits Integra Harmony (HMO SNP) Plan
-        url: /files/2020 Harmony_SOB_508.pdf
+        url: /files/2020-Harmony_SOB_508.pdf
       - title: 2020 Summary of Benefits Integra Harmony (HMO SNP) Plan Spanish
-        url: /files/2020 Harmony_SOB_SP_508.pdf
+        url: /files/2020-Harmony_SOB_SP_508.pdf
   - title: Resources
     type: resource
     items: 
