@@ -10,8 +10,7 @@ introduction:
   title: Please call us for our Provider Directory 1-877-388-5195
 lists:
   - items:
-      - file: /files/integra-harmony-hmo-snp-directory.pdf
-        icon: check
+      - icon: check
         title: >-
           Our most up to date listings (includes Providers, Specialists,
           Pharmacy, Vision and Dental)
