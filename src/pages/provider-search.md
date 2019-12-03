@@ -10,15 +10,14 @@ introduction:
   title: Please call us for our Provider Directory 1-877-388-5195
 lists:
   - items:
-      - icon: check
+      - file: /files/integra-harmony-hmo-snp-directory.pdf
+        icon: check
         title: >-
           Our most up to date listings (includes Providers, Specialists,
           Pharmacy, Vision and Dental)
-      - file: >-
-          /files/harmony_int_mapd_2020_proof__integra-mapd-provider-directory-september-tagged-v3.0_508.pdf
+      - file: /files/integra-harmony-hmo-snp-directory.pdf
         title: Integra Harmony (HMO SNP) Directory
-      - file: >-
-          /files/synergy_int_sng_2020_proof__integra-synergy-provider-directory-tagged-v5.1_508.pdf
+      - file: /files/integra-synergy-map-hmo-snp-directory.pdf
         title: Integra Synergy MAP (HMO SNP) Directory
     title: View our Searchable Directories
     type: resource
@@ -27,11 +26,9 @@ lists:
         title: >-
           Downloadable directory includes: Providers, Specialists, Pharmacy,
           Vision and Dental
-      - file: >-
-          /files/harmony_int_mapd_2020_proof__integra-mapd-provider-directory-september-tagged-v3.0_508.pdf
+      - file: /files/integra-harmony-hmo-snp-directory.pdf
         title: Integra Harmony (HMO SNP) Directory
-      - file: >-
-          /files/synergy_int_sng_2020_proof__integra-synergy-provider-directory-tagged-v5.1_508.pdf
+      - file: /files/integra-synergy-map-hmo-snp-directory.pdf
         title: Integra Synergy MAP (HMO SNP) Directory
     title: View & Print our Directories
     type: document
