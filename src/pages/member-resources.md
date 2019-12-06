@@ -22,9 +22,9 @@ lists:
         title: Covered Drugs - 2020\n(Formulary & Medication) Spanish
       - file: /files/Harmony_Formulary_11.19_Final.pdf
         title: Covered Drugs - 2019\n(Formulary & Medication)
-      - file: /files/2020_Harmony_EOC_092419_Final_508.pdf
+      - file: /files/2020-harmony-eoc.pdf
         title: Evidence of Coverage - 2020 Integra Harmony (HMO SNP)
-      - file: /files/2020_Harmony_EOC_092419_Final_SP_508.pdf
+      - file: /files/2020-harmony-eoc-sp.pdf
         title: Evidence of Coverage - 2020 Integra Harmony (HMO SNP) Spanish
       - file: /files/CY2020_Synergy_EOC_NYC FINAL_508.pdf
         title: Evidence of Coverage - 2020 Integra Synergy MAP (HMO SNP)
@@ -83,7 +83,9 @@ disclaimers:
     color, national origin, age, disability, or sex.
   - >-
     Please contact our Member Services number at 1-877-388-5195 for additional
-    information (TTY users should call 711). Hours are 8 am to 8 pm seven days a week from October 1 to March 31, and 8 am to 8 pm Monday through Friday from April 1 to September 30.
+    information (TTY users should call 711). Hours are 8 am to 8 pm seven days a
+    week from October 1 to March 31, and 8 am to 8 pm Monday through Friday from
+    April 1 to September 30.
   - >-
     ATTENTION - If you speak Spanish, language assistance services, free of
     charge, are available to you. Call 1-877-388-5195 (TTY 711). ATENCIÓN - si
