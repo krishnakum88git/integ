@@ -114,22 +114,28 @@ collections:
           - label: Title
             name: title
             widget: string
+            required: false
           - label: Body
             name: body
             widget: string
+            required: false
           - label: Action
             name: action
             widget: object
+            required: false
             fields:
               - label: Text
                 name: text
                 widget: string
+                required: false
               - label: Icon
                 name: icon
                 widget: string
+                required: false
               - label: Url
                 name: url
                 widget: string
+                required: false
       - label: Lists
         name: lists
         widget: list
@@ -316,29 +322,37 @@ collections:
           - label: Title
             name: title
             widget: string
+            required: false
           - label: Body
             name: body
             widget: string
+            required: false
           - label: Size
             name: size
             widget: hidden
+            required: false
           - label: Points
             name: points
             widget: list
+            required: false
             field: {label: Point, name: point, widget: string}
           - label: Action
             name: action
             widget: object
+            required: false
             fields:
               - label: Text
                 name: text
                 widget: string
+                required: false
               - label: Icon
                 name: icon
                 widget: string
+                required: false
               - label: Url
                 name: url
                 widget: string
+                required: false
           - label: Action Secondary
             name: actionSecondary
             widget: object
