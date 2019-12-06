@@ -368,7 +368,7 @@ collections:
                 widget: string
       - label: Introduction Feature
         name: introductionFeature
-        widget: hidden
+        widget: object
         required: false
         fields:
           - label: Title
