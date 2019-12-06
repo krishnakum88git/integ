@@ -30,7 +30,7 @@ collections:
             required: false
             fields:
               - { label: Title, name: title, widget: string }
-              - { label: Type, name: type, widget: string }
+              - { label: Type, name: type, widget: string, required: false }
               - label: Items
                 name: items
                 widget: list
@@ -69,7 +69,7 @@ collections:
             required: false
             fields:
               - { label: Title, name: title, widget: string }
-              - { label: Type, name: type, widget: string }
+              - { label: Type, name: type, widget: string, required: false }
               - label: Items
                 name: items
                 widget: list
@@ -142,7 +142,7 @@ collections:
         required: false
         fields:
           - { label: Title, name: title, widget: string }
-          - { label: Type, name: type, widget: string }
+          - { label: Type, name: type, widget: string, required: false }
           - label: Items
             name: items
             widget: list
@@ -415,7 +415,7 @@ collections:
         required: false
         fields:
           - { label: Title, name: title, widget: string }
-          - { label: Type, name: type, widget: string }
+          - { label: Type, name: type, widget: string, required: false }
           - label: Items
             name: items
             widget: list
