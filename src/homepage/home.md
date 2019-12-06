@@ -2,7 +2,9 @@
 title: Discover a plan that works to your advantage
 banner: /files/home.jpg
 lead: >-
-  Integra Managed Care offers Medicare Advantage Prescription Drug Special Needs Plans for people with Medicare and Medicaid that meet certain eligibility requirements.
+  Integra Managed Care offers Medicare Advantage Prescription Drug Special Needs
+  Plans for people with Medicare and Medicaid that meet certain eligibility
+  requirements.
 alignLeft: true
 callout:
   body: 'Call Toll-Free 1-877-388-5190 TTY: 711'
@@ -17,7 +19,7 @@ callToAction:
     - Vision care
     - Dental services
     - Over the counter allowance
-    - Prescription drug coverage
+    - 'Prescription drug coverage '
   title: 'Integra Managed Care Medicare Advantage plans may offer:'
 disclaimers:
   - >-
@@ -33,7 +35,9 @@ disclaimers:
     color, national origin, age, disability, or sex.
   - >-
     Please contact our Member Services number at 1-877-388-5195 for additional
-    information (TTY users should call 711). Hours are 8 am to 8 pm seven days a week from October 1 to March 31, and 8 am to 8 pm Monday through Friday from April 1 to September 30.
+    information (TTY users should call 711). Hours are 8 am to 8 pm seven days a
+    week from October 1 to March 31, and 8 am to 8 pm Monday through Friday from
+    April 1 to September 30.
   - >-
     ATTENTION - If you speak Spanish, language assistance services, free of
     charge, are available to you. Call 1-877-388-5195 (TTY 711). ATENCIÓN - si
