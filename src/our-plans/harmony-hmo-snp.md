@@ -22,6 +22,7 @@ introduction:
       Live in our service area of Bronx, Kings, New York, Queens or Nassau
       counties in New York
     - Not have End Stage Renal Disease (ESRD)
+  size: lg
 introductionFeature:
   action:
     icon: book-open
