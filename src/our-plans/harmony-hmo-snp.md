@@ -1,49 +1,60 @@
 ---
 title: Our Plans
 subTitle: Integra Harmony (HMO SNP)
-slug: 2020-harmony-hmo-snp
-introductionFeature:
-    title: 'Integra Harmony (HMO SNP)'
-    body: Integra Harmony (HMO SNP) is a Medicare Advantage Prescription Drug Special Needs Plan for people who have Medicare and Medicaid.
-    action:
-      text: Learn More about Integra Harmony (HMO SNP)
-      icon: book-open
-      url: /our-plans/2020-harmony-hmo-snp
 introduction:
-    title: Integra Harmony (HMO SNP)
-    body: "You may enroll in Integra Harmony (HMO SNP), if you meet the following criteria:"
-    size: lg
-    points: 
-      - Have both Medicare Parts A and B and full Medicaid benefits (QMB+ and SLMB+)
-      - Live in our service area of Bronx, Kings, New York, Queens or Nassau counties in New York
-      - Not have End Stage Renal Disease (ESRD)
-    action:
-      text: Download Plan Summary
-      icon: file-download
-      url: /files/2020-Harmony_SOB_508.pdf
-      target: _blank
-    actionSecondary:
-      text: Download Plan Summary Spanish
-      icon: file-download
-      url: /files/2020-Harmony_SOB_SP_508.pdf
-      target: _blank
+  action:
+    icon: file-download
+    text: Download Plan Summary
+    url: /files/H1205-2020-SB-Harmony.pdf
+  actionSecondary:
+    icon: file-download
+    text: Download Plan Summary Spanish
+    url: /files/H1205-2020-SB-Harmony-Spanish.pdf
+  title: Integra Harmony (HMO SNP)
+  body: >-
+    You may enroll in Integra Harmony (HMO SNP), if you meet the following
+    criteria:
 lists:
-  - title: Documents
+  - items:
+      - file: /files/h1205-2020-sb-harmony.pdf
+        title: 2020 Summary of Benefits Integra Harmony (HMO SNP) Plan
+        url: ''
+      - file: /files/h1205-2020-sb-harmony-spanish.pdf
+        title: 2020 Summary of Benefits Integra Harmony (HMO SNP) Plan Spanish
+        url: ''
+    title: Documents
     type: document
-    items: 
-      - title: 2020 Summary of Benefits Integra Harmony (HMO SNP) Plan
-        url: /files/2020-Harmony_SOB_508.pdf
-      - title: 2020 Summary of Benefits Integra Harmony (HMO SNP) Plan Spanish
-        url: /files/2020-Harmony_SOB_SP_508.pdf
-  - title: Resources
-    type: resource
-    items: 
+  - items:
       - title: Medicare.gov
-        url: http://www.medicare.gov/
+        url: 'http://www.medicare.gov/'
+    title: Resources
+    type: resource
+slug: 2020-harmony-hmo-snp
 disclaimers:
-    - Integra Managed Care is an HMO Plan with a Medicare Advantage contract and a contract with the New York State Medicaid program. Enrollment in Integra Managed Care depends on contract renewal. This information is not a complete description of benefits. Limitations, copayments, and restrictions may apply. Benefits, premiums and/or co-payments/co-insurance may change on January 1 of each year. You must continue to pay your Medicare Part B premium. Certain plans are available to anyone who has both Medicaid from New York State and Medicare. Integra Managed Care complies with applicable Federal civil rights laws and does not discriminate on the basis of race, color, national origin, age, disability, or sex.
-    - Please contact our Member Services number at 1-877-388-5195 for additional information (TTY users should call 711). Hours are 8 am to 8 pm seven days a week from October 1 to March 31, and 8 am to 8 pm Monday through Friday from April 1 to September 30.
-    - ATTENTION - If you speak Spanish, language assistance services, free of charge, are available to you. Call 1-877-388-5195 (TTY 711). ATENCIÓN - si habla español, tiene a su disposición servicios gratuitos de asistencia lingüística. Llame al 1- 877-388-5195 (TTY 711). Assistance services for other languages are also available free of charge at the number above. All plan materials and information are available upon request in a different language or alternate formats such as braille, large print and audio.
+  - >-
+    Integra Managed Care is an HMO Plan with a Medicare Advantage contract and a
+    contract with the New York State Medicaid program. Enrollment in Integra
+    Managed Care depends on contract renewal. This information is not a complete
+    description of benefits. Limitations, copayments, and restrictions may
+    apply. Benefits, premiums and/or co-payments/co-insurance may change on
+    January 1 of each year. You must continue to pay your Medicare Part B
+    premium. Certain plans are available to anyone who has both Medicaid from
+    New York State and Medicare. Integra Managed Care complies with applicable
+    Federal civil rights laws and does not discriminate on the basis of race,
+    color, national origin, age, disability, or sex.
+  - >-
+    Please contact our Member Services number at 1-877-388-5195 for additional
+    information (TTY users should call 711). Hours are 8 am to 8 pm seven days a
+    week from October 1 to March 31, and 8 am to 8 pm Monday through Friday from
+    April 1 to September 30.
+  - >-
+    ATTENTION - If you speak Spanish, language assistance services, free of
+    charge, are available to you. Call 1-877-388-5195 (TTY 711). ATENCIÓN - si
+    habla español, tiene a su disposición servicios gratuitos de asistencia
+    lingüística. Llame al 1- 877-388-5195 (TTY 711). Assistance services for
+    other languages are also available free of charge at the number above. All
+    plan materials and information are available upon request in a different
+    language or alternate formats such as braille, large print and audio.
 ---
 ### Plan Information
 
