@@ -11,7 +11,7 @@ lists:
       - icon: calendar
         title: October 1 to March 31\n7 days a week
       - icon: calendar
-        title: April 1 to September 30\nMonday through Friday
+        title: 'April 1 to September 30\nMonday through Friday '
     title: Member & Provider Services
   - items:
       - icon: phone
