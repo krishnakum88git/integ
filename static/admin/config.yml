@@ -295,6 +295,7 @@ collections:
   - name: plans
     label: Plans
     folder: "src/our-plans"
+    identifier_field: subTitle
     create: true
     fields:
       - label: Title
