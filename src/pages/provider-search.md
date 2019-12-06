@@ -13,7 +13,7 @@ lists:
       - icon: check
         title: >-
           Our most up to date listings (includes Providers, Specialists,
-          Pharmacy, Vision and Dental)
+          Pharmacy, Vision and Dental) 
       - file: /files/integra-harmony-hmo-snp-directory.pdf
         title: Integra Harmony (HMO SNP) Directory
       - file: /files/integra-synergy-map-hmo-snp-directory.pdf
