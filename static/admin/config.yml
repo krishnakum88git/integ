@@ -319,6 +319,13 @@ collections:
           - label: Body
             name: body
             widget: string
+          - label: Size
+            name: size
+            widget: hidden
+          - label: Points
+            name: points
+            widget: list
+            field: {label: Point, name: point, widget: string}
           - label: Action
             name: action
             widget: object
@@ -347,7 +354,7 @@ collections:
                 widget: string
       - label: Introduction Feature
         name: introductionFeature
-        widget: object
+        widget: hidden
         required: false
         fields:
           - label: Title
