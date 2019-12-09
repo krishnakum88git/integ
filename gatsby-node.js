@@ -53,9 +53,9 @@ exports.createPages = ({ actions, graphql }) => {
 
     redirects.forEach(redirect => {
       createRedirect({
-        fromPath: `/${redirect.source}`,
+        fromPath: redirect.source.replace("../../../static", ""),
         redirectInBrowser: true,
-        toPath: `/${redirect.destination}`
+        toPath: redirect.destination.replace("../../../static", "")
       })
     })
 

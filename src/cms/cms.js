@@ -7,6 +7,7 @@ import HomePagePreview from './preview-templates/HomePagePreview'
 import PlanPagePreview from './preview-templates/PlanPagePreview'
 import InfoPreview from './preview-templates/InfoPreview'
 import CmsInfoPreview from './preview-templates/CmsInfoPreview'
+import RedirectConfigPreview from './preview-templates/RedirectConfigPreview'
 
 icons.forEach(icon => library.add(svgIcons[icon]))
 
@@ -16,3 +17,4 @@ CMS.registerPreviewTemplate('plans', PlanPagePreview)
 CMS.registerPreviewTemplate('enrollmentInfo', InfoPreview)
 CMS.registerPreviewTemplate('contactInfo', InfoPreview)
 CMS.registerPreviewTemplate('cmsInfo', CmsInfoPreview)
+CMS.registerPreviewTemplate('redirects', RedirectConfigPreview)
