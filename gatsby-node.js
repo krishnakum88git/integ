@@ -57,6 +57,7 @@ exports.createPages = ({ actions, graphql }) => {
         isPermanent: true,
         redirectInBrowser: true,
         toPath: `/${redirect.source}`,
+        force: true
       })
     })
 
