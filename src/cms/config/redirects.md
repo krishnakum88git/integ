@@ -12,9 +12,5 @@ list:
     source: /files/2020%20Harmony_SOB_508.pdf
   - destination: /files/2020-harmony_sob_sp_508.pdf
     source: /files/2020%20Harmony_SOB_SP_508.pdf
-  - destination: /
-    source: /test-redirect
-  - destination: /our-plans
-    source: /test-redirect-2
 ---
 
