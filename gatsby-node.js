@@ -4,11 +4,11 @@ const { createFilePath } = require('gatsby-source-filesystem')
 const { fmImagesToRelative } = require('gatsby-remark-relative-images');
 
 exports.createPages = ({ actions, graphql }) => {
-  const { createPage } = actions
+  const { createPage, createRedirect } = actions
 
   return graphql(`
     {
-      allMarkdownRemark(limit: 1000) {
+      markdown: allMarkdownRemark(limit: 1000) {
         edges {
           node {
             id
@@ -20,6 +20,25 @@ exports.createPages = ({ actions, graphql }) => {
           }
         }
       }
+      redirects: allMarkdownRemark(
+        filter: {
+          frontmatter: {
+            id: { eq:"redirects" }
+          }
+        }
+      ) {
+        edges {
+          node {
+            frontmatter {
+              list {
+                source
+                destination
+              }
+            }
+          }
+        }
+      }
+
     }
   `).then(result => {
     if (result.errors) {
@@ -27,10 +46,19 @@ exports.createPages = ({ actions, graphql }) => {
       return Promise.reject(result.errors)
     }
 
-    const posts = result.data.allMarkdownRemark.edges
-
+    const posts = result.data.markdown.edges
+    const redirects = result.data.redirects.edges[0].node.frontmatter.list
     const pages = posts.filter(edge => edge.node.fileAbsolutePath.indexOf('/pages/') !== -1)
     const plans = posts.filter(edge => edge.node.fileAbsolutePath.indexOf('/our-plans/') !== -1)
+
+    redirects.forEach(redirect => {
+      createRedirect({
+        fromPath: redirect.source,
+        isPermanent: true,
+        redirectInBrowser: true,
+        toPath: redirect.destination,
+      })
+    })
 
     pages.forEach(edge => {
       const id = edge.node.id

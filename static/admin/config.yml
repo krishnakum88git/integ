@@ -97,6 +97,24 @@ collections:
                     name: icon
                     widget: string
                     required: false
+  - name: config
+    label: Config
+    files:
+      - label: "Redirects"
+        name: "redirects"
+        file: "src/data/redirects-config.md"
+        fields:
+          - label: List
+            name: list
+            widget: list
+            required: false
+            fields:
+            - label: Source
+              name: source
+              widget: string
+            - label: Destination
+              name: destination
+              widget: string
   - name: pages
     label: Pages
     folder: "src/pages"

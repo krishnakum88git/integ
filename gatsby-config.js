@@ -10,7 +10,8 @@ module.exports = {
     'MarkdownRemark.frontmatter.magnets': `MarkdownRemark.frontmatter.slug`
   },
   siteMetadata: {
-    title: "Integra Managed Care"
+    title: "Integra Managed Care",
+    siteUrl: "https://www.integramanagedcare.com/",
   },
   plugins: [
     "gatsby-plugin-react-helmet",
@@ -39,6 +40,13 @@ module.exports = {
       options: {
         path: `${__dirname}/src/data`,
         name: "data"
+      }
+    },
+    {
+      resolve: "gatsby-source-filesystem",
+      options: {
+        path: `${__dirname}/src/cms/config`,
+        name: "config"
       }
     },
     {
