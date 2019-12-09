@@ -102,7 +102,7 @@ collections:
     files:
       - label: "Redirects"
         name: "redirects"
-        file: "src/data/redirects-config.md"
+        file: "src/cms/config/redirects.md"
         fields:
           - label: List
             name: list
