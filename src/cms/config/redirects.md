@@ -1,4 +1,5 @@
 ---
+id: redirects
 list:
   - destination: >-
       /files/harmony_int_mapd_2020_proof__integra-mapd-provider-directory-september-tagged-v3.0_508.pdf
