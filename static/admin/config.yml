@@ -104,6 +104,9 @@ collections:
         name: "redirects"
         file: "src/cms/config/redirects.md"
         fields:
+          - label: ID
+            name: id
+            widget: hidden
           - label: List
             name: list
             widget: list
