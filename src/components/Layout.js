@@ -14,7 +14,7 @@ import Callout from "./Callout";
 import ExternalLinkWarningModal from './ExternalLinkWarningModal';
 import SkipNavLink from "./SkipNavLink"
 
-export const Wrapper = styled.div`
+export const Wrapper = styled.main`
   margin: 0 auto;
   max-width: 1600px;
   min-width: 1200px;

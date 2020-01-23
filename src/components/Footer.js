@@ -18,11 +18,6 @@ const FooterWrapper = styled.footer`
   padding: ${spaceSizes.lg} 0;
   color: ${blacks[4]};
 
-  h1,
-  h2,
-  h3,
-  h4,
-  h5,
   a {
     color: white;
 
@@ -34,6 +29,13 @@ const FooterWrapper = styled.footer`
     }
   }
 `;
+
+const DisclaimersTitle = styled.span`
+  margin: 1.5em 0 0.25em;
+  font-size: 22px;
+  font-weight: 800;
+  color: white;
+`
 
 const ContactMessage = styled.p`
   margin-top: ${spaceSizes.sm};
@@ -78,7 +80,7 @@ const ContactItems = styled.div`
 
 const Disclaimers = ({ disclaimers }) => (
   <Fragment>
-    <h4>Disclaimers</h4>
+    <DisclaimersTitle>Disclaimers</DisclaimersTitle>
     {disclaimers.map((disclaimer,i) => <p key ={i}>{disclaimer}</p>)}
   </Fragment>
 );

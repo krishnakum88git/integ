@@ -90,7 +90,7 @@ const Link = styled(GatsbyLink)`
   z-index: 99;
 `;
 
-const Title = styled.h5`
+const Title = styled.span`
   color: #757575;
   text-align: center;
   text-decoration: none;
