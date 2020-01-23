@@ -38,7 +38,9 @@ const ItemLink = styled.a`
     cursor: default;
 
     &&:hover,
-    &&:visited {
+    &&:visited,
+    &&:active,
+    &&:focus {
       color: white;
       text-decoration: none;
     }
