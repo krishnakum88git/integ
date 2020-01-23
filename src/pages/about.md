@@ -38,7 +38,7 @@ iconName: user-friends
 shouldIncludeContactInfo: true
 shouldIncludeEnrollmentInfo: true
 ---
-### Integra Managed Care
+## Integra Managed Care
 
 Medicare Advantage Plans are available to Medicare eligible individuals with Medicare Part A and B and who reside in our service area of Bronx, Kings, New York, Queens and Richmond and Nassau counties in New York. and have full Medicaid (QMB+ and SLMB+). Our Plans provide Medicare Beneficiaries with ALL Original Medicare benefits, including Part D prescription drug plus additional benefits not covered by Medicare. Our Integra Synergy MAP (HMO SNP) plan also provides long term care benefits for people who meet the criteria mentioned above and who also qualify for at least 120 days of community based long term care services.
 

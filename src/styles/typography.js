@@ -38,17 +38,17 @@ export const headings = css`
   }
 
   h2 {
-    font-size: ${fontSizes.lg};
-    line-height: 1.2;
-  }
-
-  h3 {
     font-size: ${fontSizes.md};
     line-height: 1.2;
   }
 
-  h4 {
+  h3 {
     font-size: ${fontSizes.sm};
+    line-height: 1.2;
+  }
+
+  h4 {
+    font-size: ${fontSizes.xs};
     letter-spacing: 0;
     line-height: 1.2;
   }

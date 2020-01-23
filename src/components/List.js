@@ -40,9 +40,11 @@ const ListItemBody = styled.li`
   line-height: 1.5;
 `;
 
-const TitleBody = styled.h4`
+const TitleBody = styled.span`
   margin: 0;
   line-height: 1;
+  font-size: 22px;
+  font-weight: 800;
 `;
 
 const Title = props =>

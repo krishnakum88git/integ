@@ -41,7 +41,7 @@ iconName: question
 shouldIncludeContactInfo: true
 shouldIncludeEnrollmentInfo: true
 ---
-### When Can I Enroll?
+## When Can I Enroll?
 
 Being new to Medicare means you have a lot of important decisions to make about your health care. Chances are you’re like many people—in the dark about your options for health care coverage under Medicare.
 
@@ -53,19 +53,19 @@ As a new beneficiary to Medicare, your complete understanding of your Medicare o
 
 Medicare consists of four distinct programs that include: 
 
-#### Medicare Part A
+### Medicare Part A
 
 Hospital Insurance which helps cover the following: Inpatient care in hospitals; Inpatient stays in a skilled nursing facility; Hospice care services; Home health care services and Inpatient care in a Religious Nonmedical Health Care Institution.
 
-#### Medicare Part B
+### Medicare Part B
 
 Medical Insurance which helps cover medically necessary services like doctors’ services and tests, outpatient care, and other medical services. Part B also covers some preventive services.
 
-#### Medicare Part C
+### Medicare Part C
 
 Which is commonly known as a Medicare Advantage plan, permits Medicare beneficiaries to receive their medical care and usually other benefits that Medicare doesn’t cover, from a number of delivery options which includes Integra Managed Care HMO plans.
 
-#### Medicare Part D
+### Medicare Part D
 
 Which covers prescription medications can be purchased separately as a Prescription Drug Plan (PDP) or included in a Medicare Advantage Prescription Drug (MAPD) plan like Integra Managed Care Harmony Plan.
 
@@ -107,4 +107,4 @@ To explore your Medicare options further, you can visit the following websites: 
 
 - - -
 
-#### [Review 2019 Integra Managed Care Medicare plans in more detail](/our-plans "Our Plans")
+### [Review 2019 Integra Managed Care Medicare plans in more detail](/our-plans "Our Plans")
