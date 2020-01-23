@@ -3,6 +3,8 @@ import styled from 'styled-components'
 
 const SVG = styled.svg`
 	display: block;
+	height: 100%;
+	width: 100%;
 `
 
 const FooterSVG = styled(SVG)`

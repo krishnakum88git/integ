@@ -17,6 +17,10 @@ const buttonStyles = css`
   cursor: pointer;
   width: ${props => props.fullWidth ? '100%' : 'auto'};
 
+  @media (max-width: 800px) {
+    font-size: 16px;
+  }
+
   &:active,
     &:visited,
     &:hover,

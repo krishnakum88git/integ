@@ -1,17 +1,21 @@
-import React from "react";
-import { Link } from "gatsby";
-import styled from "styled-components";
-import logo from "../img/logo.png";
-import { black } from "../styles/colors";
+import React from "react"
+import { Link } from "gatsby"
+import styled from "styled-components"
+import logo from "../img/logo.png"
+import { black } from "../styles/colors"
 import Container from "./Container"
 import NavbarContact from "./NavbarContact"
 
 const Nav = styled.nav`
   display: flex;
   position: relative;
-  height: 80px;
+  padding: 16px 0;
   align-items: center;
   z-index: 4;
+
+  @media (max-width: 800px) { 
+    padding-bottom: 0;
+  }
 
   a {
     display: flex;
@@ -21,6 +25,10 @@ const Nav = styled.nav`
     color: ${black.darker};
     font-weight: 800;
     text-decoration: none;
+
+    @media (max-width: 800px) { 
+      margin: 8px;
+    }
 
     &.is-active {
       margin-left: 24px;
@@ -52,6 +60,15 @@ const Indicator = styled.div`
   opacity: 0;
   will-change: opacity;
   transition: .2s ease-out opacity;
+`
+
+const Links = styled.div`
+  display: flex;
+  flex-wrap: wrap;
+
+  @media (max-width: 800px) { 
+    padding: 16px;
+  }
 `
 
 const items = [
@@ -103,7 +120,9 @@ const Navbar = ({navContact}) => (
       <Link to="/" style={{marginRight: 'auto'}}>
         <img src={logo} style={{width: 200}} alt="Integra Managed Care - Home" />
       </Link>
-      {items.map(item => (
+
+      <Links>
+        {items.map(item => (
           <Link
             getProps={isPartiallyActive}
             key={item.path}
@@ -113,9 +132,10 @@ const Navbar = ({navContact}) => (
             {item.title}
           </Link>
         ))}
+      </Links>
       <NavbarContact {...navContact} />
     </Container>
   </Nav>
-);
+)
 
-export default Navbar;
+export default Navbar

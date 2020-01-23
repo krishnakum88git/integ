@@ -21,7 +21,8 @@ const Container = styled.div`
   display: flex;
   margin: 0 auto;
   justify-content: center;
-  width: 1200px;
+  flex-wrap: wrap;
+  /* width: 1200px; */
 `
 
 export default ({ magnets }) => (

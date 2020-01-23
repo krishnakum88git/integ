@@ -3,7 +3,7 @@ import styled from "styled-components";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import Img, { objectFitShim } from "./Image";
 
-import { fontSizes, textShadow } from "../styles/typography";
+import { fontSizes, spaceSizes, textShadow } from "../styles/typography";
 import DividerCurve from "./DividerCurve";
 
 const Hero = styled.div`
@@ -70,8 +70,12 @@ const Container = styled.div`
   box-sizing: border-box;
   margin: 0 auto;
   padding: ${props => props.isCentered ? '150px 20%' : '175px 50%  175px 32px' };
-  width: 1200px;
+  max-width: 1200px;
   z-index: 2;
+
+  @media (max-width: 800px) { 
+    padding: ${spaceSizes.lg} ${spaceSizes.md};
+  }
 `
 
 const Title = styled.h1`

@@ -43,17 +43,26 @@ const Callout = styled.div`
   ${calloutColors}
   ${calloutAlignment}
   ${lists}
+
+  @media (max-width: 800px) { 
+    padding: ${spaceSizes.lg} ${spaceSizes.md};
+  }
 `
 
 const List = styled.ul`
   margin-top: 32px;
   min-width: 800px;
+
+  @media (max-width: 800px) { 
+    min-width: 100%;
+  }
 `
 
 const TitleStyled = styled.h2`
   margin-top: 0;
   white-space: pre-wrap;
   max-width: 100%;
+  font-size: ${fontSizes.lg};
 `
 
 const Title = ({ text }) => text ? (

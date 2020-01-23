@@ -39,7 +39,7 @@ disclaimers:
     language or alternate formats such as braille, large print and audio.
 iconName: book-open
 ---
-### Our Goals
+## Our Goals
 
 Integra Managed Care’s goal is to improve the quality of life of our members in the communities in which they live. We recognize the importance of having easy access to care, quality providers and reasonable costs. We also recognize that many other issues impact quality of life, such as lifestyle, disease management and access to community services. It is our goal to understand and respond to these life issues by partnering with you, your providers and community-based organizations to provide you with the best possible care. We believe this comprehensive approach will result in not only improved health care, but also improved health.
 

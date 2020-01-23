@@ -17,7 +17,7 @@ import SkipNavLink from "./SkipNavLink"
 export const Wrapper = styled.main`
   margin: 0 auto;
   max-width: 1600px;
-  min-width: 1200px;
+  /* min-width: 1200px; */
   background-color: #ffffff;
   box-shadow: 0 0 2px 2px rgba(0, 0, 0, 0.05);
 `;

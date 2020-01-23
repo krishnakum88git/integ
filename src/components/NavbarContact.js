@@ -8,11 +8,17 @@ const NavbarContact = styled.div`
   position: ${props => props.position};
   padding: ${spaceSizes.sm} ${spaceSizes.md};
   background-color: ${blue};
-  top: 67px;
+  top: calc(100% + 16px);
   right: 0;
   border-bottom-left-radius: ${spaceSizes.sm};
   border-bottom-right-radius: ${spaceSizes.sm};
   color: white;
+
+  @media (max-width: 800px) { 
+    position: relative;
+    width: 100%;
+    border-radius: 0;
+  }
 `;
 
 const Title = styled.h5`

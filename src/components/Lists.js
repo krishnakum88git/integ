@@ -18,9 +18,22 @@ const Lists = styled.div`
   flex-direction: ${props => props.direction};
   flex-wrap: wrap;
 
+  @media (max-width: 800px) {
+    margin: 0;
+    padding-top: 16px;
+    width: 100%;
+    flex-direction: column;
+  }
+
   .list {
     margin-bottom: ${props => props.direction === 'column' ? 0 : spaceSizes.md };
     flex: 0 0 ${props => props.direction === 'column' ? 'auto' : '40%' };
+
+    @media (max-width: 800px) {
+      margin: 0;
+      padding-top: 16px;
+      width: 100%;
+    }
   }
 `
 

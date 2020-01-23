@@ -7,14 +7,14 @@ import Img from "./Image";
 const Wrapper = styled.div`
   position: relative;
   background-color: #ffffff;
-  width: 270px;
+  max-width: 270px;
   border-radius: 10px;
   overflow: hidden;
   display: flex;
   flex-direction: column;
   align-items: center;
   box-shadow: 0px 2px 0px #a5b1c2;
-  margin: 45px 15px;
+  margin: 16px;
   z-index: 100;
 `;
 
