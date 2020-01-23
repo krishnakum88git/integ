@@ -1,4 +1,4 @@
-import CMS from 'netlify-cms'
+import CMS from 'netlify-cms-app'
 import { library } from '@fortawesome/fontawesome-svg-core'
 import * as svgIcons from "@fortawesome/free-solid-svg-icons"
 import icons from '../styles/icons'
