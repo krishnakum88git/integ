@@ -76,6 +76,10 @@ const Container = styled.div`
   @media (max-width: 800px) { 
     padding: ${spaceSizes.lg} ${spaceSizes.md};
   }
+
+  @media (max-width: 425px) {
+    padding: ${spaceSizes.md} ${spaceSizes.sm};
+  }
 `
 
 const Title = styled.h1`

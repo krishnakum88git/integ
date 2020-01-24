@@ -47,6 +47,10 @@ const Callout = styled.div`
   @media (max-width: 800px) { 
     padding: ${spaceSizes.lg} ${spaceSizes.md};
   }
+
+  @media (max-width: 425px) {
+    padding: 0;
+  }
 `
 
 const List = styled.ul`
@@ -63,6 +67,10 @@ const TitleStyled = styled.h2`
   white-space: pre-wrap;
   max-width: 100%;
   font-size: ${fontSizes.lg};
+
+  @media (max-width: 800px) {
+    font-size: ${fontSizes.md};
+  }
 `
 
 const Title = ({ text }) => text ? (

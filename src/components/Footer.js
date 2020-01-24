@@ -76,6 +76,10 @@ const ContactItem = ({ icon, children }) => (
 
 const ContactItems = styled.div`
   display: flex;
+
+  @media (max-width: 425px) {
+    flex-direction: column;
+  }
 `;
 
 const Disclaimers = ({ disclaimers }) => (

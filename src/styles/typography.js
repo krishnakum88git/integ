@@ -35,6 +35,10 @@ export const headings = css`
 
   h1 {
     font-size: ${fontSizes.xl};
+
+    @media (max-width: 425px) {
+      font-size: ${fontSizes.lg};
+    }
   }
 
   h2 {
@@ -72,6 +76,10 @@ export const links = css`
     &:focus {
       color: ${colors.link};
       text-decoration: none;
+    }
+
+    @media (max-width: 425px) {
+      word-break: break-word;
     }
   }
 `
