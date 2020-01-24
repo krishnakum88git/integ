@@ -88,7 +88,7 @@ const Disclaimers = ({ disclaimers }) => (
 const DividerStyled = styled.div`
   position: absolute;
   left: 0;
-  bottom: 100%;
+  bottom: 99%;
   width: 100%;
 `
 

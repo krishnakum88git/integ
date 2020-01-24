@@ -3,12 +3,13 @@ import styled from 'styled-components'
 
 const SVG = styled.svg`
 	display: block;
-	height: 100%;
 	width: 100%;
+	height: 100%;
 `
 
 const FooterSVG = styled(SVG)`
 	width: 100%;
+	height: 100%;
 `;
 
 export default ({isFooter}) => isFooter ? (
