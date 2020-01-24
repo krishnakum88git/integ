@@ -65,6 +65,7 @@ const Indicator = styled.div`
 const Links = styled.div`
   display: flex;
   flex-wrap: wrap;
+  max-width: 100%;
 
   @media (max-width: 800px) { 
     padding: 16px;
