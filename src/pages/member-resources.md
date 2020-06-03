@@ -16,7 +16,8 @@ lists:
         title: Appeals & Grievances
       - file: /files/Integra Managed Care_How to appoint a representative_Final.pdf
         title: Appoint a Representative
-      - file: /files/integra-formulary-may-2020.pdf
+      - file: >-
+          /files/20144_integra_1t_cy20_monthly_marketing_comprehensive_final_06012020.pdf
         title: Covered Drugs - 2020\n(Formulary & Medication)
       - file: /files/H1205_2020 Comprehensive Formulary_C Final_SP_508.pdf
         title: Covered Drugs - 2020\n(Formulary & Medication) Spanish
