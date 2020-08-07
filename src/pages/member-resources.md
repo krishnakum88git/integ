@@ -8,7 +8,7 @@ magnets:
   - contact-us
 lists:
   - items:
-      - file: /files/2020 ANOC Harmony_M_102719_508.pdf
+      - file: /files/h1205_2020-anoc-harmony-rev_m.pdf
         title: Annual Notice of Change (ANOC)
       - file: /files/2020 ANOC Harmony_M_102719_SP_508.pdf
         title: Annual Notice of Change (ANOC) Spanish
