@@ -14,7 +14,8 @@ lists:
         title: >-
           Our most up to date listings (includes Providers, Specialists,
           Pharmacy, Vision and Dental) 
-      - file: /files/integra-harmony-hmo-snp-directory.pdf
+      - file: >-
+          /files/int_mapd_2020a_proof_integramapdproviderdirectoryseptemberv2.5.pdf
         title: Integra Harmony (HMO SNP) Directory
       - file: /files/integra-synergy-map-hmo-snp-directory.pdf
         title: Integra Synergy MAP (HMO SNP) Directory
@@ -25,7 +26,8 @@ lists:
         title: >-
           Downloadable directory includes: Providers, Specialists, Pharmacy,
           Vision and Dental
-      - file: /files/integra-harmony-hmo-snp-directory.pdf
+      - file: >-
+          /files/int_mapd_2020a_proof_integramapdproviderdirectoryseptemberv2.5.pdf
         title: Integra Harmony (HMO SNP) Directory
       - file: /files/integra-synergy-map-hmo-snp-directory.pdf
         title: Integra Synergy MAP (HMO SNP) Directory
